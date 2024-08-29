@@ -28,3 +28,6 @@ E[|X_k|\chi_{\lbrace|X_k|\geq t\rbrace}]&\leq (E[|X_k|^p])^{1/p}(P(|X_k|\geq t))
 &\leq \frac{M}{t^{p-1}}
 \end{align*}$$
 
+Since $p>1$, we conclude that
+
+$$\lim_{t\rightarrow 0}\sup_{k\geq 0}E[|X_k|\chi_{\lbrace|X_k|\geq t\rbrace}]\leq \lim_{t\rightarrow 0}\frac{M}{t^{p-1}}=0$$
