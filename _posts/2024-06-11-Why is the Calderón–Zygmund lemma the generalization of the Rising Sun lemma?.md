@@ -1,3 +1,14 @@
+<!--<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      showMathMenu: false,
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>--><!-- Begin Jekyll SEO tag v2.8.0 -->
+  
 ## Why is the Calderón–Zygmund lemma the generalization of the Rising Sun lemma?
 
 Below is a commonly encountered lemma about continuous functions, which you can find in books like Stein's Real Analysis or on related Wikipedia pages. Let's call it Rising Sun Lemma 1:
