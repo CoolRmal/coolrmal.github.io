@@ -21,10 +21,10 @@ then $\lbrace X_k\rbrace_k$ are uniform integrable.
 
 <em>Proof: </em> Let $q$ be the conjugate of $p$ ($p^{-1}+q^{-1}=1$). We use both Hölder's and Chebyshev's inequalities to deduce that
 
-$$\begin{aligned}
+\[\begin{aligned}
 E[|X_k|\chi_{\lbrace|X_k|&\geq t\rbrace}]&amp;\leq (E[|X_k|^p])^{1/p}(P(|X_k|\geq t))^{1/q}\\
 &amp;\leq M^{1/p}(P(|X_k|\geq t))^{1/q}\\
 &amp;\leq M^{1/p}(\frac{E[|X_k|^p]}{t^p})^{1/q}\\
 &amp;\leq \frac{M^{1/p-1/q}}{t^{p-1}}
-\end{aligned}$$
+\end{aligned}\]
 
