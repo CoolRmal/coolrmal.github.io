@@ -10,3 +10,19 @@ Prove that $\lbrace\sum_{k=1}^n\frac{X_k}{\sqrt{n}}\rbrace_n$ are uniform integr
 <em>Ingredient: </em> $\lbrace X_k\rbrace_k$ are uniform integrable iff
 
 $$\lim_{t\rightarrow 0}\sup_{k\geq 0}E[|X_k|\chi_{\lbrace|X_k|\geq t\rbrace}]=0$$
+
+We now can have a try of an appetizer:
+
+<em>Appetizer: </em>If there exists some $p>1$ such that 
+
+$$\sup_{k\geq 0}E[|X_k|^p]<\infty$$
+
+then $\lbrace X_k\rbrace_k$ are uniform integrable.
+
+<em>Proof: </em> Let $q$ be the conjugate of $p$ ($p^{-1}+q^{-1}=1$). We use both Hölder's and Chebyshev's inequalities to deduce that
+
+$$\begin{aligned}
+E[|X_k|\chi_{\lbrace|X_k|&\geq t\rbrace}]&\leq (E[|X_k|^p])^{1/p}(P(|X_k|\geq t))^{1/q}\\
+&\leq M^{1/p}(P(|X_k|\geq t))^{1/q}\\
+\end{aligned}$$
+
