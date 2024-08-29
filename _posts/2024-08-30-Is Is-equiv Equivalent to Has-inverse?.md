@@ -1,1 +1,1 @@
-# Is Is-equiv Equivalent to Has-inverse?
+## Is Is-equiv Equivalent to Has-inverse?
