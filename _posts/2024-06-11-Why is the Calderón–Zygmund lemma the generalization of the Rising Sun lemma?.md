@@ -4,10 +4,7 @@ Below is a commonly encountered lemma about continuous functions, which you can 
 
 <strong>Rising Sun Lemma 1: </strong>Let $G:\mathbb R\rightarrow \mathbb{R}$ be continuous and $E=\lbrace x:\exists y>x, G(y)>G(x)\rbrace$. Then $E$ is the union of at most countable disjoint open intervals $\{(a_k,b_k)\}_k$ such that if $(a_k,b_k)$ is a finite interval, then $G(a_k)=G(b_k)$.
 
-If we further assume $G(-\infty)=\infty$, $G(\infty)=-\infty$, then each $(a_k,b_k)$ must be finite. We can prove this by contradiction. Suppose it is unbounded and WLOG assume that $(a_k,b_k)=(a_k,\infty)$. By using the definition of $E$, we can know that $G$ is often greater than $G(a_k+1)$ in this interval, which is a contradiction
-that does not belong to the interval, leading to a contradiction that 
-must be infinite). Thus, is unbounded. With this additional condition about 
- we can prove Rising Sun Lemma 2.0:
+If we further assume $G(-\infty)=\infty$, $G(\infty)=-\infty$, then each $(a_k,b_k)$ must be finite. We can prove this by contradiction (and I leave this as an exercise). We now can introduce the second version of Rising Sun Lemma:
 
 <strong>Rising Sun Lemma 2: </strong>Let $f\in L^1(\mathbb{R})\cap L^+(\mathbb{R})$ and $\lambda>0$. There exists at most countable disjoint intervals $\lbrace I_k\rbrace_k$ such that
 <ol>
