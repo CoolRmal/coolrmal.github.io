@@ -10,5 +10,4 @@ Below is a commonly encountered lemma about continuous functions, which you can 
   <li>$f(x)\leq \lambda$ a.e. on $(\bigcup_kI_k)^c$.</li>
 </ol>
 
-This looks quite similar to the Calderón-Zygmund decomposition. In fact, it's an even finer result because in the Calderón-Zygmund decomposition, you can only obtain
-</p>$$\lambda< \frac{1}{|I_k|}\int_{I_k}f(x)dx\leq 2\lambda$$<p>
+This looks quite similar to the Calderón-Zygmund decomposition. In fact, it's an even finer result because in the Calderón-Zygmund decomposition, you can only obtain</p>\[\lambda< \frac{1}{|I_k|}\int_{I_k}f(x)dx\leq 2\lambda\]<p>
