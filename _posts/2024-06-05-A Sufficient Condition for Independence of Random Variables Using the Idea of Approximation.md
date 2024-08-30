@@ -39,12 +39,41 @@ Simplifying the last equality we get $E[1_A(X)1_B(Y)]=E[1_A(X)]E[1_B(Y)]$. $\squ
 
 We can also use polynomials to approximate, which gives us a proposition similar to Proposition 1.
 
-<strong>Proposition 2: Givens two random variables $X,Y$. If for all pairs of nonnegative integers $n,m$, we have
+<strong>Proposition 2: Givens two bounded random variables $X,Y$. If for all pairs of nonnegative integers $n,m$, we have
 
 $$E[X^nY^m]=E[X^n]E[Y^m]$$
 
 Then $X$ and $Y$ are independent.
 </strong>
+
+<em>Proof: </em>By Proposition 1, we only need to prove that for all pairs of bounded continuous functions $f,g$, we have
+
+$$E[f(X)g(Y)]=E[f(X)]E[g(Y)]$$
+
+Suppose $|X|,|Y|\leq M$, then by the Stone-Weierstrass Theorem, there exists polynomials $\lbrace f_n\rbrace, \lbrace g_n\rbrace$ that converges uniformly to $f\chi_{[-M,M]}$ and $g\chi_{[-M,M]}$. For all $n$, $f_n$ and $g_n$ can be expressed as follows:
+
+$$
+\begin{align*} f_n(x)&=a_0+a_1x+\cdots a_mx^m\\ 
+g_n(x)&=b_0+b_1x+\cdots b_kx^k\\ \end{align*}
+$$
+
+By the linearity of expectation, we have
+
+$$
+\begin{align*} E[f_n(X)g_n(Y)]&=E[\sum_{i,j}a_ib_jX^iY^j]\\ 
+&=\sum_{ij}E[a_iX^i]E[b_jY^j]\\ 
+&=E[f_n(X)]E[g_n(Y)] \end{align*}
+$$
+
+Taking limit on both side to get
+
+$$
+\begin{align*} \lim_nE[f_n(X)g_n(Y)]&=\lim_nE[f_n(X)]E[g_n(Y)]\\ 
+E[f(X)g(Y)]&=E[f(X)]E[g(Y)] \end{align*}
+$$
+
+Notice that the boundedness of random variables is necessary for the use of the Stone-Weierstrass Theorem. $\square$
+
 
 
 
