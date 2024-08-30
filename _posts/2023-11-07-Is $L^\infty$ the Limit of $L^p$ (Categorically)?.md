@@ -2,7 +2,7 @@
 
 Let $(X,\mu)$ be a measure space. According to Exercise 1.1.3 in GTM249, if $f\in L^{p_0}(X,\mu)$ for some $p_0<\infty$, then 
 
-$$\lim_{p\rightarrow \infty}\parallel f\textbardbl_{L^p}=\textbardbl f\textbardbl_{L^\infty}$$
+$$\lim_{p\rightarrow \infty}\parallel f\parallel_{L^p}=\\parallel f\parallel_{L^\infty}$$
 
 This is the reason why we sometimes say that the limit of $L^p$ is $L^\infty$. Can we see this from another perspective? That is, is the statement still true if we interpret the limit here as the categorical limit? Let's include the assumption that $\mu(X)$ is finite. Then for every pair of real numbers $p,q$ such that $p\leq q$, $1\leq p\leq q<\infty$, we have
 
@@ -25,6 +25,6 @@ n,  & x\in (\frac{1}{2^n},\frac{1}{2^{n-1}}]\\
 
 Clearly $f\notin L^\infty([0,1])$. However, it is in $L^p([0,1])$ for every $p\in [1,\infty)$ because
 
-$$\textbardbl f\textbardbl_{L^p}^p=\int_0^1|f|^pdm=\sum_{n=1}^\infty\frac{n^p}{2^n}$$
+$$\parallel f\parallel_{L^p}^p=\int_0^1|f|^pdm=\sum_{n=1}^\infty\frac{n^p}{2^n}$$
 
 which can be proved to be convergent by using the ratio test.
