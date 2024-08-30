@@ -2,7 +2,7 @@
 
 Let $(X,\mu)$ be a measure space. According to Exercise 1.1.3 in GTM249, if $f\in L^{p_0}(X,\mu)$ for some $p_0<\infty$, then 
 
-$$\lim_{p\rightarrow \infty}\parallel f\parallel_{L^p}=\\parallel f\parallel_{L^\infty}$$
+$$\lim_{p\rightarrow \infty}\parallel f\parallel_{L^p}=\parallel f\parallel_{L^\infty}$$
 
 This is the reason why we sometimes say that the limit of $L^p$ is $L^\infty$. Can we see this from another perspective? That is, is the statement still true if we interpret the limit here as the categorical limit? Let's include the assumption that $\mu(X)$ is finite. Then for every pair of real numbers $p,q$ such that $p\leq q$, $1\leq p\leq q<\infty$, we have
 
