@@ -129,7 +129,7 @@ Furthermore, $h(1/2)=1$. Define the following two functions:
 $$
 \begin{align*}
     g(x)&=\sum_{n=1}^\infty h(n^2(x-n))\chi_{[n,n+1]}\\
-    f(x)&=(\sum_{n=1}^\infty\frac{1}{n^2}\int_0^1h(x)dx)-\int_0^xg(x)dx
+    f(x)&=(\sum_{n=1}^\infty\frac{1}{n^2}\int_0^1h(t)dt)-\int_0^xg(x)dx
 \end{align*}
 $$
 
@@ -137,16 +137,29 @@ Any finite interval $[a,b]$ can be covered by finitely many intervals of the for
 
 $$
 \begin{align*}
-    \int_0^xg(x)dx&\leq \int_0^mg(x)dx\text{ (取一个大于$x$的整数$m$)}\\
+    \int_0^xg(x)dx&\leq \int_0^mg(x)dx\text{ ($m$ is an integer larger than $x$)}\\
     &=\int_0^m\sum_{n=1}^\infty h(n^2(x-n))\chi_{[n,n+1]}dx\\
-    &=\int_0^m\sum_{n=1}^m h(n^2(x-n))\chi_{[n,n+1]}dx\\
-    &\leq \sum_{n=1}^m\int_0^mh(n^2(x-n))dx\\
+    &=\int_0^m\sum_{n=1}^{m-1} h(n^2(x-n))\chi_{[n,n+1]}dx\\
     &\leq \sum_{n=1}^{m-1}\int_{n}^{\frac{1}{n^2}+n}h(n^2(x-n))dx\\
     &\leq \sum_{n=1}^{m-1}\frac{1}{n^2}\int_0^1h(u)du\text{ (substitution $u=n^2(x-n)$)}\\
     &\leq \sum_{n=1}^{\infty}\frac{1}{n^2}\int_0^1h(u)du<\infty
 \end{align*}
 $$
 
+Consider the following two sequences:$\{n+\frac{1}{n^2}\}, \{n+\frac{1}{2n^2}\}$.
+
+$$
+\begin{align*}
+    g(n+\frac{1}{n^2})&=h(n^2\frac{1}{n^2})=h(1)=0\\
+    g(n+\frac{1}{2n^2})&=h(n^2\frac{1}{2n^2})=h(\frac{1}{2})=1
+\end{align*}
+$$
+
+We can see that $g$ is oscillating, so $f'=-g$ does not have a limit at infinity. Let's reflect on the construction of this counterexample. Intuitively, we might expect a non-negative decreasing function to look something like this: 
+
+We may believe that in order for the function to remain non-negative and approach its limit at infinity, the rate of change of the function at infinity cannot be too large. However, we can actually have a function that changes very little for most of the time and changes a lot at some points, resulting in an overall small rate of change:
+
+This helps us understand the construction of the above counterexample: it is simply the antiderivative of a non-negative function that oscillates at infinity.
 
 
 
