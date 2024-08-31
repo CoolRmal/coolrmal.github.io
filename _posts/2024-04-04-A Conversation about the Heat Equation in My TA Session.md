@@ -105,6 +105,47 @@ $$
 \end{align}
 $$
 
+Therefore, $E$ is a nonnegative decreasing function, so it has a limit at infinity.
+
+Student: I believe that the limit of $E'(t)$ at infinity is $0$, so by $(1)$ we have
+
+$$\lim_{t\rightarrow\infty}\int_0^1(v_x(t,x))^2dx=0$$
+
+We then can apply the squeeze theorem to $(2)$ to see that the limit of $E(t)$ at infinity is 0.
+
+Me: I don't think your argument is correct. A nonnegative decreasing function does not need to have vanishing derivative at infinity. Consider the following example. Let's $h$ be a bump function supported in $[0,1]$. $h$ satisfies
+
+$$
+\begin{align*}
+    h(x)\begin{cases}
+        >0, &x\in (0,1)\\
+        =0, &\text{otherwise}
+    \end{cases}
+\end{align*}
+$$
+
+Furthermore, $h(1/2)=1$. Define the following two functions: 
+
+$$
+\begin{align*}
+    g(x)&=\sum_{n=1}^\infty h(n^2(x-n))\chi_{[n,n+1]}\\
+    f(x)&=(\sum_{n=1}^\infty\frac{1}{n^2}\int_0^1h(x)dx)-\int_0^xg(x)dx
+\end{align*}
+$$
+
+Any finite interval $[a,b]$ can be covered by finitely many intervals of the form $[n,n+1]$, so $g$ is locally the sum of finitely many smooth functions，which implies that both $g$ and $f$ are smooth. $f'=-g\leq 0$, so $f$ is decreasing。$f\geq 0$ because 
+
+$$
+\begin{align*}
+    \int_0^xg(x)dx&\leq \int_0^mg(x)dx\text{ (取一个大于$x$的整数$m$)}\\
+    &=\int_0^m\sum_{n=1}^\infty h(n^2(x-n))\chi_{[n,n+1]}dx\\
+    &=\int_0^m\sum_{n=1}^m h(n^2(x-n))\chi_{[n,n+1]}dx\\
+    &\leq \sum_{n=1}^m\int_0^mh(n^2(x-n))dx\\
+    &\leq \sum_{n=1}^{m-1}\int_{n}^{\frac{1}{n^2}+n}h(n^2(x-n))dx\\
+    &\leq \sum_{n=1}^{m-1}\frac{1}{n^2}\int_0^1h(u)du\text{ (substitution $u=n^2(x-n)$)}\\
+    &\leq \sum_{n=1}^{\infty}\frac{1}{n^2}\int_0^1h(u)du<\infty
+\end{align*}
+$$
 
 
 
