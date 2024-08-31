@@ -185,7 +185,18 @@ $$
 
 from which we easily deduce that $\lim_{x\rightarrow \infty}f’(x)=0$. $\square$
 
+Let's go back to the original problem，which is to prove that $\lim_{t\rightarrow\infty}E(t)=0$. 
 
+Student: Here's another argument. Suppose $\lim_{t\rightarrow\infty}E(t)=c>0$. Then there exists a large enough real number $M$ such that $\forall t>M$,
+
+$$
+\begin{align*}
+    |E(t)-c|&<\frac{c}{2}\\
+    \frac{c}{2}&<E(t)\leq \frac{1}{2}\int_0^1(v_x(t,x))^2dx\text{ (by $(2)$)}\\
+    c&\leq \int_0^1(v_x(t,x))^2dx\\
+    -c&\geq -\int_0^1(v_x(t,x))^2dx=E'(t)
+    \end{align*}
+$$
 
 
 
