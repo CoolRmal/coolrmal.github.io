@@ -157,6 +157,10 @@ $$
 
 We can see that $g$ is oscillating, so $f'=-g$ does not have a limit at infinity. Let's reflect on the construction of this counterexample. Intuitively, we might expect a non-negative decreasing function to look something like this: 
 
+<div align="center">
+	<img width="594" alt="Screenshot 2024-08-31 at 4 04 03 PM" src="https://github.com/user-attachments/assets/2d8b0500-7710-4fff-9e6e-ccae9979ed50">
+</div>
+
 We may believe that in order for the function to remain non-negative and approach its limit at infinity, the rate of change of the function at infinity cannot be too large. However, we can actually have a function that changes very little for most of the time and changes a lot at some points, resulting in an overall small rate of change:
 
 This helps us understand the construction of the above counterexample: it is simply the antiderivative of a non-negative function that oscillates at infinity.
