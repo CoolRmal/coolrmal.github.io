@@ -74,6 +74,40 @@ $$
 
 Notice that the boundedness of random variables is necessary for the use of the Stone-Weierstrass Theorem. $\square$
 
+One should expects that trignometric polynomials can also be used to perform approximation and prove independence. We then can see how charactersitic functions are related to independence.
+
+<strong>Proposition 3: Givens two bounded random variables $X,Y$. If for all pairs integers $n,m$, we have
+
+$$E[e^{inX}e^{imY}]=E[e^{inX}]E[e^{imY}]$$
+
+Then $X$ and $Y$ are independent.
+</strong>
+
+Again one can use the Stone-Weierstrass Theorem. The proof is similar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
