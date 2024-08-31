@@ -55,6 +55,25 @@ $$
 \end{align*}
 $$
 
+By the definition of $v$, we can know that
+
+$$
+\int_0^1v(t,x)dx=\int_0^1u(t,x)dx-H=\mathcal{H}(t)-H=0
+$$
+
+The problem then asks me to prove that $\forall t\geq 0$, $\exists x_0\in [0,1]$ such that $v(t,x_0)=0$.
+
+Me: Well how do you prove that?
+
+Student: I used the Mean Value Theorem. Define $F(s)=\int_0^sv(t,x)dx$. Since $F(1)=F(0)=0$，the Mean Value Theorem tells us that $\exists x_0$ such that
+
+$$
+\begin{align*}
+    F'(x_0)&=\frac{F(1)-F(0)}{1-0}=0\\
+    v(t,x_0)&=0
+\end{align*}
+$$
+
 
 
 
