@@ -217,7 +217,7 @@ $$
 \end{align*}
 $$
 
-Either $|E(T+1)-c|\geq c/2$ or $|E(T)-c|\geq c/2$. In both cases, we obtain a contradiction.
+Either $\abs{E(T+1)-c}\geq c/2$ or $\abs{E(T)-c}\geq c/2$. In both cases, we obtain a contradiction.
 
 
 
