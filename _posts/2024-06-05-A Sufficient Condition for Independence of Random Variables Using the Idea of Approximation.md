@@ -50,7 +50,7 @@ Then $X$ and $Y$ are independent.
 
 $$E[f(X)g(Y)]=E[f(X)]E[g(Y)]$$
 
-Suppose $|X|,|Y|\leq M$, then by the Stone-Weierstrass Theorem, there exists polynomials $\lbrace f_n\rbrace, \lbrace g_n\rbrace$ that converges uniformly to $f\chi_{[-M,M]}$ and $g\chi_{[-M,M]}$. For all $n$, $f_n$ and $g_n$ can be expressed as follows:
+Suppose $|X|,|Y|\leq M$,
 
 $$
 \begin{align*} 
