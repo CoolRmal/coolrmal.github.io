@@ -53,8 +53,10 @@ $$E[f(X)g(Y)]=E[f(X)]E[g(Y)]$$
 Suppose $|X|,|Y|\leq M$, then by the Stone-Weierstrass Theorem, there exists polynomials $\lbrace f_n\rbrace, \lbrace g_n\rbrace$ that converges uniformly to $f\chi_{[-M,M]}$ and $g\chi_{[-M,M]}$. For all $n$, $f_n$ and $g_n$ can be expressed as follows:
 
 $$
-\begin{align*} f_n(x)&=a_0+a_1x+\cdots a_mx^m\\ 
-g_n(x)&=b_0+b_1x+\cdots b_kx^k\\ \end{align*}
+\begin{align*} 
+f_n(x)&=a_0+a_1x+\cdots a_mx^m\\ 
+g_n(x)&=b_0+b_1x+\cdots b_kx^k\\ 
+\end{align*}
 $$
 
 By the linearity of expectation, we have
@@ -81,7 +83,7 @@ One should expects that trignometric polynomials can also be used to perform app
 $$E[e^{inX}e^{imY}]=E[e^{inX}]E[e^{imY}]$$
 
 Then $X$ and $Y$ are independent.
-</strong>
+<\strong>
 
 Again one can use the Stone-Weierstrass Theorem. The proof is similar.
 
