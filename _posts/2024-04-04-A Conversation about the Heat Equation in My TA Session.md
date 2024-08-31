@@ -220,6 +220,12 @@ $$
 Either $|E(T+1)-c|\geq c/2$ or $|E(T)-c|\geq c/2$. In both cases, we obtain a contradiction.
 
 
+
+
+
+
+
+
 <strong>Reference: </strong>
 1. https://math.stackexchange.com/questions/42277/proving-that-lim-limits-x-to-inftyfx-0-when-lim-limits-x-to-inftyf?noredirect=1&lq=1
 2. https://math.stackexchange.com/questions/788813/the-limit-of-the-derivative-of-an-increasing-and-bounded-function-is-always-0/788818#788818
