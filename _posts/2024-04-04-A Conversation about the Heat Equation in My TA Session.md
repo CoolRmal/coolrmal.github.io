@@ -74,8 +74,36 @@ $$
 \end{align*}
 $$
 
+Me: I totally agree with you.
 
+Student: Then we are asked to use the Cauchy-Schwarz inequality to prove that 
 
+$$
+E(t)\leq \frac{1}{2}\int_0^1(v_x(t,x))^2dx
+$$
+
+I don't have time to solve this problem during the exam, but I do have a solution right now (Calculating on the blackboard).
+
+$$
+\begin{align*}
+    (v(t,x))^2&=(v(t,x)-v(t,x_0))^2\\
+    &=(\int_x^{x_0}v_x(t,x)dx)^2\\
+    &\leq (\int_0^{1}v_x(t,x)dx)^2\\
+    &\leq \int_0^1(v_x(t,x))^2dx\text{ (Cauchy Schwarz})\\
+    E(t)&=\frac{1}{2}\int_0^1(v(t,x)-v(t,x_0))^2dx\\
+    &\leq \frac{1}{2}\int_0^1(\int_0^1(v_x(t,x))^2dx)dx\\
+    &=\frac{1}{2}\int_0^1(v_x(t,x))^2dx
+\end{align*}
+$$
+
+Me: Nice calculations. Let's review what we know about the function $E$ right now:
+
+$$
+\begin{align}
+    E'(t)&= -\int_0^1(v_x(t,x))^2dx\\
+    E(t)&\leq \frac{1}{2}\int_0^1(v_x(t,x))^2dx
+\end{align}
+$$
 
 
 
