@@ -82,8 +82,7 @@ One should expects that trignometric polynomials can also be used to perform app
 
 $$E[e^{inX}e^{imY}]=E[e^{inX}]E[e^{imY}]$$
 
-Then $X$ and $Y$ are independent.
-</strong>
+Then $X$ and $Y$ are independent.</strong>
 
 Again one can use the Stone-Weierstrass Theorem. The proof is similar.
 
