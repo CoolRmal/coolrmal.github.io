@@ -158,15 +158,32 @@ $$
 We can see that $g$ is oscillating, so $f'=-g$ does not have a limit at infinity. Let's reflect on the construction of this counterexample. Intuitively, we might expect a non-negative decreasing function to look something like this: 
 
 <div align="center">
-	<img width="594" alt="Screenshot 2024-08-31 at 4 04 03 PM" src="https://github.com/user-attachments/assets/2d8b0500-7710-4fff-9e6e-ccae9979ed50">
+	<img width="594" src="https://github.com/user-attachments/assets/12e70065-5ffb-4841-9d8d-a7702933b4e9">
 </div>
 
 We may believe that in order for the function to remain non-negative and approach its limit at infinity, the rate of change of the function at infinity cannot be too large. However, we can actually have a function that changes very little for most of the time and changes a lot at some points, resulting in an overall small rate of change:
 
-This helps us understand the construction of the above counterexample: it is simply the antiderivative of a non-negative function that oscillates at infinity.
+<div align="center">
+	<img width="594" src="https://github.com/user-attachments/assets/4132223b-307c-4457-8d8c-b6bbedc187e3">
+</div>
 
+The red arrows in the above picture points at the moments that the function has a large rate of change. This helps us understand the construction of the above counterexample: it is simply the antiderivative of a non-negative function that oscillates at infinity.
 
+Now let's make a digression. The example above suggests that the existence of $\lim_{x\rightarrow \infty}f(x)$ does not guarantee that $\lim_{x\rightarrow \infty}f’(x)=0$ because $\lim_{x\rightarrow \infty}f’(x)$ may not even exist. However, what if we know that $\lim_{x\rightarrow \infty}f’(x)$ exists? In this case, do we have the equality $\lim_{x\rightarrow \infty}f’(x)=0$? The answer is Yes, and in fact we only need a weak assumption: the existence of $\lim_{x\rightarrow \infty}f(x)+f’(x)$.
 
+<strong>Theorem (Hardy): If both $\lim_{x\rightarrow \infty}f(x)$ and $\lim_{x\rightarrow \infty}f(x)+f’(x)$ exists, then $\lim_{x\rightarrow \infty}f’(x)=0$.</strong> 
+
+<em>Proof: </em> We elegantly apply L'Hôpital's rule:
+
+$$
+\begin{align*}
+        \lim_{x\rightarrow \infty}f(x)&=\lim_{x\rightarrow \infty}\frac{e^xf(x)}{e^x}\\
+        &=\lim_{x\rightarrow \infty}\frac{e^xf(x)+e^xf'(x)}{e^x}\text{ (L'Hôpital's rule)}\\
+        &=\lim_{x\rightarrow \infty}f(x)+f’(x)
+    \end{align*}
+$$
+
+from which we easily deduce that $\lim_{x\rightarrow \infty}f’(x)=0$. $\square$
 
 
 
