@@ -27,11 +27,11 @@ $$G_\Omega\mu(x):=\int_\Omega G_\Omega(x,y)d\mu(y)$$
 
 This function takes values in $[0,\infty]$, and we call it a potential associated with $\mu$ if $G_\Omega\mu$ is finite at some point. If you are willing to accept that the integral of a superharmonic function is superharmonic, then you can see that $G_\Omega\mu$ is actually superharmonic if it is a potential. 
 
-Riesz Decomposition Theorem: Let $u$ be a superharmonic function defined on $\Omega$. Then $G_\Omega\mu_u$ is a potential and $u$ has the following representation:
+<strong>Riesz Decomposition Theorem: Let $u$ be a superharmonic function defined on $\Omega$. Then $G_\Omega\mu_u$ is a potential and $u$ has the following representation:</strong>
 
 $$u(x)=G_\Omega\mu_u(x)+h(x)$$
 
-where $h$ is the greatest harmonic minorant of $u$.
+<strong>where $h$ is the greatest harmonic minorant of $u$.</strong>
 
 If you already know that $G_\Omega\mu_u$ is a potential, then this theorem is easy to prove because you can first apply Fubini's theorem to show that the Riesz measure associated with $G_\Omega\mu_u$  is $\mu_u$ and then use Weyl's lemma to know that $u-G_\Omega\mu_u$ is harmonic. 
 
