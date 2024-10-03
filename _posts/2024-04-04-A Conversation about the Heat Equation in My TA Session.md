@@ -30,9 +30,11 @@ $$\begin{align*}
 
 Then you will see that the derivative of the energy with respect to time is zero, so the energy is equal to some constant $H$.
 
-Student: Yes I agree with you. Next we want to prove that $u(x,t)$ converges to $H$ in the $L^2$-sense as $t\rightarrow\infty$. Following the hint, we should first prove that
+Student: Yes I agree with you. Next we want to prove that $u(t,x)$ converges to $H$ in the $L^2$-sense as $t\rightarrow\infty$. Following the hint, we should first prove that
 
 $$E'(t)= -\int_0^1(v_x(t,x))^2dx$$
+
+where $v:=u-H$.
 
 Me: I guess you still apply the trick of exchanging the order of differentiation and integration.
 
