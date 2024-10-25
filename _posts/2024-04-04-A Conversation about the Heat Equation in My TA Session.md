@@ -1,4 +1,4 @@
-## A Conversation about the Heat Equation in My TA Session
+## A Conversation about the Heat Equation in My TA Session — $L^2$ Convergence of Energy
 
 Student: Can I discuss the last question of the midterm exam with you?
 
