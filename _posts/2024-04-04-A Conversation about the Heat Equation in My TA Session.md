@@ -32,9 +32,11 @@ Then you will see that the derivative of the energy with respect to time is zero
 
 Student: Yes I agree with you. Next we want to prove that $u(t,x)$ converges to $H$ in the $L^2$-sense as $t\rightarrow\infty$. Following the hint, we should first prove that
 
-$$E'(t)= -\int_0^1(v_x(t,x))^2dx$$
+$$\begin{align*}
+    E'(t)= -\int_0^1(v_x(t,x))^2dx
+\end{align*}$$
 
-where $v:=u-H$.
+where $v:=u-H$ and $E(t)=\int_0^1v^2(t,x)dx$.
 
 Me: I guess you still apply the trick of exchanging the order of differentiation and integration.
 
