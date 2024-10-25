@@ -16,7 +16,7 @@ u_x(t,0)=u_x(t,1)=0 & t\in \mathbb{R}_+
 \end{align*}
 $$
 
-We define $\mathcal{H}(t)=\int_0^1u(t,x)dx$, which is the energy at time $t$。First, we need to prove that the energy is conserved, meaning that $\mathcal{H}(t)$ is equal to some constant $H$.
+We define $\mathcal{H}(t)=\int_0^1u(t,x)dx$, which is the energy at time $t$. First, we need to prove that the energy is conserved, meaning that $\mathcal{H}(t)$ is equal to some constant $H$.
 
 Me: This shouldn't be too difficult for you. For such kind of physics problems, you can exchange the order of differentiation and integration and use the given boundary conditions to find: 
 
