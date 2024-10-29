@@ -1,7 +1,6 @@
 ## A Simple Estimate Involving $A_p$ Weights
 
-This is an exercise given by Professor Sergei Treil. 
-Let $f: \mathbb{R}\rightarrow \mathbb{C}$ be a measurable function. Given a bounded interval $I\subset \mathbb{R}$, we can define an operator $E_I$ as follows:
+This is an exercise given by Professor Sergei Treil during the analysis seminar. Let $f: \mathbb{R}\rightarrow \mathbb{C}$ be a measurable function. Given a bounded interval $I\subset \mathbb{R}$, we can define an operator $E_I$ as follows:
 
 $$E_If=(\frac{1}{|I|}\int_Ifdx)\chi_I$$
 
@@ -38,3 +37,5 @@ $$
 Hence, 
 
 $$\|E_I\|_{L^p(w)\rightarrow L^p(w)}\leq [w]_{A_p}^{\frac{1}{p}}.$$
+
+I remember that Professor Treil told me that there is a way to show that this is indeed an equality, but I didn't figure it out. It would be great if someone can share your thought with me on this problem.
