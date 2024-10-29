@@ -35,21 +35,23 @@ This is the product of two complex-valued harmonic functions, so one of them mus
 
 Here are some similar questions. Let $f:\Omega\subset\mathbb{C}\rightarrow \mathbb{C}$ be a complex-valued harmonic function. Suppose $f^2$ is also harmonic. Prove that $f$ is either holomorphic or anti-holomorphic. In particular, if $f$ is real-valued, then $f$ must be constant.
 
-*Proof.* $$\begin{align*}
+*Proof.* 
+$$\begin{align*}
         \frac{\partial}{\partial\bar{z}}\frac{\partial (f^2)}{\partial z}&=0\\
         \frac{\partial}{\partial\bar{z}}[2f\frac{\partial f}{\partial z}]&=0\\
         2\frac{\partial f}{\partial\bar{z}}\frac{\partial f}{\partial z}+2f\frac{\partial}{\partial\bar{z}}\frac{\partial f}{\partial z}&=0\\
         \frac{\partial f}{\partial\bar{z}}\frac{\partial f}{\partial z}&=0
     \end{align*}$$
-    We obtain the same conclusion. $\square$
+We obtain the same conclusion. $\square$
     
 Let $f:\Omega\subset\mathbb{C}\rightarrow \mathbb{C}-[0,\infty)$ be a complex-valued harmonic function. Suppose $\log f$ is also harmonic. Prove that $\log f$ is either holomorphic or anti-holomorphic. In particular, if $f$ is real-valued, then $f$ must be constant.
 
-*Proof.* \begin{align*}
+*Proof.* 
+$$\begin{align*}
         \frac{\partial}{\partial\bar{z}}\frac{\partial (\log f)}{\partial z}&=0\\
         \frac{\partial}{\partial\bar{z}}[\frac{1}{f}\frac{\partial f}{\partial z}]&=0\\
         \frac{\partial (1/f)}{\partial\bar{z}}\frac{\partial f}{\partial z}+\frac{1}{f}\frac{\partial}{\partial\bar{z}}\frac{\partial f}{\partial z}&=0\\
         (-\frac{1}{f^2})\frac{\partial f}{\partial\bar{z}}\frac{\partial f}{\partial z}&=0\\
         \frac{\partial f}{\partial\bar{z}}\frac{\partial f}{\partial z}&=0
-    \end{align*}
+    \end{align*}$$
 which completes the proof. $\square$
