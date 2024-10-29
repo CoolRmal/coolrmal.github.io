@@ -44,7 +44,7 @@ $$\begin{align*}
     \end{align*}$$
 We obtain the same conclusion. $\square$
     
-Let $f:\Omega\subset\mathbb{C}\rightarrow \mathbb{C}-[0,\infty)$ be a complex-valued harmonic function. Suppose $\log f$ is also harmonic. Prove that $\log f$ is either holomorphic or anti-holomorphic. In particular, if $f$ is real-valued, then $f$ must be constant.
+Let $f:\Omega\subset\mathbb{C}\rightarrow \mathbb{C}-[0,\infty)$ be a complex-valued harmonic function. Suppose $\log f$ is also harmonic. Prove that $f$ is either holomorphic or anti-holomorphic. In particular, if $f$ is real-valued, then $f$ must be constant.
 
 *Proof.* 
 $$\begin{align*}
