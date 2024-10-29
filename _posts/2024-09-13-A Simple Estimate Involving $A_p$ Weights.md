@@ -35,4 +35,6 @@ $$
 \end{align*}
 $$
 
-Hence, $\|E_I\|_{L^p(w)\rightarrow L^p(w)}\leq [w]_{A_p}^{\frac{1}{p}}$.
+Hence, 
+
+$$\|E_I\|_{L^p(w)\rightarrow L^p(w)}\leq [w]_{A_p}^{\frac{1}{p}}.$$
