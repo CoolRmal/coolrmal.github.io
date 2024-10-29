@@ -41,7 +41,7 @@ As a corollary of this theorem, if $W$ is a bounded open subset of $\Omega$ such
 
 $$u(x)=\int_\Omega U_y(x)d\mu_u(y)+v(x)$$
 
-for some harmonic function. To prove this, just notice that
+for some harmonic function $v$. To prove this, just notice that
 
 $$
 \begin{align*}
@@ -51,7 +51,7 @@ $$
 \end{align*}
 $$
 
-and accept that the integral of a harmonic function is harmonic. In particular, when $N=2$, we have
+and use the fact that the integral of a harmonic function is harmonic. In particular, when $N=2$, we have
 
 $$
 \begin{align*}
