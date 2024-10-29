@@ -55,3 +55,5 @@ $$\begin{align*}
         \frac{\partial f}{\partial\bar{z}}\frac{\partial f}{\partial z}&=0
     \end{align*}$$
 which completes the proof. $\square$
+
+Notice that the above arguments can be generalized to complex valued harmonic functions defined on $\mathbb{C}^n$.
