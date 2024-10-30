@@ -38,4 +38,4 @@ Hence,
 
 $$\|E_I\|_{L^p(w)\rightarrow L^p(w)}\leq [w]_{A_p}^{\frac{1}{p}}.$$
 
-I remember that Professor Treil told me that there is a way to show that this is indeed an equality, but I didn't figure it out. It would be great if someone can share your thought with me on this problem.
+I remember that Professor Treil said that there is a way to show that this is indeed an equality, but I didn't figure it out. It would be great if someone can share your thoughts with me on this problem.
