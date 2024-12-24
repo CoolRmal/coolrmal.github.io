@@ -3,7 +3,7 @@ author: "Aaron Lin"
 description: "A place to have fun and study magic. "
 
 header-includes: 
-  - \usepackage{tikz}
+  - \usepackage{tikzcd}
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
