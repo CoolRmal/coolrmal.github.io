@@ -35,7 +35,7 @@ $D_{16}$ is not isomorphic to $D_8\times S_2$ because the first group contains a
         \end{align*}
         $$
 
-Hence, $3\mathrel{|}\lvert G\lvert$ and $|G|\mathrel{|}|\text{GL}_2(\bb{F}_3)|$. Using the formula derived in the [practice final](), we have
+Hence, $3\mathrel{|}\lvert G\lvert$ and $|G|\mathrel{|}|\text{GL}_2(\bb{F}_3)|$. Using the formula derived in the [practice final](https://coolrmal.github.io/2024/12/23/Solutions-to-the-Practice-Final-for-MATH2510-Algebra,-Fall-2024,-Brown-University.html), we have
 
 $$|\text{GL}_2(\bb{F}_3)|=(3^2-1)(3^2-3)=48=3\times 2^4$$
 
