@@ -4,7 +4,7 @@
 - $D_{12}\cong D_6\times S_2$
 - $D_{16}\cong D_8\times S_2$
 
-<em>Proof: </em> We present here only a geometric argument for the first statement. $D_{12}$ is not only the symmetry group of a hexagon but also the one of a hexagram, which can be decomposed into two triangles. The figure below shows two elements of $D_{12}$. The first row shows how you can identity the 60 degree rotation of a triangle with the 120 degree rotation of the hexagram. The second row shows how you can identity the transposition in $S_2$ with a reflection of the hexagram.
+<em>Proof: </em> We present here only a geometric argument for the first statement. $D_{12}$ is not only the symmetry group of a hexagon but also the one of a hexagram, which can be decomposed into two triangles. The figure below shows two elements of $D_{12}$. The first row shows how you can identify the 60 degree rotation of a triangle with the 120 degree rotation of the hexagram. The second row shows how you can identify the transposition in $S_2$ with a reflection of the hexagram.
 
 <div align="center">
 	<img width="594" src="https://github.com/user-attachments/assets/1ab539fe-0a58-431f-a95f-5d0037b28255">
