@@ -1,4 +1,4 @@
-## Solutions to the Practice Final for MATH2510: Algebra, Fall 2024, Brown University
+## Solutions to the Final Exam for MATH2510: Algebra, Fall 2024, Brown University
 
 <strong>Problem 1.</strong> Let $D_{2n}$ be the symmetry group of an $n-$gon and $S_n$ be the permutation group of $n$ elements. Determine whether the following two statements are true:
 - $D_{12}\cong D_6\times S_2$
