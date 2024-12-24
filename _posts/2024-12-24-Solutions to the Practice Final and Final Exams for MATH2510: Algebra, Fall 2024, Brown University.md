@@ -25,7 +25,7 @@ Problem 2. VII.6.6. (Algebra: Chapter 0)
   \end{align*}
   $$
      
-  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-4x^2+2$ and thus a Galois extension. Both the degree of extension and $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$ are equal to $4$. Recall that every root of $x^4-4x^2+2$ corresponds to an automorphism in $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$. Let $f\in \text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$ be the automorphism that corresponds to $\sqrt{2-\sqrt{2}}$ (i.e. $f(\sqrt{2+\sqrt{2}})=\sqrt{2-\sqrt{2}}$). Then,
+  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-4x^2+2$ and thus a Galois extension. Both the degree of extension and $\left\lvert\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))\right\lvert$ are equal to $4$. Recall that every root of $x^4-4x^2+2$ corresponds to an automorphism in $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$. Let $f\in \text{Aut}_{\mathbb{Q}}\mathbb{Q}(\sqrt{2+\sqrt{2}})$ be the automorphism that corresponds to $\sqrt{2-\sqrt{2}}$ (i.e. $f(\sqrt{2+\sqrt{2}})=\sqrt{2-\sqrt{2}}$). Then,
      
      $$
      \begin{align*}
