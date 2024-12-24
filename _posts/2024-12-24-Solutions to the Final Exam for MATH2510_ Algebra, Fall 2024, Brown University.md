@@ -116,7 +116,7 @@ $\square$
 
 <strong>Problem 7.</strong> Is there an epimorphism in the category of fields that is not an isomorphism?
 
-<em>Proof: </em> There indeed exists an epimorphism that is not an isomorphism in the category of fields. Let $p$ be  a prime. Consider the field of rational functions $\mathbb{F}_p(t)$ and a simple extension $\bb{F}_p(t)(t^{\frac{1}{p}})$. Then the inclusion map $i:\mathbb{F}_p(t)\rightarrow \mathbb{F}_p(t)(t^{\frac{1}{p}})$ is clearly not surjective and thus not an isomorphism. We claim that this is an epimorphism. We need to show that if $g,h$ are two morphisms from $\bb{F}_p(t)(t^{\frac{1}{p}})$ to a field $k$ such that
+<em>Proof: </em> There indeed exists an epimorphism that is not an isomorphism in the category of fields. Let $p$ be  a prime. Consider the field of rational functions $\mathbb{F}_p(t)$ and a simple extension $\mathbb{F}_p(t)(t^{\frac{1}{p}})$. Then the inclusion map $i:\mathbb{F}_p(t)\rightarrow \mathbb{F}_p(t)(t^{\frac{1}{p}})$ is clearly not surjective and thus not an isomorphism. We claim that this is an epimorphism. We need to show that if $g,h$ are two morphisms from $\mathbb{F}_p(t)(t^{\frac{1}{p}})$ to a field $k$ such that
 
 $$
 g\circ i=h\circ i
