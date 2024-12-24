@@ -31,6 +31,7 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
       \end{align*}
       $$
      $f$ is then an element of order 4. Therefore, $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$ must be cyclic. $\square$
+     
    - Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{3+\sqrt{5}})$ is a Galois extension and its Galois group is isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.
      <em>Proof: </em>  $\sqrt{3+\sqrt{5}}$ is the root to the following separable polynomial:
 
@@ -48,7 +49,9 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
      $|\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))|=4$. Suppose $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))$ is cyclic, then it has three subgroups. The Galois correspondence then says that there are three intermediate fields of $\bb{Q}\subset \bb{Q}(\sqrt{3+\sqrt{5}})$. However, there are at least 4 intermediate fields: $\bb{Q}$, $\mathbb{Q}(\sqrt{5})$, $\bb{Q}(\sqrt{10})$ ($\sqrt{10}=\sqrt{3+\sqrt{5}}+\sqrt{3-\sqrt{5}}\in \mathbb{Q}(\sqrt{3+\sqrt{5}})$), $\mathbb{Q}(\sqrt{3+\sqrt{5}})$. 
 
      We conclude that 
+
      $$\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))\cong (\bb{Z}/2\bb{Z})^2$$
+     
      $\square$
    - Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{1+\sqrt{2}})$ is not Galois. Compute its Galois closure $\mathbb{Q}\subset F$ and $ \text{Aut}_{\mathbb{Q}}(F)$.
   <em>Proof: </em>
