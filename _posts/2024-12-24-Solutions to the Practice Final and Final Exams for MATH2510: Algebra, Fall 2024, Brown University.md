@@ -15,12 +15,15 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
      <em>Proof: </em> $\sqrt{2+\sqrt{2}}$ is the root to the following polynomial:
      $$x^4-4x^2+2=(x-\sqrt{2+\sqrt{2}})(x+\sqrt{2+\sqrt{2}})(x-\sqrt{2-\sqrt{2}})(x+\sqrt{2-\sqrt{2}})$$
      which is clearly separable. It is irreducible in $\mathbb{Z}$ by Eisenstein's criterion and thus also irreducible in $\mathbb{Q}$. Notice that $\sqrt{2-\sqrt{2}}\in \mathbb{Q}(\sqrt{2+\sqrt{2}})$ because
+     
      $$
      \begin{align*}
      \sqrt{2-\sqrt{2}}&=\frac{\sqrt{2}}{\sqrt{2+\sqrt{2}}}=\frac{(\sqrt{2+\sqrt{2}})^2-2}{\sqrt{2+\sqrt{2}}}
      \end{align*}
      $$
+     
      It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-4x^2+2$ and thus a Galois extension. Both the degree of extension and $|\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))|$ are equal to $4$. Recall that every root of $x^4-4x^2+2$ corresponds to an automorphism in $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$. Let $f\in \text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$ be the automorphism that corresponds to $\sqrt{2-\sqrt{2}}$ (i.e. $f(\sqrt{2+\sqrt{2}})=\sqrt{2-\sqrt{2}}$). Then,
+     
      $$
      \begin{align*}
       f(f(\sqrt{2+\sqrt{2}}))&=f(\sqrt{2-\sqrt{2}})\\
@@ -30,6 +33,7 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
       &=-\sqrt{2+\sqrt{2}}
       \end{align*}
       $$
+     
      $f$ is then an element of order 4. Therefore, $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$ must be cyclic. $\square$
      
    - Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{3+\sqrt{5}})$ is a Galois extension and its Galois group is isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.
@@ -45,8 +49,7 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
      \end{align*}
      $$
 
-     It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-6x^2+4$ and thus a Galois extension.
-     $|\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))|=4$. Suppose $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))$ is cyclic, then it has three subgroups. The Galois correspondence then says that there are three intermediate fields of $\mathbb{Q}\subset \bb{Q}(\sqrt{3+\sqrt{5}})$. However, there are at least 4 intermediate fields: $\mathbb{Q}$, $\mathbb{Q}(\sqrt{5})$, $\mathbb{Q}(\sqrt{10})$ ($\sqrt{10}=\sqrt{3+\sqrt{5}}+\sqrt{3-\sqrt{5}}\in \mathbb{Q}(\sqrt{3+\sqrt{5}})$), $\mathbb{Q}(\sqrt{3+\sqrt{5}})$. 
+     It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-6x^2+4$ and thus a Galois extension. $|\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))|=4$. Suppose $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))$ is cyclic, then it has three subgroups. The Galois correspondence then says that there are three intermediate subfields of $\mathbb{Q}\subset \mathbb{Q}(\sqrt{3+\sqrt{5}})$. However, there are at least 4 intermediate fields: $\mathbb{Q}$, $\mathbb{Q}(\sqrt{5})$, $\mathbb{Q}(\sqrt{10})$ ($\sqrt{10}=\sqrt{3+\sqrt{5}}+\sqrt{3-\sqrt{5}}\in \mathbb{Q}(\sqrt{3+\sqrt{5}})$), $\mathbb{Q}(\sqrt{3+\sqrt{5}})$. 
 
      We conclude that 
 
@@ -57,7 +60,8 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
    - Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{1+\sqrt{2}})$ is not Galois. Compute its Galois closure $\mathbb{Q}\subset F$ and $ \text{Aut}_{\mathbb{Q}}(F)$.
   <em>Proof: </em>
 Consider the following separable polynomial:
-     $$x^4-2x^2-1=(x-\sqrt{1+\sqrt{2}})(x+\sqrt{1+\sqrt{2}})(x-\sqrt{1-\sqrt{2}})(x+\sqrt{1-\sqrt{2}})$$
+
+$$x^4-2x^2-1=(x-\sqrt{1+\sqrt{2}})(x+\sqrt{1+\sqrt{2}})(x-\sqrt{1-\sqrt{2}})(x+\sqrt{1-\sqrt{2}})$$
 
 Clearly $\sqrt{1+\sqrt{2}}$ is a root of this polynomial. The product of any two factors of the four factors above is not in $\mathbb{Q}[x]$, which means that it is irreducible. $\sqrt{1-\sqrt{2}}=i\sqrt{-1+\sqrt{2}}=\cfrac{i}{1+\sqrt{2}}$. Hence, the splitting field of $x^4-2x^2-1$ is $\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$, which is also the Galois closure of $\mathbb{Q}(\sqrt{1+\sqrt{2}})$ (we proved in the exercise above that the Galois closure of a simple extension is the splitting field of the minimal polynomial). This also shows why $\mathbb{Q}\subset \mathbb{Q}(\sqrt{1+\sqrt{2}})$ is not normal ($x^4-2x^2-1$ has a root in this extension but does not split) and thus not Galois.
 
@@ -68,7 +72,8 @@ $\square$
 3. VII.6.7. (Algebra: Chapter 0) Let $p>0$ be prime, and let $d\mathrel{|}e$ be positive integers, so that there is an extension $\mathbb{F}_{p^d}\subset \mathbb{F}_{p^e}$. Prove that $\text{Aut}_{\mathbb{F}_{p^d}}(\bb{F}_{p^e})$ is cyclic, and describe a generator of this group.
   <em>Proof: </em>
   It is proved in Proposition 5.8 that $\text{Aut}_{\mathbb{F}_{p}}(\mathbb{F}_{p^e})$ is a cyclic group of order $e$. Every subgroup of $\text{Aut}_{\mathbb{F}_{p}}(\mathbb{F}_{p^e})$ is also cyclic, and is generated by $\phi^d$, where $\phi$ is Frobenius automorphism and $d$ is a divisor of $n$. The fixed field of $\phi^d$ is exactly $\mathbb{F}_{p^d}$ (because it is the splitting field of $x^{p^d}-x$). The Galois correspondence then suggests that 
-   \[\text{Aut}_{\mathbb{F}_{p^d}}(\mathbb{F}_{p^e})=\text{Cyclic subgroup generated by }\phi^d\]
+
+$$\text{Aut}_{\mathbb{F}_{p^d}}(\mathbb{F}_{p^e})=\text{Cyclic subgroup generated by }\phi^d$$
      $\square$
 
 4. 
