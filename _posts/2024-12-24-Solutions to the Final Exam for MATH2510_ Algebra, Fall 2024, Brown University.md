@@ -41,10 +41,14 @@ $$|\text{GL}_2(\mathbb{F}_3)|=(3^2-1)(3^2-3)=48=3\times 2^4$$
 
 Therefore, the largest integer $m$ such that $3^m$ divides $\lvert G\rvert$ is $1$, which implies that $H$ is a Sylow 3-subgroup of $G$.
 
-Now we compute the number $n$ of Sylow 3-subgroups. We first notice that the group of lower triangular matrices with all ones on the diagonal, denoted by $L$, is a subgroup of $G$. $L$ also contains 3 elements and is disjoint from $H$. Moreover, $\begin{bmatrix}
+Now we compute the number $n$ of Sylow 3-subgroups. We first notice that the group of lower triangular matrices with all ones on the diagonal, denoted by $L$, is a subgroup of $G$. $L$ also contains 3 elements and is disjoint from $H$. Moreover, 
+
+$$\begin{bmatrix}
                 2 & 0\\
                 0 & 1
-            \end{bmatrix}\notin G $, so we have the following estimates:
+            \end{bmatrix}\notin G $$
+	    
+so we have the following estimates:
 
 $$6\leq |G|<48$$
 
