@@ -1,75 +1,52 @@
 ## Solutions to the Practice Final for MATH2510: Algebra, Fall 2024, Brown University
 
-<strong>Problem 1.</strong> VII.6.4. (Algebra: Chapter 0) Let $k\subset E$ be a finite separable extension. Prove that $E$ may be identified with an intermediate field of a Galois extension $k\subset F$ of $k$. In fact, prove that there is a smallest such extension $k\subset F$, in the sense that if $k\subset E\subset K$, with $k\subset K$ Galois, then there exists an embedding of $F$ in $K$ which is the identity on $E$. (The extension $k\subset F$ is the Galois closure of the extension $k\subset E$.)
+<strong>Problem 1.</strong> Let $D_{2n}$ be the symmetry group of an $n-$gon and $S_n$ be the permutation group of $n$ elements. Determine whether the following two statements are true:
+- $D_{12}\cong D_6\times S_2$
+- $D_{16}\cong D_8\times S_2$
 
-<em>Proof: </em> Since every finite separable extension is simple, $E=k(\alpha)$. Let $g$ be the minimal polynomial of $\alpha$. $g$ is separable. Let $k\subset F$ be the splitting field of $g$. $k\subset F$ is then a Galois extension, and $E$ is clearly an intermediate field of $F$.
+<em>Proof: </em> We present here only a geometric argument for the first statement. $D_{12}$ is not only the symmetry group of a hexagon but also the one of a hexagram, which can be decomposed into two triangles. The figure below shows two elements of $D_{12}$. The first row shows how you can identity the 60 degree rotation of a triangle with the 120 degree rotation of the hexagram. The second row shows how you can identity the transposition in $S_2$ with a reflection of the hexagram.
 
-We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for some Galois extension $k\subset K$. $k\subset K$ is the a normal extension. Since $g$ has a root in $E\subset K$, $g$ splits in $K$. $K$ thus contains the splitting field $F$. $\square$
+<div align="center">
+	<img width="594" src="https://github.com/user-attachments/assets/1ab539fe-0a58-431f-a95f-5d0037b28255">
+</div>
+
+$D_{16}$ is not isomorphic to $D_8\times S_2$ because the first group contains an element of order 8 and the degree of every element in the second group is less than or equal to 4. $\square$
 
 <br>
 
-<strong>Problem 2.</strong> VII.6.6. (Algebra: Chapter 0)
-- Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{2+\sqrt{2}})$ is a Galois extension and its Galois group is cyclic.
-  
-  <em>Proof: </em> $\sqrt{2+\sqrt{2}}$ is the root to the following polynomial:
-     
-  $$x^4-4x^2+2=(x-\sqrt{2+\sqrt{2}})(x+\sqrt{2+\sqrt{2}})(x-\sqrt{2-\sqrt{2}})(x+\sqrt{2-\sqrt{2}})$$
-     
-  which is clearly separable. It is irreducible in $\mathbb{Z}$ by Eisenstein's criterion and thus also irreducible in $\mathbb{Q}$. Notice that $\sqrt{2-\sqrt{2}}\in \mathbb{Q}(\sqrt{2+\sqrt{2}})$ because
+<strong>Problem 2.</strong> Let $G=\text{SL}_2(\mathbb{F}_3)$ and $H\subset G$ be the group of upper triangular matrices with all ones on the diagonal. Show that $H$ is a Sylow 3-subgroup of $G$. Compute the number of Sylow 3-subgroups of $G$.
 
-  $$
-  \begin{align*}
-  \sqrt{2-\sqrt{2}}&=\frac{\sqrt{2}}{\sqrt{2+\sqrt{2}}}\\
-  &=\frac{(\sqrt{2+\sqrt{2}})^2-2}{\sqrt{2+\sqrt{2}}}
-  \end{align*}
-  $$
-     
-  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-4x^2+2$ and thus a Galois extension. Both the degree of extension and $\left\lvert\text{Aut}\_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))\right\lvert$ are equal to $4$. Recall that every root of $x^4-4x^2+2$ corresponds to an automorphism in $\text{Aut}\_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$. Let $f\in \text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$ be the automorphism that corresponds to $\sqrt{2-\sqrt{2}}$ (i.e. $f(\sqrt{2+\sqrt{2}})=\sqrt{2-\sqrt{2}}$). Then,
-     
-     $$
-     \begin{align*}
-      f(f(\sqrt{2+\sqrt{2}}))&=f(\sqrt{2-\sqrt{2}})\\
-      &=f(\frac{(\sqrt{2+\sqrt{2}})^2-2}{\sqrt{2+\sqrt{2}}})\\
-      &=\frac{f(\sqrt{2+\sqrt{2}})^2-2}{f(\sqrt{2+\sqrt{2}})}\\
-      &=\frac{(\sqrt{2-\sqrt{2}})^2-2}{\sqrt{2-\sqrt{2}}}\\
-      &=-\sqrt{2+\sqrt{2}}
-      \end{align*}
+<em>Proof: </em> Clearly we have
+
       $$
-     
-     $f$ is then an element of order 4. Therefore, $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$ must be cyclic. $\square$
-     
-- Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{3+\sqrt{5}})$ is a Galois extension and its Galois group is isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.
-  
-  <em>Proof: </em>  $\sqrt{3+\sqrt{5}}$ is the root to the following separable polynomial:
+      \begin{align*}
+            H&=\{\begin{bmatrix}
+                1 & 0\\
+                0 & 1
+            \end{bmatrix}, \begin{bmatrix}
+                1 & 1\\
+                0 & 1
+            \end{bmatrix}, \begin{bmatrix}
+                1 & 2\\
+                0 & 1
+            \end{bmatrix}\}\\
+            |H|&=3\\
+            H&\subset G\subset \text{GL}_2(\bb{F}_3)
+        \end{align*}
+        $$
 
-  $$x^4-6x^2+4=(x-\sqrt{3+\sqrt{5}})(x+\sqrt{3+\sqrt{5}})(x-\sqrt{3-\sqrt{5}})(x+\sqrt{3-\sqrt{5}})$$
+Hence, $3\mathrel{|}\lvert G\lvert$ and $|G|\mathrel{|}|\text{GL}_2(\bb{F}_3)|$. Using the formula derived in the [practice final](), we have
 
-  The product of any two factors of the four factors above is not in $\mathbb{Q}[x]$, which means that $x^4-6x^2+4$ is irreducible. Notice that $\sqrt{3-\sqrt{5}}\in \mathbb{Q}(\sqrt{3+\sqrt{5}})$ because
+$$|\text{GL}_2(\bb{F}_3)|=(3^2-1)(3^2-3)=48=3\times 2^4$$
 
-  $$
-   \begin{align*}
-   \sqrt{3-\sqrt{5}}&=\frac{2}{\sqrt{3+\sqrt{5}}}
-   \end{align*}
-  $$
+Therefore, the largest integer $m$ such that $3^m$ divides $\abs{G}$ is $1$, which implies that $H$ is a Sylow 3-subgroup of $G$.
 
-  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-6x^2+4$ and thus a Galois extension. $\left\lvert\text{Aut}\_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))\right\lvert=4$. Suppose $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))$ is cyclic, then it has three subgroups. The Galois correspondence then says that there are three intermediate subfields of $\mathbb{Q}\subset \mathbb{Q}(\sqrt{3+\sqrt{5}})$. However, there are at least 4 intermediate fields: $\mathbb{Q}$, $\mathbb{Q}(\sqrt{5})$, $\mathbb{Q}(\sqrt{10})$ ($\sqrt{10}=\sqrt{3+\sqrt{5}}+\sqrt{3-\sqrt{5}}\in \mathbb{Q}(\sqrt{3+\sqrt{5}})$), $\mathbb{Q}(\sqrt{3+\sqrt{5}})$.
-
-  We conclude that
-
-  $$\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))\cong (\mathbb{Z}/2\mathbb{Z})^2$$
-
-  $\square$
-
-- Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{1+\sqrt{2}})$ is not Galois. Compute its Galois closure $\mathbb{Q}\subset F$ and $ \text{Aut}_{\mathbb{Q}}(F)$.
-
-  <em>Proof: </em> Consider the following separable polynomial:
-
-  $$x^4-2x^2-1=(x-\sqrt{1+\sqrt{2}})(x+\sqrt{1+\sqrt{2}})(x-\sqrt{1-\sqrt{2}})(x+\sqrt{1-\sqrt{2}})$$
-
-  Clearly $\sqrt{1+\sqrt{2}}$ is a root of this polynomial. The product of any two factors of the four factors above is not in $\mathbb{Q}[x]$, which means that it is irreducible. $\sqrt{1-\sqrt{2}}=i\sqrt{-1+\sqrt{2}}=\cfrac{i}{1+\sqrt{2}}$. Hence, the splitting field of $x^4-2x^2-1$ is $\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$, which is also the Galois closure of $\mathbb{Q}(\sqrt{1+\sqrt{2}})$ (we proved in the exercise above that the Galois closure of a simple extension is the splitting field of the minimal polynomial). This also shows why $\mathbb{Q}\subset \mathbb{Q}(\sqrt{1+\sqrt{2}})$ is not normal ($x^4-2x^2-1$ has a root in this extension but does not split) and thus not Galois.
-
-  The degree of extension of $F=\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$ is 8, which means that $\text{Aut}\_{\mathbb{Q}}(F)$ has 8 elements. The symmetry group of a square $D_8$ is a Sylow 2-subgroup of $S_4$, and by the second Sylow theorem, the only order 8 subgroup of $S_4$ up to an isomorphism is $D_8$ (the isomorphism is given by conjugatation). Since $\text{Aut}_{\mathbb{Q}}(F)\subset S_4$, $\text{Aut}\_{\mathbb{Q}}(F)\cong D_8$.
-
+Now we compute the number $n$ of Sylow 3-subgroups. We first notice that the group of lower triangular matrices with all ones on the diagonal, denoted by $L$, is a subgroup of $G$. $L$ also contains 3 elements and is disjoint from $H$. Moreover, $\begin{bmatrix}
+                2 & 0\\
+                0 & 1
+            \end{bmatrix}\notin G $, so we have the following estimates:
+            \[6\leq |G|<48\]
+        The only possible choices for $|G|$ are $3\times 2, 3\times 2^2, 3\times 2^3$. By the third Sylow theorem, $n\mathrel{|}\cfrac{|G|}{3}$. $n$ thus divides $8$, so the only possible choices for $|G|$ are $1,2,4,8$. The third Sylow theorem also says that $n\equiv 1\text{ (mod }3)$, which implies that $n$ is either equal to $1$ or $4$. Since $L$ is also a Sylow 3-subgroup, $n\geq 2$. We conclude that $n=4$.
 $\square$
 
 <br>
