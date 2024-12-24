@@ -102,7 +102,7 @@ Problem 5. Is it possible to localize a commutative ring $R$ that is not an inte
 
 <em>Proof: </em> This is possible. For example, consider $S=\{1,3\}$. We claim that
 
-$$S^{-1}\bb{Z}/6\bb{Z}\cong \bb{Z}/2\bb{Z}$$
+$$S^{-1}\mathbb{Z}/6\mathbb{Z}\cong \mathbb{Z}/2\mathbb{Z}$$
 
 Here are the all possible fractions:
 
