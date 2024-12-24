@@ -84,7 +84,7 @@ $\square$
 
 <br>
 
-Problem 4.  What is the size of the group $\mathrm{GL}_3(\mathbb{F}_2)$ of $3\times 3$ invertible matrices over $\mathbb{F}_2$?  Does there exist a set of size $21$ on which $\mathrm{GL}_3(\mathbb{F}_2)$ acts transitively?
+<strong>Problem 4.</strong>  What is the size of the group $\mathrm{GL}_3(\mathbb{F}_2)$ of $3\times 3$ invertible matrices over $\mathbb{F}_2$?  Does there exist a set of size $21$ on which $\mathrm{GL}_3(\mathbb{F}_2)$ acts transitively?
 
 <em>Proof: </em> Here's a general formula for the size of $\mathrm{GL}\_n(\mathbb{F}\_{p})$:
 
@@ -98,7 +98,7 @@ Notice that the group $H\subset \mathrm{GL}_3(\mathbb{F}_2)$ of upper triangular
 
 <br>
 
-Problem 5. Is it possible to localize a commutative ring $R$ that is not an integral domain and get an integral domain?
+<strong>Problem 5.</strong> Is it possible to localize a commutative ring $R$ that is not an integral domain and get an integral domain?
 
 <em>Proof: </em> This is possible. For example, consider $S=\{1,3\}$. We claim that
 
@@ -117,7 +117,7 @@ Notice that fractions with even numerator are equivalent to zero (because $2\tim
 
 <br>
 
-Problem 6. Let $n\geq 1$, and suppose $A:\mathbb{C}^n\to \mathbb{C}^n$ is an idempotent linear operator.  ({\em Idempotent} means that $A^2 = A$.)  What are the possibilities for the characteristic polynomial of $A$? 
+<strong>Problem 6.</strong> Let $n\geq 1$, and suppose $A:\mathbb{C}^n\to \mathbb{C}^n$ is an idempotent linear operator.  ({\em Idempotent} means that $A^2 = A$.)  What are the possibilities for the characteristic polynomial of $A$? 
 
 <em>Proof: </em> Suppose $\lambda$ is an eigenvalue and $v$ is its corresponding eigenvector. Then
 
@@ -131,7 +131,7 @@ for some $0\leq r\leq n$. $\square$
 
 <br>
 
-Problem 7. Let $k$ be a field. Prove that if all irreducible polynomials in $k[x]$ are separable, then $k$ is perfect.
+<strong>Problem 7.</strong> Let $k$ be a field. Prove that if all irreducible polynomials in $k[x]$ are separable, then $k$ is perfect.
 
 <em>Proof: </em> We prove by contrapositive. Suppose $k$ is not perfect. Then char is nonzero and the Frobenius homomorphism is not surjective. We pick $u\in k$ that does not belong to the image $i$ of the Frobenius homomorphism. We claim that $x^p-u$ is an inseparable irreducible polynomial. It is not separable because in $\bar{k}$, if $v$ is a root to this polynomial, then $x^p-u=x^p-v^p=(x-v)^p$, which implies that $v$ is the only root with multiplicity $p$. $x^p-u$ is irreducible because if we have a nontrivial monic factor, it must be in the form $(x-v)^n=x^n-v^n$ for some $0<n<p$. Consequently, $v^n\in k$. $n$ and $p$ are relatively prime, so for some integer $a,b$ we have $na+pb=1$. Hence, 
 
