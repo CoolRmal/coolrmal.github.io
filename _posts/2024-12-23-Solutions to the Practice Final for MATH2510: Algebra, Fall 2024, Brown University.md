@@ -129,6 +129,8 @@ $$x^r(x-1)^{n-r}$$
 
 for some $0\leq r\leq n$. $\square$
 
+<br>
+
 Problem 7. Let $k$ be a field. Prove that if all irreducible polynomials in $k[x]$ are separable, then $k$ is perfect.
 
 <em>Proof: </em> We prove by contrapositive. Suppose $k$ is not perfect. Then char is nonzero and the Frobenius homomorphism is not surjective. We pick $u\in k$ that does not belong to the image $i$ of the Frobenius homomorphism. We claim that $x^p-u$ is an inseparable irreducible polynomial. It is not separable because in $\bar{k}$, if $v$ is a root to this polynomial, then $x^p-u=x^p-v^p=(x-v)^p$, which implies that $v$ is the only root with multiplicity $p$. $x^p-u$ is irreducible because if we have a nontrivial monic factor, it must be in the form $(x-v)^n=x^n-v^n$ for some $0<n<p$. Consequently, $v^n\in k$. $n$ and $p$ are relatively prime, so for some integer $a,b$ we have $na+pb=1$. Hence, 
