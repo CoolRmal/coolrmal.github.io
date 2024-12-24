@@ -13,12 +13,15 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
 2. VII.6.6. (Algebra: Chapter 0)
    - Show that $\mathbb{Q}\subset \mathbb{Q}(\sqrt{2+\sqrt{2}})$ is a Galois extension and its Galois group is cyclic.
      <em>Proof: </em> $\sqrt{2+\sqrt{2}}$ is the root to the following polynomial:
+     
      $$x^4-4x^2+2=(x-\sqrt{2+\sqrt{2}})(x+\sqrt{2+\sqrt{2}})(x-\sqrt{2-\sqrt{2}})(x+\sqrt{2-\sqrt{2}})$$
+     
      which is clearly separable. It is irreducible in $\mathbb{Z}$ by Eisenstein's criterion and thus also irreducible in $\mathbb{Q}$. Notice that $\sqrt{2-\sqrt{2}}\in \mathbb{Q}(\sqrt{2+\sqrt{2}})$ because
      
      $$
      \begin{align*}
-     \sqrt{2-\sqrt{2}}&=\frac{\sqrt{2}}{\sqrt{2+\sqrt{2}}}=\frac{(\sqrt{2+\sqrt{2}})^2-2}{\sqrt{2+\sqrt{2}}}
+     \sqrt{2-\sqrt{2}}&=\frac{\sqrt{2}}{\sqrt{2+\sqrt{2}}}\\
+     &=\frac{(\sqrt{2+\sqrt{2}})^2-2}{\sqrt{2+\sqrt{2}}}
      \end{align*}
      $$
      
