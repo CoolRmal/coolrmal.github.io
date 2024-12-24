@@ -35,7 +35,7 @@ H&=\{\begin{bmatrix}
         \end{align*}
         $$
 
-Hence, $3\mathrel{|}\lvert G\lvert$ and $|G|\mathrel{|}|\text{GL}_2(\mathbb{F}_3)|$. Using the formula derived in the [practice final](https://coolrmal.github.io/2024/12/23/Solutions-to-the-Practice-Final-for-MATH2510-Algebra,-Fall-2024,-Brown-University.html), we have
+Hence, $3\lvert \lvert G\lvert$ and $|G|\lvert \lvert\text{GL}_2(\mathbb{F}_3)\lvert$. Using the formula derived in the [practice final](https://coolrmal.github.io/2024/12/23/Solutions-to-the-Practice-Final-for-MATH2510-Algebra,-Fall-2024,-Brown-University.html), we have
 
 $$|\text{GL}_2(\mathbb{F}_3)|=(3^2-1)(3^2-3)=48=3\times 2^4$$
 
@@ -71,33 +71,105 @@ $\square$
 
 $$\hom_{\mathcal{D}}(FX,Y)\overset{I_{X,Y}}{\cong} \hom_{\mathcal{C}}(X,GY)$$
 
-for all objects $X$ in $\mathcal{C}$ and $Y$ in $\mathcal{D}$. Moreover, the following commutative diagram commutes: 
+for all objects $X$ in $\mathcal{C}$ and $Y$ in $\mathcal{D}$. Moreover, the following diagram commutes: 
 
+<div align="center">
+	<img width="500" src="https://github.com/user-attachments/assets/96b8da49-a346-42b3-8ed4-091d4ec2031b">
+</div>
+
+where $f:Y\rightarrow Y'$ is a morphism in $\mathcal{D}$. Now we assume that $f$ is a monomorphism. We want to prove that $Gf$ is a monomorphism. Suppose $g,h: X\rightarrow GY$ are two morphisms such that
+
+$$Gf\circ g=Gf\circ h$$
+
+Our goal is to show that $g=h$. Since $I_{X,Y}$ is a bijection, there exists morphisms $a,b:FX\rightarrow Y$ such that
+
+$$
+\begin{align*}
+            g&=I_{X,Y}(a)\\
+            h&=I_{X,Y}(b)
+\end{align*}
+$$
+
+We then deduce that
+
+$$
+        \begin{align*}
+            Gf\circ g&=Gf\circ h\\
+            Gf\circ I_{X,Y}(a)&=Gf\circ I_{X,Y}(b)\\
+            I_{X,Y'}(f\circ a)&=I_{X,Y'}(f\circ b)\text{ (because the diagram commutes)}\\
+            f\circ a&=f\circ b\text{ (because $I_{X,Y'}$ is injective)}\\
+            a&=b\text{ (because $f$ is a monomorphism)}\\
+            I_{X,Y}(a)&=I_{X,Y}(b)\\
+            g&=h
+        \end{align*}
+$$
 
 $\square$
 
 <br>
 
-<strong>Problem 6.</strong> Let $n\geq 1$, and suppose $A:\mathbb{C}^n\to \mathbb{C}^n$ is an idempotent linear operator.  ({\em Idempotent} means that $A^2 = A$.)  What are the possibilities for the characteristic polynomial of $A$? 
+<strong>Problem 6.</strong> Let $A:\mathbb{C}^n\rightarrow \mathbb{C}^n$ be an invertible map of finite order ($A^k=I$ for some $k\geq 0$). Show that $A$ is diagonalizable.
 
-<em>Proof: </em> Suppose $\lambda$ is an eigenvalue and $v$ is its corresponding eigenvector. Then
-
-$$\lambda v=Av=A^2v=\lambda^2v\Rightarrow \lambda-\lambda^2=0$$
-
-Therefore, $\lambda$ is either equal to $1$ or 0 and the characteristic polynomial takes the following form:
-
-$$x^r(x-1)^{n-r}$$
-
-for some $0\leq r\leq n$. $\square$
+<em>Proof: </em> Over $\mathbb{C}$, a matrix is diagonalizable iff its minimal polynomial is separable. In our case, the minimal polynomial $m_A(x)$ of $A$ divides $x^k-1$. Since $x^k-1$ has no repeated roots, $m_A(x)$ also has no repeated roots, which implies that $A$ is diagonalizable. $\square$
 
 <br>
 
-<strong>Problem 7.</strong> Let $k$ be a field. Prove that if all irreducible polynomials in $k[x]$ are separable, then $k$ is perfect.
+<strong>Problem 7.</strong> Is there an epimorphism in the category of fields that is not an isomorphism?
 
-<em>Proof: </em> We prove by contrapositive. Suppose $k$ is not perfect. Then char is nonzero and the Frobenius homomorphism is not surjective. We pick $u\in k$ that does not belong to the image $i$ of the Frobenius homomorphism. We claim that $x^p-u$ is an inseparable irreducible polynomial. It is not separable because in $\bar{k}$, if $v$ is a root to this polynomial, then $x^p-u=x^p-v^p=(x-v)^p$, which implies that $v$ is the only root with multiplicity $p$. $x^p-u$ is irreducible because if we have a nontrivial monic factor, it must be in the form $(x-v)^n=x^n-v^n$ for some $0<n<p$. Consequently, $v^n\in k$. $n$ and $p$ are relatively prime, so for some integer $a,b$ we have $na+pb=1$. Hence, 
+<em>Proof: </em> There indeed exists an epimorphism that is not an isomorphism in the category of fields. Let $p$ be  a prime. Consider the field of rational functions $\mathbb{F}_p(t)$ and a simple extension $\bb{F}_p(t)(t^{\frac{1}{p}})$. Then the inclusion map $i:\mathbb{F}_p(t)\rightarrow \mathbb{F}_p(t)(t^{\frac{1}{p}})$ is clearly not surjective and thus not an isomorphism. We claim that this is an epimorphism. We need to show that if $g,h$ are two morphisms from $\bb{F}_p(t)(t^{\frac{1}{p}})$ to a field $k$ such that
 
-$$v=v^{na+pb}=(v^{n})^au^b\in k$$
+$$
+g\circ i=h\circ i
+$$
 
-which is a contradiction. $\square$
+then $g=h$. It suffices to prove that $g(t^{\frac{1}{p}})=h(t^{\frac{1}{p}})$. Let $m(x)=x^p-g(t)\in k[x]$. We have
+
+$$
+\begin{align*}
+            (x-g(t^{\frac{1}{p}}))^p&=x^p-(g(t^{\frac{1}{p}}))^p\\
+            &=x^p-g(t)\\
+            &=x^p-g\circ i(t)\\
+            &=x^p-h\circ i(t)\\
+            &=x^p-h(t)\\
+            &=x^p-(h(t^{\frac{1}{p}}))^p\\
+            &=(x-h(t^{\frac{1}{p}}))^p
+        \end{align*}
+$$
+	
+If $g(t^{\frac{1}{p}})$ is not equal to $h(t^{\frac{1}{p}})$, then we have two different factorizations into irreducibles of the polynomial $m(x)$, which is a contradiction to the fact that $k[x]$ is a UFD. $\square$
+
+<br>
+
+<strong>Problem 8.</strong> Let $k$ be a field such that its characteristic is not equal to $2$. Consider an extension $k\subset L$ of degree 2. Show that $L$ is a Galois extension.
+
+<em>Proof: </em> Take an element $\alpha\in L-k$. Clearly $1<[k(\alpha):k]\leq 2$, which implies that $[k(\alpha):k]=2$ and $L=k(\alpha)$. $\alpha$ is then algebraic, and its minimal polynomial $m(x)$ is quadratic. $m(x)$ then splits in $L$ and has the following form for some $\beta\in L$:
+
+$$m(x)=(x-\alpha)(x-\beta)$$
+
+$L=k(\alpha)\subset k(\alpha,\beta)\subset L$, so $L$ is the splitting field of $m$. Suppose $\beta=\alpha$, then
+
+$$m(x)=x^2-2\alpha x+\alpha^2$$
+
+Since the characteristic of $k$ is not equal to $2$ and $2\alpha\in k$, $\alpha=\frac{1}{2}(2\alpha)\in k$. This contradiction implies that $\beta\ne \alpha$ and thus $m$ is a separable polynomial. $L$ is then Galois because it is the splitting field of a separable polynomial. $\square$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
