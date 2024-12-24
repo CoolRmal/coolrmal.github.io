@@ -35,7 +35,7 @@ H&=\{\begin{bmatrix}
         \end{align*}
         $$
 
-Hence, $3\lvert \lvert G\lvert$ and $|G|\lvert \lvert\text{GL}_2(\mathbb{F}_3)\lvert$. Using the formula derived in the [practice final](https://coolrmal.github.io/2024/12/23/Solutions-to-the-Practice-Final-for-MATH2510-Algebra,-Fall-2024,-Brown-University.html), we have
+Hence, $3\lvert \lvert G\lvert$ and $\lvert G\lvert\lvert \lvert\text{GL}_2(\mathbb{F}_3)\lvert$. Using the formula derived in the [practice final](https://coolrmal.github.io/2024/12/23/Solutions-to-the-Practice-Final-for-MATH2510-Algebra,-Fall-2024,-Brown-University.html), we have
 
 $$|\text{GL}_2(\mathbb{F}_3)|=(3^2-1)(3^2-3)=48=3\times 2^4$$
 
