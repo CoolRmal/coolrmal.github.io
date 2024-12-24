@@ -1,4 +1,4 @@
-## Solutions to the Final Exame for MATH2510: Algebra, Fall 2024, Brown University
+## Solutions to the Practice Final for MATH2510: Algebra, Fall 2024, Brown University
 
 <strong>Problem 1.</strong> VII.6.4. (Algebra: Chapter 0) Let $k\subset E$ be a finite separable extension. Prove that $E$ may be identified with an intermediate field of a Galois extension $k\subset F$ of $k$. In fact, prove that there is a smallest such extension $k\subset F$, in the sense that if $k\subset E\subset K$, with $k\subset K$ Galois, then there exists an embedding of $F$ in $K$ which is the identity on $E$. (The extension $k\subset F$ is the Galois closure of the extension $k\subset E$.)
 
