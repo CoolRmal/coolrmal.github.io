@@ -25,7 +25,7 @@ Problem 2. VII.6.6. (Algebra: Chapter 0)
   \end{align*}
   $$
      
-  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-4x^2+2$ and thus a Galois extension. Both the degree of extension and $\left\lvert\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))\right\lvert$ are equal to $4$. Recall that every root of $x^4-4x^2+2$ corresponds to an automorphism in $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$. Let $f\in \text{Aut}_{\mathbb{Q}}\mathbb{Q}(\sqrt{2+\sqrt{2}})$ be the automorphism that corresponds to $\sqrt{2-\sqrt{2}}$ (i.e. $f(\sqrt{2+\sqrt{2}})=\sqrt{2-\sqrt{2}}$). Then,
+  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-4x^2+2$ and thus a Galois extension. Both the degree of extension and $\left\lvert\text{Aut}\_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))\right\lvert$ are equal to $4$. Recall that every root of $x^4-4x^2+2$ corresponds to an automorphism in $\text{Aut}\_{\mathbb{Q}}(\mathbb{Q}(\sqrt{2+\sqrt{2}}))$. Let $f\in \text{Aut}_{\mathbb{Q}}\mathbb{Q}(\sqrt{2+\sqrt{2}})$ be the automorphism that corresponds to $\sqrt{2-\sqrt{2}}$ (i.e. $f(\sqrt{2+\sqrt{2}})=\sqrt{2-\sqrt{2}}$). Then,
      
      $$
      \begin{align*}
@@ -52,7 +52,7 @@ Problem 2. VII.6.6. (Algebra: Chapter 0)
    \end{align*}
   $$
 
-  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-6x^2+4$ and thus a Galois extension. $\left\lvert\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))\left\lvert=4$. Suppose $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))$ is cyclic, then it has three subgroups. The Galois correspondence then says that there are three intermediate subfields of $\mathbb{Q}\subset \mathbb{Q}(\sqrt{3+\sqrt{5}})$. However, there are at least 4 intermediate fields: $\mathbb{Q}$, $\mathbb{Q}(\sqrt{5})$, $\mathbb{Q}(\sqrt{10})$ ($\sqrt{10}=\sqrt{3+\sqrt{5}}+\sqrt{3-\sqrt{5}}\in \mathbb{Q}(\sqrt{3+\sqrt{5}})$), $\mathbb{Q}(\sqrt{3+\sqrt{5}})$.
+  It follows that $\mathbb{Q}(\sqrt{2+\sqrt{2}})$ is the splitting field of the separable irreducible polynomial $x^4-6x^2+4$ and thus a Galois extension. $\left\lvert\text{Aut}\_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))\left\lvert=4$. Suppose $\text{Aut}_{\mathbb{Q}}(\mathbb{Q}(\sqrt{3+\sqrt{5}}))$ is cyclic, then it has three subgroups. The Galois correspondence then says that there are three intermediate subfields of $\mathbb{Q}\subset \mathbb{Q}(\sqrt{3+\sqrt{5}})$. However, there are at least 4 intermediate fields: $\mathbb{Q}$, $\mathbb{Q}(\sqrt{5})$, $\mathbb{Q}(\sqrt{10})$ ($\sqrt{10}=\sqrt{3+\sqrt{5}}+\sqrt{3-\sqrt{5}}\in \mathbb{Q}(\sqrt{3+\sqrt{5}})$), $\mathbb{Q}(\sqrt{3+\sqrt{5}})$.
 
   We conclude that
 
@@ -67,15 +67,15 @@ Problem 2. VII.6.6. (Algebra: Chapter 0)
 
   Clearly $\sqrt{1+\sqrt{2}}$ is a root of this polynomial. The product of any two factors of the four factors above is not in $\mathbb{Q}[x]$, which means that it is irreducible. $\sqrt{1-\sqrt{2}}=i\sqrt{-1+\sqrt{2}}=\cfrac{i}{1+\sqrt{2}}$. Hence, the splitting field of $x^4-2x^2-1$ is $\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$, which is also the Galois closure of $\mathbb{Q}(\sqrt{1+\sqrt{2}})$ (we proved in the exercise above that the Galois closure of a simple extension is the splitting field of the minimal polynomial). This also shows why $\mathbb{Q}\subset \mathbb{Q}(\sqrt{1+\sqrt{2}})$ is not normal ($x^4-2x^2-1$ has a root in this extension but does not split) and thus not Galois.
 
-  The degree of extension of $F=\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$ is 8, which means that $\text{Aut}_{\mathbb{Q}}(F)$ has 8 elements. The symmetry group of a square $D_8$ is a Sylow 2-subgroup of $S_4$, and by the second Sylow theorem, the only order 8 subgroup of $S_4$ up to an isomorphism is $D_8$ (the isomorphism is given by conjugatation). Since $\text{Aut}_{\mathbb{Q}}(F)\subset S_4$, $\text{Aut}_{\mathbb{Q}}(F)\cong D_8$.
+  The degree of extension of $F=\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$ is 8, which means that $\text{Aut}\_{\mathbb{Q}}(F)$ has 8 elements. The symmetry group of a square $D_8$ is a Sylow 2-subgroup of $S_4$, and by the second Sylow theorem, the only order 8 subgroup of $S_4$ up to an isomorphism is $D_8$ (the isomorphism is given by conjugatation). Since $\text{Aut}_{\mathbb{Q}}(F)\subset S_4$, $\text{Aut}\_{\mathbb{Q}}(F)\cong D_8$.
 
 $\square$
 
-Problem 3. VII.6.7. (Algebra: Chapter 0) Let $p>0$ be prime, and let $d\lvert e$ be positive integers, so that there is an extension $\mathbb{F}_{p^d}\subset \mathbb{F}_{p^e}$. Prove that $\text{Aut}_{\mathbb{F}_{p^d}}(\bb{F}_{p^e})$ is cyclic, and describe a generator of this group.
+Problem 3. VII.6.7. (Algebra: Chapter 0) Let $p>0$ be prime, and let $d\lvert e$ be positive integers, so that there is an extension $\mathbb{F}_{p^d}\subset \mathbb{F}_{p^e}$. Prove that $\text{Aut}\_{\mathbb{F}_{p^d}}(\mathbb{F}_{p^e})$ is cyclic, and describe a generator of this group.
 
-<em>Proof: </em>It is proved in Proposition 5.8 that $\text{Aut}_{\mathbb{F}_{p}}(\mathbb{F}_{p^e})$ is a cyclic group of order $e$. Every subgroup of $\text{Aut}_{\mathbb{F}_{p}}(\mathbb{F}_{p^e})$ is also cyclic, and is generated by $\phi^d$, where $\phi$ is Frobenius automorphism and $d$ is a divisor of $n$. The fixed field of $\phi^d$ is exactly $\mathbb{F}_{p^d}$ (because it is the splitting field of $x^{p^d}-x$). The Galois correspondence then suggests that 
+<em>Proof: </em>It is proved in Proposition 5.8 that $\text{Aut}\_{\mathbb{F}\_{p}}(\mathbb{F}\_{p^e})$ is a cyclic group of order $e$. Every subgroup of $\text{Aut}\_{\mathbb{F}\_{p}}(\mathbb{F}\_{p^e})$ is also cyclic, and is generated by $\phi^d$, where $\phi$ is Frobenius automorphism and $d$ is a divisor of $n$. The fixed field of $\phi^d$ is exactly $\mathbb{F}_{p^d}$ (because it is the splitting field of $x^{p^d}-x$). The Galois correspondence then suggests that 
 
-$$\text{Aut}_{\mathbb{F}_{p^d}}(\mathbb{F}_{p^e})=\text{Cyclic subgroup generated by }\phi^d$$
+$$\text{Aut}_{\mathbb{F}\_{p^d}}(\mathbb{F}_{p^e})=\text{Cyclic subgroup generated by }\phi^d$$
 
 $\square$
 
