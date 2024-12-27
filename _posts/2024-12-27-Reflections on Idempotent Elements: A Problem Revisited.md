@@ -47,3 +47,5 @@ $$
 $$
 
 This proof explains why the existence of an idempotent element should lead to a decomposition of $R$—because a projection induces a decomposition of a vector space into the direct sum of its kernel and image.
+
+The proof also explains why my original construction works. It is easy to see that $R/(e)\cong (1-e)$ and $R/(1-e)\cong (e)$.
