@@ -1,16 +1,17 @@
-Reflections on Idempotent Elements: A Problem Revisited
-\\\\
+# Reflections on Idempotent Elements: A Problem Revisited
+
 I encountered the following homework problem in my algebra class. We assume throughout this post that a ring is commutative.
 
-\\\\
-\textbf{Problem: }An {\em idempotent} in $R$ is an element $e$ satisfying $e^2 = e$.  Prove that $R$ is isomorphic to a product of two nonzero rings if and only if $R$ has an idempotent other than $0_R, 1_R$.
-\\\\
+<strong>Problem: <\strong>An idempotent in a ring $R$ is an element $e$ satisfying $e^2 = e$.  Prove that $R$ is isomorphic to a product of two nonzero rings if and only if $R$ has an idempotent other than $0_R, 1_R$.
+
 The forward direction is trivial. For the other direction, we need to construct an isomorphism. My original proof was unmotivated. I constructed an isomorphism $i:R\rightarrow R/(e)\times R/(1-e)$. Since the codomain is the product of two quotient rings, I spent a lot of time on checking whether $i$ is well-defined. The proof also did not tell me why this interesting theorem holds, or at least why we should expect this theorem to be true. Recently I come up with a natural proof of this problem.
-\\\\
+
 Before going into the details, let me do some review on a projection map. Let $P:V\rightarrow V$ be a projection defined on a vector space $V$. Geometrically, this often means that $P$ maps the whole space into a lower-dimensional subspace and is equal to identity when it is restricted onto this subspace. Abstractly, or algebraically, we are requiring $P$ to be idempotent. That is, $P^2=P\circ P=P$. In this case, we can prove that
+
 \[V\cong \text{ker }P \oplus \text{im }P\]
+
 In fact, this is even true for idempotent homomorphism defined on a module.
-\\\\
+
 \textbf{Theorem : }Let $M$ be an $R$-module, and $P:M\rightarrow M$ an idempotent $R$-module homomorphism. We then have the following isomorphism
 \[M\cong \text{ker }P \oplus \text{im }P\]
 \begin{proof}
