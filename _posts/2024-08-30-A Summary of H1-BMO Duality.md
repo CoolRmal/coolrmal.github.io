@@ -20,10 +20,10 @@ where $Q$ is an arbitrary cube with sides parallel to the axis.
 
 $$
 \begin{align*}
-    |f-f_Q|\_Q&=\frac{1}{|Q|}\int_Q|f(x)-f_Q|dx\\
+    |f-f_Q|_Q&=\frac{1}{|Q|}\int_Q|f(x)-f_Q|dx\\
     &\leq \frac{1}{|Q|}(\int_Q|f(x)|dx+\int_Q|f_Q|dx)\\
-    &\leq \|f\|\_{L^\infty}+|f_Q|\\
-    &=\|f\|\_{L^\infty}+\frac{1}{|Q|}\int_Q|f(x)|dx\\
+    &\leq \|f\|_{L^\infty}+|f_Q|\\
+    &=\|f\|_{L^\infty}+\frac{1}{|Q|}\int_Q|f(x)|dx\\
     &\leq 2\|f\|_{L^\infty}
 \end{align*}
 $$
