@@ -32,7 +32,7 @@ BMO then can be considered as a substitude of $L^\infty$.
 
 <strong>BMO is actually a quotient space. </strong>It is easy to see that for any constant $c\in \mathbb{C}$, $f$ and $f+c$ have the same BMO norm.  We thus identity $f$ with $f+c$, and when we say BMO, what we really mean is BMO mod out the constant functions. This also justifies the use of the term BMO norm (otherwise a function with zero BMO norm may not be the zero function).
 
-</strong>What are the possible function spaces whose duals are isomorphic to BMO? </strong>We know from $L^p$ theory that $L^\infty=(L^1)^\*$ (at least this is true for $\mathbb{R}^n$ with Lebesgue measure) and the isomorphism is given by the following formula:
+<strong>What are the possible function spaces whose duals are isomorphic to BMO? </strong>We know from $L^p$ theory that $L^\infty=(L^1)^\*$ (at least this is true for $\mathbb{R}^n$ with Lebesgue measure) and the isomorphism is given by the following formula:
 
 $$f\in L^\infty\mapsto (g\in L^1\mapsto \int_{\mathbb{R}^n}g(x)f(x)dx)$$
 
