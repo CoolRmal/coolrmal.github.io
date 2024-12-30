@@ -6,7 +6,7 @@ This article aims to provide an intuition for why BMO is the dual of $H^1$. I wi
 
 $$\frac{1}{|K|}\int_Kf(x)dx$$
 
-The oscillation is defined as $|f-f_K|$, and the mean oscillation is
+The oscillation is defined as $\lvert f-f_K\rvert$, and the mean oscillation is
 
 $$|f-f_K|_K=\frac{1}{|K|}\int_K|f(x)-f_K|dx$$
 
@@ -66,7 +66,7 @@ $$\lVert L_b\rVert_{(H^1)^*}\leq C_n\lVert b \rVert_{\text{BMO}}$$
 
 which is obtained by using the atomic decomposition of $H^1$. We denote the space of finite linear combinations of $H^1$ atoms by $H^1_0$.
 
-<strong>Step 2: </strong>We want to extend the estimates above a to function $b\in \text{BMO}$. The idea is to use a sequence of functions $\{b\chi_{|b|\leq n}\}\_{n\in \mathbb{N}}$ in $L^\infty$ to approximate $b$. Indeed this sequence converges a.e. to $b$ and has a bounded BMO norm. The corresponding sequence of linear functionals $L_{b_n}$ is thus contained in a bounded region of $(H^1)^\*$ by what is proved above, which allows us to use the Banach-Alaoglu theorem to obtain a weak* cluster point $\tilde{L}\_b$. As a consequence of the Banach-Alaoglu theorem, we have
+<strong>Step 2: </strong>We want to extend the estimates above a to function $b\in \text{BMO}$. The idea is to use a sequence of functions $\{b\chi_{\lvert b\rvert\leq n}\}\_{n\in \mathbb{N}}$ in $L^\infty$ to approximate $b$. Indeed this sequence converges a.e. to $b$ and has a bounded BMO norm. The corresponding sequence of linear functionals $L_{b_n}$ is thus contained in a bounded region of $(H^1)^\*$ by what is proved above, which allows us to use the Banach-Alaoglu theorem to obtain a weak* cluster point $\tilde{L}\_b$. As a consequence of the Banach-Alaoglu theorem, we have
 
 $$\lVert \tilde{L}\_b \rVert_{(H^1)^*}\leq C_n\lVert b\rVert_{\text{BMO}}$$
 
