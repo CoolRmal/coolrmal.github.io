@@ -12,7 +12,7 @@ $$|f-f_K|_K=\frac{1}{|K|}\int_K|f(x)-f_K|dx$$
 
 $f$ belongs to the space of bounded mean oscillation BMO($\mathbb{R}^n$) if
 
-$$\lVert f \rVert\_{\text{BMO}}:=\sup_{Q}|f-f_Q|_Q<\infty$$
+$$\lVert f \rVert_{\text{BMO}}:=\sup_{Q}|f-f_Q|_Q<\infty$$
 
 where $Q$ is an arbitrary cube with sides parallel to the axis.
 
