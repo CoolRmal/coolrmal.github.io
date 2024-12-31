@@ -68,9 +68,7 @@ We claim that $F$ is also the Galois closure. Suppose $k\subset E\subset K$ for 
 
   Clearly $\sqrt{1+\sqrt{2}}$ is a root of this polynomial. The product of any two factors of the four factors above is not in $\mathbb{Q}[x]$, which means that it is irreducible. $\sqrt{1-\sqrt{2}}=i\sqrt{-1+\sqrt{2}}=\cfrac{i}{1+\sqrt{2}}$. Hence, the splitting field of $x^4-2x^2-1$ is $\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$, which is also the Galois closure of $\mathbb{Q}(\sqrt{1+\sqrt{2}})$ (we proved in the exercise above that the Galois closure of a simple extension is the splitting field of the minimal polynomial). This also shows why $\mathbb{Q}\subset \mathbb{Q}(\sqrt{1+\sqrt{2}})$ is not normal ($x^4-2x^2-1$ has a root in this extension but does not split) and thus not Galois.
 
-  The degree of extension of $F=\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$ is 8, which means that $\text{Aut}\_{\mathbb{Q}}(F)$ has 8 elements. The symmetry group of a square $D_8$ is a Sylow 2-subgroup of $S_4$, and by the second Sylow theorem, the only order 8 subgroup of $S_4$ up to an isomorphism is $D_8$ (the isomorphism is given by conjugatation). Since $\text{Aut}_{\mathbb{Q}}(F)\subset S_4$, $\text{Aut}\_{\mathbb{Q}}(F)\cong D_8$.
-
-$\square$
+  The degree of extension of $F=\mathbb{Q}(i,\sqrt{2+\sqrt{2}})$ is 8, which means that $\text{Aut}\_{\mathbb{Q}}(F)$ has 8 elements. The symmetry group of a square $D_8$ is a Sylow 2-subgroup of $S_4$, and by the second Sylow theorem, the only order 8 subgroup of $S_4$ up to an isomorphism is $D_8$ (the isomorphism is given by conjugatation). Since $\text{Aut}_{\mathbb{Q}}(F)\subset S_4$, $\text{Aut}\_{\mathbb{Q}}(F)\cong D_8$. $\square$
 
 <br>
 
