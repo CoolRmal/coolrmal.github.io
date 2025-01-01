@@ -1,4 +1,4 @@
-# Why you sometimes need physics for PDE?
+# Why Do You Sometimes Need Physics for PDE?
 
 I realized I truly lack a "physics mindset." This realization came from considering the following problem in the PDE class where I was a TA:
 
