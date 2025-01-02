@@ -1,4 +1,4 @@
-# Spectrum of Fourier Transform
+# The Spectrum of the Fourier Transform Operator
 
 Let's begin with some notations.
 
