@@ -137,7 +137,7 @@ X_n=\sum_{k=1}^{K_n} \frac{\mu\left(I_{k, n}\right)}{\nu\left(I_{k, n}\right)} 1
 $$
 
 
-The most amazing part about this proof is that $\\{X_n\\}$ is a martingale. Let's first show that $E[1_{I_{k, n+1}} \mid \mathcal{F}_n]=\frac{\nu(I_{k, n+1})}{\nu(I_{j, n})} 1_{I_{j, n}}$, where $I_{k, n+1} \subset I_{j, n}$. Our proposed random variable is clearly measurable with respect to $\mathcal{F}_n$. In addition,
+The most amazing part about this proof is that $\\{X_n\\}$ is a martingale. Let's first show that $E\left[1_{I_{k, n+1}} \lvert \mathcal{F}_n\right]=\frac{\nu(I_{k, n+1})}{\nu(I_{j, n})} 1_{I_{j, n}}$, where $I_{k, n+1} \subset I_{j, n}$. Our proposed random variable is clearly measurable with respect to $\mathcal{F}_n$. In addition,
 
 $$
 \begin{aligned}
