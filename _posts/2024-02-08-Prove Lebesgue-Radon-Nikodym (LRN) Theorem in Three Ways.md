@@ -40,7 +40,7 @@ Now suppose that $\lambda(\{g<0\})>0$.
 
 $$\{g<0\}=\bigcup_{n \in \mathbb{N}}\left\{g<-\frac{1}{n}\right\}$$
 
-There exists some $n$ such that $\lambda\left(\left\{g<-\frac{1}{n}\right\}\right) \neq 0$. Replace $f$ with $1_{\left\{g<-\frac{1}{n}\right\}}$ in equality (1), we get
+There exists some $n$ such that $\lambda(\{g<-\frac{1}{n}\}) \neq 0$. Replace $f$ with $1_{\{g<-\frac{1}{n}\}}$ in equality (1), we get
 
 $$
 \begin{aligned}
