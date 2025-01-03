@@ -5,8 +5,9 @@ Recall that for any two categories $\mathcal{C}$ and $\mathcal{D}$, they are nat
 Now suppose $\mathcal{C}$ is a category such that for any two objects $A,B$ in $\mathcal{C}$, there exists exactly one morphism $f\in \text{Mor}(A,B)$. Then geometrically, we can represent this category in the following way (suppose in addition that $\mathcal{C}$ has 4 objects):
 
 <div align="center">
-<img width="806" alt="Screenshot 2025-01-03 at 1 34 14 AM" src="https://github.com/user-attachments/assets/4f5d3680-878b-4aa1-b1d8-5731c97554fc" />
+<img width="715" alt="Screenshot 2025-01-03 at 2 07 13 AM" src="https://github.com/user-attachments/assets/5195c302-1738-409e-969d-bce3a85d84a9" />
 </div>
+
 
 Since there are only one morphism between each object, every morphism is an isomorphism (the composition of the morphism in $\text{Mor}(A,B)$ and the morphism in $\text{Mor}(B,A)$ is necessarily equal to the identity morphism). It is then clear from the graph that we are only left with one object after we mod out isomorphic objects. Therefore, $\mathcal{C}$ is equivalent to the category $1$ with a single object and a single morphism. 
 
