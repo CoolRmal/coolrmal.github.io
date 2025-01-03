@@ -40,7 +40,7 @@ Now suppose that $\lambda(\{g<0\})>0$.
 
 $$\{g<0\}=\bigcup_{n \in \mathbb{N}}\left\{g<-\frac{1}{n}\right\}$$
 
-There exists some $n$ such that $\lambda(\{g<-\frac{1}{n}\}) \neq 0$. Replace $f$ with $1_{\{g<-\frac{1}{n}\}}$ in equality (1), we get
+There exists some $n$ such that $\lambda(\\{g<-\frac{1}{n}\\}) \neq 0$. Replace $f$ with $1_{\\{g<-\frac{1}{n}\\}}$ in equality (1), we get
 
 $$
 \begin{aligned}
@@ -53,7 +53,7 @@ We have a strict inequality, which is a contradiction and suggests that $g\geq 0
 
 $\{g>1\}=\bigcup_{n \in \mathbb{N}}\left\{g>1+\frac{1}{n}\right\}$
 
-Choose an $n$ such that $\lambda\left(\left\{g>1+\frac{1}{n}\right\}\right) \neq 0$. Replace $f$ with $1_{\left\{g>1+\frac{1}{n}\right\}}$ in equality (1) to get, 
+Choose an $n$ such that $\lambda\left(\\{g>1+\frac{1}{n}\\}\right) \neq 0$. Replace $f$ with $1_{\\{g>1+\frac{1}{n}\\}}$ in equality (1) to get, 
 
 $$
 \begin{aligned}
