@@ -2,11 +2,11 @@
 
 I realized I truly lack a "physics mindset." This realization came from considering the following problem in the PDE class where I was a TA:
 
-<strong>Show that the equation of one-dimensional diffusion in a liquid that is moving along the $x$ axis to the right at constant speed $V$ is 
+<strong>Show that the equation of one-dimensional diffusion in a liquid that is moving along the $x$ axis to the right at constant speed $V$ is</strong> 
 
 $$u_t=ku_{xx}-Vu_x$$
 
-where $u(x,t)$ represents the concentration of the liquid. </strong>
+<strong>where $u(x,t)$ represents the concentration of the liquid. </strong>
 
 My most straightforward approach to solving this would have been to consider two factors that influence the concentration: diffusion $\phi(x,t)$ and advection $\psi(x,t)$. According to Fick's law, the amount of material flowing through a unit area per unit time is proportional to the gradient of the concentration, i.e.,
 
