@@ -98,9 +98,11 @@ $h$ is $(\mathcal{P}(S)\otimes \mathcal{P}(\omega_1),\mathcal{B}_{\mathbb{R}^2})
 We see that $S$ can be viewed as a countable union of graphs. Thus by Lemma 5, $S\in \mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)$. $\square$
 
 <strong>Lemma 7: </strong>Every subset of $S_1:=\{(x,y):y\leq x\}$ and $S_2:=\{(x,y):x\leq y\}$ are in $\mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)$ 
+
 <em>Proof: </em> It is a well-known property of $\omega_1$ that for every $x\in \omega_1$, $\{y:y\leq x\}$ is at most countable. We then apply Lemma 3 to obtain the result. $\square$
 
 <strong>Lemma 8: </strong>$\mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)=\mathcal{P}(\omega_1\times\omega_1)$.
+
 <em>Proof: </em> For every set $S$, $S=S\cap (\omega_1\times \omega_1)=S\cap (S_1\cup S_2)=(S\cap S_1)\cup (S\cap S_2)$. By Lemma 7, both $S\cap S_1$ and $S\cap S_2$ are in $\mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)$. Hence, $S\in \mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)$. $\square$
 
 
