@@ -12,8 +12,12 @@ Hence, if $\otimes_{j=1}^n \mathcal{B}\_{X_j}\ne\mathcal{B}\_{\Pi_{j=1}^nX_j}$, 
 
 The idea is to show that $\Delta$ does not belong to a larger $\sigma-$algebra $\mathcal{E}$ containing $\mathcal{B}_X\otimes \mathcal{B}_X$. $\mathcal{E}$ is defined as follows:
 
-$$\mathcal{E}:=\{E\subset X: \text{ both }E, E^c\text{ are representable as unions \\
-of the continuum (or fewer) of rectangles } A\times B, A, B \subset X\}$$
+$$
+\begin{align*}
+\mathcal{E}:=\{E\subset X: \text{ both }E, E^c\text{ are representable as unions \\
+of the continuum (or fewer) of rectangles } A\times B, A, B \subset X\}
+\end{align*}
+$$
 
 Suppose we already know that $\mathcal{E}$ is a $\sigma-$algebra containing $\mathcal{B}_X\otimes \mathcal{B}_X$. We then need to prove that $\Delta\notin \mathcal{E}$. Indeed suppose
 
