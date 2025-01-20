@@ -4,16 +4,16 @@ People who use Folland's real analysis as their introductory textbook for measur
 
 <strong>Theorem 1: </strong>Let $X_1,\cdots, X_n$ be metric space and let $\Pi_{j=1}^nX_j$ equipped with the product metric. Then $\otimes \mathcal{B}\_{X_j}\subset \mathcal{B}\_{\Pi_{j=1}^nX_j}$. If the $X_j$'s are separable, then $\otimes_{j=1}^n \mathcal{B}\_{X_j}=\mathcal{B}\_{\Pi_{j=1}^nX_j}$.
 
-Hence, if $\otimes_{j=1}^n \mathcal{B}_{X_j}\ne\mathcal{B}_{\Pi_{j=1}^nX_j}$, then one of the $X_j$'s must be nonseparable. I will give a concrete example to illustrate this.
+Hence, if $\otimes_{j=1}^n \mathcal{B}\_{X_j}\ne\mathcal{B}_{\Pi_{j=1}^nX_j}$, then one of the $X_j$'s must be nonseparable. I will give a concrete example to illustrate this.
 
-<strong>Theorem 2: </strong>Let $X$ be a Hausdorff space of cardinality greater than that of the continuum. Then $\mathcal{B}_X\otimes \mathcal{B}_X\ne \mathcal{B}_{X\times X}$.
+<strong>Theorem 2: </strong>Let $X$ be a Hausdorff space of cardinality greater than that of the continuum. Then $\mathcal{B}\_X\otimes \mathcal{B}\_X\ne \mathcal{B}_{X\times X}$.
 
-<em>Proof: </em> $\mathcal{B}_X\otimes \mathcal{B}_X$ is always a subset of $\mathcal{B}_{X\times X}$. Therefore, we just need to find some set $S\subset X$ such that $S\in \mathcal{B}_{X\times X}-\mathcal{B}_X\otimes \mathcal{B}_X$. Our candidate for $S$ is the diagonal $\Delta:=\{(x,x):x\in X\}$, which is closed (because $X$ is Hausdorff) and thus belongs to $\mathcal{B}_{X\times X}$.
+<em>Proof: </em> $\mathcal{B}\_X\otimes \mathcal{B}\_X$ is always a subset of $\mathcal{B}\_{X\times X}$. Therefore, we just need to find some set $S\subset X$ such that $S\in \mathcal{B}\_{X\times X}-\mathcal{B}\_X\otimes \mathcal{B}\_X$. Our candidate for $S$ is the diagonal $\Delta:=\{(x,x):x\in X\}$, which is closed (because $X$ is Hausdorff) and thus belongs to $\mathcal{B}_{X\times X}$.
 
 The idea is to show that $\Delta$ does not belong to a larger $\sigma-$algebra $\mathcal{E}$ containing $\mathcal{B}_X\otimes \mathcal{B}_X$. $\mathcal{E}$ is defined as follows:
 
-$$\mathcal{E}:=\{E\subset X: \text{ both }E, E^c\text{ are representable as unions of the continuum (or fewer) of rectangles } A\times B,
-A, B \subset X\}$$
+$$\mathcal{E}:=\{E\subset X: \text{ both }E, E^c\text{ are representable as unions \\
+of the continuum (or fewer) of rectangles } A\times B, A, B \subset X\}$$
 
 Suppose we already know that $\mathcal{E}$ is a $\sigma-$algebra containing $\mathcal{B}_X\otimes \mathcal{B}_X$. We then need to prove that $\Delta\notin \mathcal{E}$. Indeed suppose
 
