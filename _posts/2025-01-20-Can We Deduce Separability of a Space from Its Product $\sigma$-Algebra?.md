@@ -21,7 +21,7 @@ $$\Delta=\bigcup_{r\in \mathbb{R}}(A_r\times B_r)$$
 
 WLOG we can assume each $A_r, B_r$ are nonempty. $A_r$ cannot contains two distinct points $x,y$. Otherwise for some $z\in B_r$, either $x\ne z\Rightarrow (x,z)\notin \Delta$ or $y\ne z\Rightarrow (y,z)\notin \Delta$. In both cases, we arrive at a contradiction. Similarly, $B_r$ must be a singleton. $A_r\times B_r=\{(x,x)\}$ for some $x\in X$, and the union $\bigcup_{r\in \mathbb{R}}(A_r\times B_r)$ has cardinality at most that of the continuum. However, the cardinality of $\Delta$ is greater than that of the continuum by our assumption, which leads to a contradiction.
     
-To finish the proof, we need to show that $\mathcal{E}$ is a $\sigma-$algebra containing $\mathcal{B}_X\otimes \mathcal{B}_X$. By definition, $\mathcal{E}$ contains all the rectangles and is closed under complement. The only nontrivial part is to show that $\mathcal{E}$ is closed under countable union. Indeed if $\{E_i\}_{i=1}^\infty\subset \mathcal{E}$ such that for each $i$, $E_i=\bigcup_{r\in \mathbb{R}}(A^i_r\times B^i_r)$ and $E_i^c=\bigcup_{r\in \mathbb{R}}(C^i_r\times D^i_r)$, then
+To finish the proof, we need to show that $\mathcal{E}$ is a $\sigma-$algebra containing $\mathcal{B}\_X\otimes \mathcal{B}\_X$. By definition, $\mathcal{E}$ contains all the rectangles and is closed under complement. The only nontrivial part is to show that $\mathcal{E}$ is closed under countable union. Indeed if $\{E_i\}\_{i=1}^\infty\subset \mathcal{E}$ such that for each $i$, $E_i=\bigcup_{r\in \mathbb{R}}(A^i_r\times B^i_r)$ and $E_i^c=\bigcup_{r\in \mathbb{R}}(C^i_r\times D^i_r)$, then
 
 $$
 \begin{align*}
@@ -36,13 +36,13 @@ Let $X$ be the power set of $\mathbb{R}$ with the discrete topology, which is al
 
 A natural question to ask is whether the converse of Theorem 1 is true.
 
-<strong>Conjecture 1: </strong>If $X_1,\cdots, X_n$ are metric spaces such that $\otimes_{j=1}^n \mathcal{B}_{X_j}=\mathcal{B}_{\Pi_{j=1}^nX_j}$, then each $X_j$ is separable.
+<strong>Conjecture 1: </strong>If $X_1,\cdots, X_n$ are metric spaces such that $\otimes_{j=1}^n \mathcal{B}\_{X_j}=\mathcal{B}\_{\Pi_{j=1}^nX_j}$, then each $X_j$ is separable.
 
 Unfortunately, the answer is no. Many readers of Folland's book overlook the following, more general version of Theorem 1, which can be proven in a more elegant way. It is understandable, however, that Folland does not include this theorem, as the book does not assume students to be familiar with point-set topology at the beginning.
 
-<strong>Theorem 3: </strong>Let $X,Y$ be topological spaces such that $Y$ is second countable. Then $\mathcal{B}_X\otimes \mathcal{B}_Y=\mathcal{B}_{X\times Y}$.
+<strong>Theorem 3: </strong>Let $X,Y$ be topological spaces such that $Y$ is second countable. Then $\mathcal{B}\_X\otimes \mathcal{B}\_Y=\mathcal{B}\_{X\times Y}$.
 
-<em>Proof: </em> $\mathcal{B}_X\otimes \mathcal{B}_Y\subset \mathcal{B}_{X\times Y}$ can be proven by following Folland's proof of Theorem 1. For the other direction, it suffices to show that every open set $U\subset X\times Y$ belongs to $\mathcal{B}_X\otimes \mathcal{B}_Y$. Let $\{V_n\}_{n=1}^\infty$ be a countable basis of $Y$. Define
+<em>Proof: </em> $\mathcal{B}\_X\otimes \mathcal{B}\_Y\subset \mathcal{B}_{X\times Y}$ can be proven by following Folland's proof of Theorem 1. For the other direction, it suffices to show that every open set $U\subset X\times Y$ belongs to $\mathcal{B}_X\otimes \mathcal{B}_Y$. Let $\{V_n\}\_{n=1}^\infty$ be a countable basis of $Y$. Define
 
 $$I:=\{n\in \mathbb{N}:\exists \text{ open set }W\subset X\text{ such that }W\times V_n\subset U\}$$
 
@@ -56,7 +56,7 @@ The intuition for this proof is that since $Y$ is second countable, one can deco
 
 Is it possible for a weaker version of Conjecture 1 (e.g. the converse of Theorem 2) to hold? 
 
-<strong>Conjecture 2: </strong>If $X_1,\cdots, X_n$ are metric spaces such that $\otimes_{j=1}^n \mathcal{B}_{X_j}=\mathcal{B}_{\Pi_{j=1}^nX_j}$, then one of $X_j$ is separable.
+<strong>Conjecture 2: </strong>If $X_1,\cdots, X_n$ are metric spaces such that $\otimes_{j=1}^n \mathcal{B}\_{X_j}=\mathcal{B}\_{\Pi_{j=1}^nX_j}$, then one of $X_j$ is separable.
 
 This conjecture is also false, at least if you assume the continuum hypothesis. In the following, we will construct a nonseparable metric space $X$ such that $B_X\otimes B_X=B_{X\times X}$.
 
@@ -77,7 +77,7 @@ $\mathcal{F}$ is a $\sigma-$algebra containing all the measurable rectangle. Thu
 
 <strong>Lemma 5: </strong>Let $S$ be a subset of $\omega_1$. For every function $f:S\rightarrow \omega_1$, the graph of the function $\Gamma_f:=\{(x,f(x)):x\in S\}\subset S\times \omega_1$ is in $\mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)$.
 
-<em>Proof: </em> $f$ is $(\mathcal{P}(S),\mathcal{P}(\omega_1))$-measurable. By the continuum hypothesis, there exists a bijection $j:\omega_1\rightarrow \mathbb{R}$, which is $(\mathcal{P}(\omega_1),\mathcal{B}_\mathbb{R})$-measurable. $j\circ f$ is then $(\mathcal{P}(S),\mathcal{B}_\mathbb{R})$-measurable. We can then define the following function:
+<em>Proof: </em> $f$ is $(\mathcal{P}(S),\mathcal{P}(\omega_1))$-measurable. By the continuum hypothesis, there exists a bijection $j:\omega_1\rightarrow \mathbb{R}$, which is $(\mathcal{P}(\omega_1),\mathcal{B}\_{\mathbb{R}})$-measurable. $j\circ f$ is then $(\mathcal{P}(S),\mathcal{B}_\mathbb{R})$-measurable. We can then define the following function:
 
 $$h:S\times \omega_1\rightarrow \mathbb{R}\times \mathbb{R}, h(x,y)=(j(f(x)),j(y))$$
 
