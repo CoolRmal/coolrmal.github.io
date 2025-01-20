@@ -2,7 +2,7 @@
 
 People who use Folland's real analysis as their introductory textbook for measure theory have probably seen the following statement. We use $\mathcal{B}$ to denote a Borel $\sigma-$algebra.
 
-<strong>Theorem 1: </strong>Let $X_1,\cdots, X_n$ be metric space and let $\Pi_{j=1}^nX_j$ equipped with the product metric. Then $\otimes \mathcal{B}_{X_j}\subset \mathcal{B}_{\Pi_{j=1}^nX_j}$. If the $X_j$'s are separable, then $\otimes_{j=1}^n \mathcal{B}_{X_j}=\mathcal{B}_{\Pi_{j=1}^nX_j}$.
+<strong>Theorem 1: </strong>Let $X_1,\cdots, X_n$ be metric space and let $\Pi_{j=1}^nX_j$ equipped with the product metric. Then $\otimes \mathcal{B}\_{X_j}\subset \mathcal{B}\_{\Pi_{j=1}^nX_j}$. If the $X_j$'s are separable, then $\otimes_{j=1}^n \mathcal{B}\_{X_j}=\mathcal{B}\_{\Pi_{j=1}^nX_j}$.
 
 Hence, if $\otimes_{j=1}^n \mathcal{B}_{X_j}\ne\mathcal{B}_{\Pi_{j=1}^nX_j}$, then one of the $X_j$'s must be nonseparable. I will give a concrete example to illustrate this.
 
