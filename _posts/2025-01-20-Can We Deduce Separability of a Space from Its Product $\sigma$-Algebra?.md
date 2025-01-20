@@ -10,14 +10,7 @@ Hence, if $\otimes_{j=1}^n \mathcal{B}\_{X_j}\ne\mathcal{B}\_{\Pi_{j=1}^nX_j}$, 
 
 <em>Proof: </em> $\mathcal{B}\_X\otimes \mathcal{B}\_X$ is always a subset of $\mathcal{B}\_{X\times X}$. Therefore, we just need to find some set $S\subset X$ such that $S\in \mathcal{B}\_{X\times X}-\mathcal{B}\_X\otimes \mathcal{B}\_X$. Our candidate for $S$ is the diagonal $\Delta:=\{(x,x):x\in X\}$, which is closed (because $X$ is Hausdorff) and thus belongs to $\mathcal{B}_{X\times X}$.
 
-The idea is to show that $\Delta$ does not belong to a larger $\sigma-$algebra $\mathcal{E}$ containing $\mathcal{B}_X\otimes \mathcal{B}_X$. $\mathcal{E}$ is defined as follows:
-
-$$
-\begin{align*}
-\mathcal{E}:=\{E\subset X: \text{ both }E, E^c\text{ are representable as unions \\
-of the continuum (or fewer) of rectangles } A\times B, A, B \subset X\}
-\end{align*}
-$$
+The idea is to show that $\Delta$ does not belong to a larger $\sigma-$algebra $\mathcal{E}$ containing $\mathcal{B}_X\otimes \mathcal{B}_X$. Let $\mathcal{E}$ be the collection of sets $E$ such that both $E$ and its complement are representable as unions of continuum (or fewer) rectangles $A\times B$, $A,B\subset X$.
 
 Suppose we already know that $\mathcal{E}$ is a $\sigma-$algebra containing $\mathcal{B}_X\otimes \mathcal{B}_X$. We then need to prove that $\Delta\notin \mathcal{E}$. Indeed suppose
 
@@ -25,7 +18,7 @@ $$\Delta=\bigcup_{r\in \mathbb{R}}(A_r\times B_r)$$
 
 WLOG we can assume each $A_r, B_r$ are nonempty. $A_r$ cannot contains two distinct points $x,y$. Otherwise for some $z\in B_r$, either $x\ne z\Rightarrow (x,z)\notin \Delta$ or $y\ne z\Rightarrow (y,z)\notin \Delta$. In both cases, we arrive at a contradiction. Similarly, $B_r$ must be a singleton. $A_r\times B_r=\{(x,x)\}$ for some $x\in X$, and the union $\bigcup_{r\in \mathbb{R}}(A_r\times B_r)$ has cardinality at most that of the continuum. However, the cardinality of $\Delta$ is greater than that of the continuum by our assumption, which leads to a contradiction.
     
-To finish the proof, we need to show that $\mathcal{E}$ is a $\sigma-$algebra containing $\mathcal{B}\_X\otimes \mathcal{B}\_X$. By definition, $\mathcal{E}$ contains all the rectangles and is closed under complement. The only nontrivial part is to show that $\mathcal{E}$ is closed under countable union. Indeed if $\{E_i\}\_{i=1}^\infty\subset \mathcal{E}$ such that for each $i$, $E_i=\bigcup_{r\in \mathbb{R}}(A^i_r\times B^i_r)$ and $E_i^c=\bigcup_{r\in \mathbb{R}}(C^i_r\times D^i_r)$, then
+To finish the proof, we need to show that $\mathcal{E}$ is a $\sigma-$algebra containing $\mathcal{B}\_X\otimes \mathcal{B}\_X$. By definition, $\mathcal{E}$ contains all the rectangles and is closed under complement. The only nontrivial part is to show that $\mathcal{E}$ is closed under countable union. Indeed if $\\{E_i\\}\_{i=1}^\infty\subset \mathcal{E}$ such that for each $i$, $E_i=\bigcup_{r\in \mathbb{R}}(A^i_r\times B^i_r)$ and $E_i^c=\bigcup_{r\in \mathbb{R}}(C^i_r\times D^i_r)$, then
 
 $$
 \begin{align*}
@@ -46,7 +39,7 @@ Unfortunately, the answer is no. Many readers of Folland's book overlook the fol
 
 <strong>Theorem 3: </strong>Let $X,Y$ be topological spaces such that $Y$ is second countable. Then $\mathcal{B}\_X\otimes \mathcal{B}\_Y=\mathcal{B}\_{X\times Y}$.
 
-<em>Proof: </em> $\mathcal{B}\_X\otimes \mathcal{B}\_Y\subset \mathcal{B}_{X\times Y}$ can be proven by following Folland's proof of Theorem 1. For the other direction, it suffices to show that every open set $U\subset X\times Y$ belongs to $\mathcal{B}_X\otimes \mathcal{B}_Y$. Let $\{V_n\}\_{n=1}^\infty$ be a countable basis of $Y$. Define
+<em>Proof: </em> $\mathcal{B}\_X\otimes \mathcal{B}\_Y\subset \mathcal{B}_{X\times Y}$ can be proven by following Folland's proof of Theorem 1. For the other direction, it suffices to show that every open set $U\subset X\times Y$ belongs to $\mathcal{B}_X\otimes \mathcal{B}_Y$. Let $\\{V_n\\}\_{n=1}^\infty$ be a countable basis of $Y$. Define
 
 $$I:=\{n\in \mathbb{N}:\exists \text{ open set }W\subset X\text{ such that }W\times V_n\subset U\}$$
 
@@ -68,14 +61,14 @@ This conjecture is also false, at least if you assume the continuum hypothesis. 
 
 We will show that $\mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)=\mathcal{P}(\omega_1\times\omega_1)$. We first need several lemmas.
 
-<strong>Lemma 4: </strong>Suppose that $(X,\mathcal{A})$ and $(Y,\mathcal{B})$ are measurable
-spaces and $f:X\rightarrow \mathbb{R}$ and $g:Y\rightarrow \mathbb{R}$ are measurable functions. Then the following function is $(\mathcal{A}\otimes \mathcal{B},\mathcal{B}_{\mathbb{R}^2})-$measurable:
+<strong>Lemma 4: </strong>Suppose that $(X,\mathcal{A})$ and $(Y,\mathcal{C})$ are measurable
+spaces and $f:X\rightarrow \mathbb{R}$ and $g:Y\rightarrow \mathbb{R}$ are measurable functions. Then the following function is $(\mathcal{A}\otimes \mathcal{C},\mathcal{B}_{\mathbb{R}^2})-$measurable:
 
 $$h:X\times Y\rightarrow \mathbb{R}^2, h(x,y)=(f(x),g(y))$$
 
-<em>Proof: </em> Suppose $I,J$ are measurable sets in $\mathcal{B}_{\mathbb{R}}$, then $h^{-1}(I\times J)=f^{-1}(I)\times g^{-1}(J)\in \mathcal{A}\otimes \mathcal{B}$. Define
+<em>Proof: </em> Suppose $I,J$ are measurable sets in $\mathcal{B}_{\mathbb{R}}$, then $h^{-1}(I\times J)=f^{-1}(I)\times g^{-1}(J)\in \mathcal{A}\otimes \mathcal{C}$. Define
 
-$$\mathcal{F}:=\{E\in \mathcal{B}_{\mathbb{R}^2}:h^{-1}(E)\in \mathcal{A}\otimes \mathcal{B}\}$$
+$$\mathcal{F}:=\{E\in \mathcal{B}_{\mathbb{R}^2}:h^{-1}(E)\in \mathcal{A}\otimes \mathcal{C}\}$$
 
 $\mathcal{F}$ is a $\sigma-$algebra containing all the measurable rectangle. Thus, $\mathcal{F}=\mathcal{B}_{\mathbb{R}^2}$. $\square$
 
