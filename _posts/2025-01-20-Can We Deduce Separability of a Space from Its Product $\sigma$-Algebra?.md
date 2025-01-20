@@ -88,7 +88,7 @@ $h$ is $(\mathcal{P}(S)\otimes \mathcal{P}(\omega_1),\mathcal{B}_{\mathbb{R}^2})
 <em>Proof: </em> Here's a visualization of this proof.
 
 <div align="center">
-<img width="500" src="" />
+<img width="500" src="https://github.com/user-attachments/assets/074c37bf-a204-48bd-99e3-fdfa87ed811c" />
 </div>
 
 We see that $S$ can be viewed as a countable union of graphs. Thus by Lemma 5, $S\in \mathcal{P}(\omega_1)\otimes \mathcal{P}(\omega_1)$. $\square$
