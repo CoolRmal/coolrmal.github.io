@@ -17,7 +17,7 @@ $$\|M^\mu_d(f)\|_{L^{1,\infty}(\mu)}\leq C\|f\|_{L^1(\mu)}$$
 
 for all $f\in L^1(\mu)$? Equivalently, what is the operator norm $\|M_d^\mu\|_{L^1\rightarrow L^{1,\infty}}$? In particular, we are interested in the case that $\mu$ is the Lebesgue measure.
 
-<strong>Answer: </strong>Suppose the $\mu$-measure of each $d$-dimensional quadrant in $\mathbb{R}^d$ is infinite. Then $\|M_d^\mu\|_{L^1\rightarrow L^{1,\infty}}=1$. 
+<strong>Answer: </strong>Suppose that the $\mu$-measure of each $d$-dimensional quadrant in $\mathbb{R}^d$ is infinite. Then $\|M_d^\mu\|_{L^1\rightarrow L^{1,\infty}}=1$. 
 
 The condition that each quadrant has infinite measure may seem weird, but it holds for the Lebesgue measure. Moreover, this property is needed for the next lemma.
 
