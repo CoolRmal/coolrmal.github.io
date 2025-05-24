@@ -26,7 +26,7 @@ Now $\forall f\in L^2$, we can define the integral expression
 
 $$If(z):=\int_{\Omega}f(\zeta)K(z,\zeta)d\zeta=\int_{\Omega}f(\zeta)\overline{k_z(\zeta)}d\zeta$$
 
-$If$ is at least well-defined a.e. by the Cauchy-Schwarz inequality. The proof on Krantz's book goes like this: $I$ is a self-adjoint, idempotent operator on $L^2$, so it is an orthogonal projection onto its range $A^2$. In order to make this argument works, one need to check that $I$ is indeed an operator that sends an $L^2$ function to an $A^2$ function. I spent a lot of time thinking about why this is true, as the book does not adequately explain this issue. I wasted much of that time checking conditions for the integral of a holomorphic function being holomorphic, Minkowski's inequality, and the Fubini-Tonelli theorem. Eventually, I realized I could use the definition of $P$ (notice that $P$ is defined without ). $Pf\in A^2$ by definition and we have
+$If$ is at least well-defined by the Cauchy-Schwarz inequality. The proof on Krantz's book goes like this: $I$ is a self-adjoint, idempotent operator on $L^2$, so it is the orthogonal projection onto its range $A^2$. In order to make this argument works, one need to check that $I$ is indeed an operator that sends an $L^2$ function to an $A^2$ function. I spent a lot of time thinking about why this is true, as the book does not adequately explain this issue. I wasted much of that time checking conditions for the integral of a holomorphic function being holomorphic, Minkowski's inequality, and the Fubini-Tonelli theorem. Eventually, I realized I could use the definition of $P$. $Pf\in A^2$ by definition and we have
 
 $$
 \begin{align*}
