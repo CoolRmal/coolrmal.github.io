@@ -15,9 +15,9 @@ $$M^\mu_d(f)(x):=\sup_{\mathscr{D}\ni Q\ni x}\langle |f|\rangle_Q.$$
 
 $$\|M^\mu_d(f)\|_{L^{1,\infty}(\mu)}\leq C\|f\|_{L^1(\mu)}$$
 
-for all $f\in L^1(\mu)$? Equivalently, what is the operator norm $\|M_d^\mu\|_{L^1\rightarrow L^{1,\infty}}$? In particular, we are interested in the case that $\mu$ is the Lebesgue measure.
+for all $f\in L^1(\mu)$? Equivalently, what is the operator norm $\parallel M_d^\mu\parallel_{L^1\rightarrow L^{1,\infty}}$? In particular, we are interested in the case that $\mu$ is the Lebesgue measure.
 
-<strong>Answer: </strong>Suppose that the $\mu$-measure of each $d$-dimensional quadrant in $\mathbb{R}^d$ is infinite. Then $\|M_d^\mu\|_{L^1\rightarrow L^{1,\infty}}=1$. 
+<strong>Answer: </strong>Suppose that the $\mu$-measure of each $d$-dimensional quadrant in $\mathbb{R}^d$ is infinite. Then $\parallel M_d^\mu\parallel_{L^1\rightarrow L^{1,\infty}}=1$. 
 
 The condition that each quadrant has infinite measure may seem weird, but it holds for the Lebesgue measure. Moreover, this property is needed for the next lemma.
 
@@ -33,11 +33,11 @@ $$\langle |f|\rangle_Q\leq \lambda <\langle |f|\rangle_{Q_j}.$$
 
 $$\lambda <\langle |f|\rangle_{Q}.$$
 
-As the $\mu$-measure of each quadrant is infinite and $f\in L^1(\mu)$, $\langle |f|\rangle_{Q}\rightarrow 0$ as $Q$ gets larger and larger. Hence, eventually we will have $\langle |f|\rangle_{Q}\leq \lambda$, and a maximal dyadic cube $Q^x$ containing $x$ must exist. As a result, 
+As the $\mu$-measure of each quadrant is infinite and $f\in L^1(\mu)$, $\langle \lvert f\rvert\rangle_{Q}\rightarrow 0$ as $Q$ gets larger and larger. Hence, eventually we will have $\langle \lvert f\rvert\rangle_{Q}\leq \lambda$, and a maximal dyadic cube $Q^x$ containing $x$ must exist. As a result, 
 
 $$\{M_d^\mu(f)>\lambda\}\subset \bigcup_x Q^x$$
 
-Notice that for every point $y\in Q^x$, $M_d^\mu(f)(y)\geq \langle |f|\rangle_{Q^x}>\lambda$. Therefore, 
+Notice that for every point $y\in Q^x$, $M_d^\mu(f)(y)\geq \langle \lvert f\rvert\rangle_{Q^x}>\lambda$. Therefore, 
 
 $$Q^x\subset \{M_d^\mu(f)>\lambda\}$$
 
@@ -51,9 +51,9 @@ $$\lambda <\langle |f|\rangle_{Q_2}\leq \lambda <\langle |f|\rangle_{Q_1}.$$
 
 This is absurd. $\square$
 
-<em>Remark: </em>As we only have countably many dyadic cubes, $\{M_d^\mu(f)>\lambda\}$ is a countable union of disjoint maximal dyadic cubes $\{Q_j\}$.
+<em>Remark: </em>Since we only have countably many dyadic cubes, $\{M_d^\mu(f)>\lambda\}$ is a countable union of disjoint maximal dyadic cubes $\{Q_j\}$.
 
-Now we are ready to prove that $\|M_d^\mu\|_{L^1\rightarrow L^{1,\infty}}=1$. Indeed, $\|M_d^\mu\|_{L^1\rightarrow L^{1,\infty}}\leq 1$ because for each $\lambda>0$, we have
+Now we are ready to prove that $\parallel M_d^\mu\parallel_{L^1\rightarrow L^{1,\infty}}=1$. Indeed, $\parallel M_d^\mu\parallel_{L^1\rightarrow L^{1,\infty}}\leq 1$ because for each $\lambda>0$, we have
 
 $$
 \begin{align*}
@@ -69,20 +69,20 @@ This calculation implies that
 
 $$\|M_d^\mu(f)\|_{L^{1,\infty}(\mu)}\leq \|f\|_{L^1(\mu)}.$$
 
-We also need to show that $1$ is the best constant. As each $d$-dimensional quadrant has infinite measure and $\mu$ is locally finite, there must exist some dyadic cube $Q^*$ such that $0<\mu(Q^*)<\infty$. Consider the indicator function $g:=1_{Q^*}$. Let $C$ be any constant such that the inequality
+We also need to show that $1$ is the best constant. As each $d$-dimensional quadrant has infinite measure and $\mu$ is locally finite, there must exist some dyadic cube $\tilde{Q}$ such that $0<\mu(\tilde{Q})<\infty$. Consider the indicator function $g:=1_{\tilde{Q}}$. Let $C$ be any constant such that the inequality
 
 $$\|M^\mu_d(f)\|_{L^{1,\infty}(\mu)}\leq C\|f\|_{L^1(\mu)}$$
 
-holds for all $f\in L^1(\mu)$. Observe that for all $0<\varepsilon<1$ and any point $x\in Q^*$, we have
+holds for all $f\in L^1(\mu)$. Observe that for all $0<\varepsilon<1$ and any point $x\in \tilde{Q}$, we have
 
-$$M_d^\mu(g)(x)\geq \langle |g|\rangle_{Q^*}=1>1-\varepsilon.$$
+$$M_d^\mu(g)(x)\geq \langle |g|\rangle_{\tilde{Q}}=1>1-\varepsilon.$$
 
-Thus, $Q^*\subset \{M_d^\mu(g)>1-\varepsilon\}$. We can then deduce that
+Thus, $\tilde{Q}\subset \{M_d^\mu(g)>1-\varepsilon\}$. We can then deduce that
 
 $$
 \begin{align*}
-C\|g\|_{L^1(\mu)}\geq (1-\varepsilon)\mu(\{M_d^\mu(g)>1-\varepsilon\})&\geq (1-\varepsilon)\mu(Q^*),\\
-C\mu(Q^*)&\geq (1-\varepsilon)\mu(Q^*),\\
+C\|g\|_{L^1(\mu)}\geq (1-\varepsilon)\mu(\{M_d^\mu(g)>1-\varepsilon\})&\geq (1-\varepsilon)\mu(\tilde{Q}),\\
+C\mu(\tilde{Q})&\geq (1-\varepsilon)\mu(\tilde{Q}),\\
 C&\geq 1-\varepsilon.
 \end{align*}
 $$
