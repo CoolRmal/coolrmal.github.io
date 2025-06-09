@@ -41,7 +41,7 @@ Define a function $g:[0,\infty)\rightarrow \mathbb{R}$ by using the following fo
 
 $$g(r)=\zeta((r,0,\cdots, 0)).$$
 
-Clearly $g\in C_0^\infty$, $\zeta(x)=g(|x|)$, and we have
+Clearly $g\in C_0^\infty$, $\zeta(x)=g(\lvert x\rvert)$, and we have
 
 $$
 \begin{align*}
@@ -51,22 +51,28 @@ N_{ij}&=\int_{\mathbb{R}^d}\frac{y_i}{d\alpha_d|y|^d}\partial_j\zeta(y)dy\\
 $$
 
 From this formula, we can see that $N_{ii}$ is independent of $i$. Therefore, we have
+
 $$
 \begin{align*}
 dN_{ii}=\sum_{i=1}^dN_{ii}&=\sum_{i=1}^d\int_{\mathbb{R}^d}\frac{y_i}{d\alpha_d|y|^d}\partial_i\zeta(y)dy.
 \end{align*}
 $$
+
 Krylov also shows in this section that 
+
 $$
-\int_{\mathbb{R}^d}\frac{y_i}{d\alpha_d|y|^d}\partial_i\zeta(y)dy=\partial_{ii}v(0).
+\int_{\mathbb{R}^d}\frac{y_i}{d\alpha_d|y|^d}\partial_i\zeta(y)dy=\partial_{ii}v(0),
 $$
+
 where $v$ satisfies $-\Delta v=\zeta$. We then can deduce that
+
 $$
 \begin{align*}
 dN_{ii}&=\Delta v(0)=-\zeta(0)=-1,\\
 N_{ii}&=-\frac{1}{d}.
 \end{align*}
 $$
+
 If $i\ne j$, we can use a change of variable $y_i\rightarrow -y_i$ to see that $N_{ij}=-N_{ij}$, which implies that $N_{ij}=0$. $\square$
 
 Now we want to obtain an estimate of the $L^q$ norm of $p$ in terms of the the $L^{2q}$ norm of $u$ (at least for some $q\in (1,\infty)$). The theory of singular integral operators (see Grafakos' *Classical Fourier Analysis*) implies that for each pair $(i,j)$ and every $q\in (1,\infty)$,
@@ -96,7 +102,7 @@ $$
 \end{align*}
 $$
 
-As a result, we will obtain the desired $L^2$ boundedness if we have a uniform estimate of $\|\mathcal{F}(K\chi_{\{r\leq |y|\leq \frac{1}{r}\}})\|_{L^\infty}$, which we omit the details. Once we have the $L^2$ boundedness, we can prove a weak type (1,1) estimate by using the Calderón–Zygmund Decomposition. We can then finally obtain $L^q$ boundedness for all $q\in (1,\infty)$ by using the Marcinkiewicz Interpolation Theorem.
+As a result, we will obtain the desired $L^2$ boundedness if we have a uniform estimate of $\parallel\mathcal{F}(K\chi_{\{r\leq \lvert y\rvert\leq \frac{1}{r}\}})\parallel_{L^\infty}$, which we omit the details. Once we have the $L^2$ boundedness, we can prove a weak type (1,1) estimate by using the Calderón–Zygmund Decomposition. We can then finally obtain $L^q$ boundedness for all $q\in (1,\infty)$ by using the Marcinkiewicz Interpolation Theorem.
 
 In the case that $K=K_{ij}$ and $i\ne j$, we don't need to use Fatou's Lemma because we have the $L^2$ convergence.
 
@@ -129,6 +135,7 @@ $$
 $$
 
 Hence, $f(x-y)-f(x)\zeta(y)=0$ for any $|y|>R+|x|$. We can then use the mean value inequality to prove that for all $r$ that is small enough,
+
 $$
 \begin{align*}
 &\Big|\int_{r\leq |y|\leq \frac{1}{r}} K_{ij}(y)(f(x-y)-f(x)\zeta(y))dy\Big|\\
@@ -147,6 +154,7 @@ $$
 |x-y|&\geq |x|-|y|>R.
 \end{align*}
 $$
+
 Hence, $f(x-y)=0$ for any $\lvert y\rvert<\lvert x\rvert-R$. For all $r$ that is small enough, we have
 
 $$
@@ -158,6 +166,7 @@ $$
 &\lesssim \frac{1}{|x|^d}.
 \end{align*}
 $$
+
 We have the last inequality because $\lvert x\rvert/(\lvert x\rvert -R)$ is a a bounded function over the region $|x|>R+1$. 
 
 Clearly, the function $g$ defined by $g(x)=2R+1$ for $\lvert x\rvert\leq R+1$ and $g(x)=\lvert x\rvert^{-d}$ for $\lvert x\rvert>R+1$ is in $L^2$, so $g(x)^2$ is a suitable domaining function of $K_{ij}\chi_{r<\lvert y\rvert<\frac{1}{r}}*f$. $\square$
@@ -165,6 +174,7 @@ Clearly, the function $g$ defined by $g(x)=2R+1$ for $\lvert x\rvert\leq R+1$ an
 Here's another way of deriving the $L^2$ estimate for the singular integral operators defined by the kernel $K_{ij}$. The general idea of this approach can be summarized by one word: pertubation. We first consider $\lambda-\Delta$ and prove an estimate for this operator, where $\lambda>0$ , and then obtain an estimate for $-\Delta$ by taking $\lambda\rightarrow 0$. 
 
 <strong>Lemma</strong> : For all $u\in C^\infty\cap W^{2,2}=C^\infty\cap H^2$,
+
 $$
 \begin{align*}
 \lambda^2\|u\|^2_{L^2}+2\lambda\sum_{i}\|\partial_iu\|_{L^2}^2+\sum_{i,j}\|\partial_{ij}u\|_{L^2}^2&=\|\lambda u-\Delta u\|^2_{L^2}\\
