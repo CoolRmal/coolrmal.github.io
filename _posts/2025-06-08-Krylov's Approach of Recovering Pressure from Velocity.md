@@ -2,7 +2,7 @@
 
 The mathematician Nicolai Vladimirovich Krylov wrote a book *Lectures on Elliptic and Parabolic Equations in Sobolev Space* and this article is meant to give a complete solution to the three exercises at the end of Section 9, Chapter 1 of this book.
 
-Let me first give some motivations. Let $u(x)$ be the velocity of some incompressible fluid at the point $x\in \mathbb{R}^d$. We also assume $d\geq 3$. It is well-known that the pressure $p(x)$ satisfies the following PDE
+Let me first introduce the background. Let $u(x)$ be the velocity of some incompressible fluid at the point $x\in \mathbb{R}^d$. We also assume $d\geq 3$. It is well-known that the pressure $p(x)$ satisfies the following PDE
 
 $$-\Delta p= \partial_{ij}(u_iu_j),$$
 
