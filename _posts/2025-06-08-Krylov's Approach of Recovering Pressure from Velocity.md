@@ -134,7 +134,7 @@ $$
 \end{align*}
 $$
 
-Hence, $f(x-y)-f(x)\zeta(y)=0$ for any $|y|>R+|x|$. We can then use the mean value inequality to prove that for all $r$ that is small enough,
+Hence, $f(x-y)-f(x)\zeta(y)=0$ for any $\lvert y\rvert >R+\lvert x\rvert$. We can then use the mean value inequality to prove that for all $r$ that is small enough,
 
 $$
 \begin{align*}
@@ -167,7 +167,7 @@ $$
 \end{align*}
 $$
 
-We have the last inequality because $\lvert x\rvert/(\lvert x\rvert -R)$ is a a bounded function over the region $|x|>R+1$. 
+We have the last inequality because $\lvert x\rvert/(\lvert x\rvert -R)$ is a a bounded function over the region $\lvert x\rvert>R+1$. 
 
 Clearly, the function $g$ defined by $g(x)=2R+1$ for $\lvert x\rvert\leq R+1$ and $g(x)=\lvert x\rvert^{-d}$ for $\lvert x\rvert>R+1$ is in $L^2$, so $g(x)^2$ is a suitable domaining function of $K_{ij}\chi_{r<\lvert y\rvert<\frac{1}{r}}*f$. $\square$
 
