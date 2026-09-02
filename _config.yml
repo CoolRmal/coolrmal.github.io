@@ -2,6 +2,7 @@ title: "AL's Math Diary"
 first_name: "Aaron"
 last_name: "Lin"
 description: "A place to have fun and study magic."
+# Not shown on the page; jekyll-seo-tag uses it for the home page <title>.
 tagline: "Harmonic analysis, PDEs, and formalizing mathematics in Lean 4."
 url: "https://coolrmal.github.io"
 

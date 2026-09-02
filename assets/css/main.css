@@ -4,31 +4,15 @@
   --bg: #fff;
   --text: #000;
   --text-light: #828282;
-  --theme: #b509ac;
+  --theme: #1565c0;
   --divider: rgba(0, 0, 0, 0.1);
   --card-bg: #fff;
-  --code-bg: rgba(181, 9, 172, 0.05);
+  --code-bg: rgba(21, 101, 192, 0.06);
   --footer-bg: #1c1c1d;
   --footer-text: #e8e8e8;
   --footer-link: #fff;
   --nav-bg: rgba(255, 255, 255, 0.95);
   --table-stripe: #fafafa;
-}
-
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #1c1c1d;
-  --text: #e8e8e8;
-  --text-light: #828282;
-  --theme: #2698ba;
-  --divider: #424246;
-  --card-bg: #212529;
-  --code-bg: #2c3237;
-  --footer-bg: #e8e8e8;
-  --footer-text: #1c1c1d;
-  --footer-link: #000;
-  --nav-bg: rgba(28, 28, 29, 0.95);
-  --table-stripe: #212529;
 }
 
 /* ------------------------------------------------------------------- base */
@@ -149,24 +133,6 @@ blockquote {
 .nav-link:hover { color: var(--theme); text-decoration: none; }
 .nav-link.active { color: var(--theme); font-weight: 500; }
 
-#light-toggle {
-  background: none;
-  border: 0;
-  cursor: pointer;
-  color: var(--text);
-  font-size: 1.05rem;
-  padding: 0 0 0 0.2rem;
-  line-height: 1;
-}
-
-#light-toggle:hover { color: var(--theme); }
-
-/* only the icon matching the current setting is shown */
-#light-toggle span { display: none; }
-html[data-theme-setting="system"] #light-toggle-system,
-html[data-theme-setting="light"]  #light-toggle-light,
-html[data-theme-setting="dark"]   #light-toggle-dark { display: inline; }
-
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -209,7 +175,7 @@ html[data-theme-setting="dark"]   #light-toggle-dark { display: inline; }
 
 /* --------------------------------------------------------------- profile */
 .profile { width: 30%; }
-.profile.float-right { float: right; margin-left: 1.5rem; margin-bottom: 1rem; }
+.profile.float-right { float: right; margin-left: 3.5rem; margin-bottom: 1.5rem; }
 .profile figure { margin: 0; }
 .profile img { width: 100%; }
 
@@ -233,18 +199,6 @@ html[data-theme-setting="dark"]   #light-toggle-dark { display: inline; }
 .post-content h2 { margin-top: 2.2rem; font-size: 1.6rem; }
 .post-content h3 { margin-top: 1.8rem; font-size: 1.25rem; }
 .post-content img { display: block; margin: 1.8rem auto; }
-
-/* Diagrams are drawn with dark ink on a light ground, so keep them on a light
-   card in dark mode rather than letting their strokes disappear. */
-.post-content img[src$=".svg"] {
-  background-color: #fff;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
-}
-
-html[data-theme="dark"] .post-content img[src$=".svg"] {
-  border: 1px solid var(--divider);
-}
 
 .post-content table {
   margin: 1.8rem 0;
