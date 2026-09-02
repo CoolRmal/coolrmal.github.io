@@ -234,6 +234,18 @@ html[data-theme-setting="dark"]   #light-toggle-dark { display: inline; }
 .post-content h3 { margin-top: 1.8rem; font-size: 1.25rem; }
 .post-content img { display: block; margin: 1.8rem auto; }
 
+/* Diagrams are drawn with dark ink on a light ground, so keep them on a light
+   card in dark mode rather than letting their strokes disappear. */
+.post-content img[src$=".svg"] {
+  background-color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+}
+
+html[data-theme="dark"] .post-content img[src$=".svg"] {
+  border: 1px solid var(--divider);
+}
+
 .post-content table {
   margin: 1.8rem 0;
   border-collapse: collapse;
