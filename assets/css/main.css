@@ -174,7 +174,7 @@ blockquote {
 }
 
 /* --------------------------------------------------------------- profile */
-.profile { width: 30%; }
+.profile { width: 22%; max-width: 200px; }
 .profile.float-right { float: right; margin-left: 3.5rem; margin-bottom: 1.5rem; }
 .profile figure { margin: 0; }
 .profile img { width: 100%; }
@@ -302,7 +302,7 @@ blockquote {
 
   .nav-links.open { display: flex; }
 
-  .profile { width: 100%; }
+  .profile { width: 100%; max-width: 260px; }
   .profile.float-right { float: none; margin-left: 0; }
   .profile img { max-width: 260px; }
   .profile .more-info { margin-bottom: 1.2rem; }
