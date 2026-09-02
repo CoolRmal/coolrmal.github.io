@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" font-family="Georgia, 'Times New Roman', serif">
+  <style>
+    .set{stroke:#1a1a1a;stroke-width:2;fill:none}
+    .ball{fill:#eef2f6;fill-opacity:.85;stroke:#5b7186;stroke-width:1.4}
+    .rad{stroke:#5b7186;stroke-width:1.1;stroke-dasharray:4 3}
+    .dim{stroke:#c0392b;stroke-width:1.6}
+    .lbl{font-size:14px;fill:#1a1a1a}
+    .red{font-size:14px;fill:#c0392b}
+    .cap{font-size:14px;fill:#55616b}
+    .it{font-style:italic}
+  </style>
+
+  <!-- the set: a wiggly curve of finite length -->
+  <path class="set" d="M 70 120 C 140 60, 200 175, 275 120 S 400 55, 470 130 S 590 165, 655 110"/>
+
+  <!-- disjoint balls centred on it -->
+  <circle class="ball" cx="110" cy="97" r="38"/>
+  <line class="rad" x1="110" y1="97" x2="148" y2="97"/>
+  <text class="lbl it" x="120" y="92">r<tspan dy="4" font-size="10">1</tspan></text>
+
+  <circle class="ball" cx="248" cy="133" r="46"/>
+  <line class="rad" x1="248" y1="133" x2="294" y2="133"/>
+  <text class="lbl it" x="260" y="128">r<tspan dy="4" font-size="10">2</tspan></text>
+
+  <circle class="ball" cx="393" cy="88" r="33"/>
+  <line class="rad" x1="393" y1="88" x2="426" y2="88"/>
+  <text class="lbl it" x="400" y="83">r<tspan dy="4" font-size="10">3</tspan></text>
+
+  <circle class="ball" cx="530" cy="147" r="41"/>
+  <line class="rad" x1="530" y1="147" x2="571" y2="147"/>
+  <text class="lbl it" x="541" y="142">r<tspan dy="4" font-size="10">4</tspan></text>
+
+  <!-- diameter of the union -->
+  <line class="dim" x1="72" y1="205" x2="571" y2="205"/>
+  <line class="dim" x1="72" y1="198" x2="72" y2="212"/>
+  <line class="dim" x1="571" y1="198" x2="571" y2="212"/>
+  <text class="red it" x="312" y="226" text-anchor="middle">D = diam of the union</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" width="720" font-family="Georgia, 'Times New Roman', serif">
+  <style>
+    .mono{fill:#e8ecef;fill-opacity:.9;stroke:#4a5560;stroke-width:1.5}
+    .r{fill:#c0392b;fill-opacity:.20;stroke:#c0392b;stroke-width:1.6}
+    .b{fill:#2471a3;fill-opacity:.20;stroke:#2471a3;stroke-width:1.6}
+    .dim{stroke:#55616b;stroke-width:1.4}
+    .cap{font-size:14px;fill:#55616b}
+    .hd{font-size:15px;fill:#1a1a1a}
+  </style>
+
+  <!-- LEFT: one colour, every ball disjoint -->
+  <text class="hd" x="165" y="30" text-anchor="middle">one colour</text>
+  <circle class="mono" cx="80"  cy="105" r="33"/>
+  <circle class="mono" cx="165" cy="105" r="50"/>
+  <circle class="mono" cx="248" cy="105" r="32"/>
+  <line class="dim" x1="47" y1="178" x2="280" y2="178"/>
+  <line class="dim" x1="47" y1="171" x2="47" y2="185"/>
+  <line class="dim" x1="280" y1="171" x2="280" y2="185"/>
+  <text class="cap" x="165" y="200" text-anchor="middle">D</text>
+  <text class="cap" x="165" y="228" text-anchor="middle">every ball disjoint</text>
+  <text class="cap" x="165" y="247" text-anchor="middle">Σ r / D ≈ 0.49</text>
+
+  <!-- RIGHT: two colours, only same-colour disjoint -->
+  <text class="hd" x="555" y="30" text-anchor="middle">two colours</text>
+  <circle class="r" cx="470" cy="105" r="33"/>
+  <circle class="r" cx="555" cy="105" r="50"/>
+  <circle class="r" cx="638" cy="105" r="32"/>
+  <circle class="b" cx="512" cy="105" r="42"/>
+  <circle class="b" cx="600" cy="105" r="41"/>
+  <line class="dim" x1="437" y1="178" x2="670" y2="178"/>
+  <line class="dim" x1="437" y1="171" x2="437" y2="185"/>
+  <line class="dim" x1="670" y1="171" x2="670" y2="185"/>
+  <text class="cap" x="555" y="200" text-anchor="middle">D</text>
+  <text class="cap" x="555" y="228" text-anchor="middle">red ⊥ red, blue ⊥ blue, red–blue may overlap</text>
+  <text class="cap" x="555" y="247" text-anchor="middle">Σ r / D ≈ 0.85</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 372" width="720" font-family="Georgia, 'Times New Roman', serif">
+  <style>
+    .disk{fill:none;stroke:#c3ccd4;stroke-width:1.2;stroke-dasharray:5 4}
+    .red{fill:#c0392b}
+    .blue{fill:#2471a3}
+    .redline{stroke:#c0392b;stroke-width:1.8}
+    .blueline{stroke:#2471a3;stroke-width:1.8}
+    .root{stroke:#1a1a1a;stroke-width:1.8}
+    .lbl{font-size:15px;font-style:italic}
+    .num{font-size:13px;fill:#55616b}
+    .cap{font-size:14px;fill:#55616b}
+  </style>
+
+  <!-- child disks of radius 1 about each root -->
+  <circle class="disk" cx="280" cy="186" r="190"/>
+  <circle class="disk" cx="470" cy="186" r="190"/>
+
+  <!-- sibling chords -->
+  <line class="redline"  x1="185" y1="53" x2="185" y2="319"/>
+  <line class="blueline" x1="565" y1="53" x2="565" y2="319"/>
+
+  <!-- root edge -->
+  <line class="root" x1="280" y1="186" x2="470" y2="186"/>
+
+  <!-- spokes -->
+  <line class="redline"  x1="280" y1="186" x2="185" y2="53"  stroke-opacity=".35"/>
+  <line class="redline"  x1="280" y1="186" x2="185" y2="319" stroke-opacity=".35"/>
+  <line class="blueline" x1="470" y1="186" x2="565" y2="53"  stroke-opacity=".35"/>
+  <line class="blueline" x1="470" y1="186" x2="565" y2="319" stroke-opacity=".35"/>
+
+  <!-- half-turn centre -->
+  <circle cx="375" cy="186" r="3" fill="#8a8a8a"/>
+  <path d="M 355 168 A 26 26 0 1 1 353 202" fill="none" stroke="#8a8a8a" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <polygon points="353,202 350,193 359,197" fill="#8a8a8a"/>
+
+  <!-- points -->
+  <circle class="red"  cx="280" cy="186" r="5.5"/>
+  <circle class="red"  cx="185" cy="53"  r="5.5"/>
+  <circle class="red"  cx="185" cy="319" r="5.5"/>
+  <circle class="blue" cx="470" cy="186" r="5.5"/>
+  <circle class="blue" cx="565" cy="53"  r="5.5"/>
+  <circle class="blue" cx="565" cy="319" r="5.5"/>
+
+  <text class="red" x="272" y="212" font-size="15">0</text>
+  <text class="lbl blue" x="466" y="210">e</text>
+  <text class="lbl red"  x="150" y="49">p<tspan dy="4" font-size="10">1</tspan></text>
+  <text class="lbl red"  x="150" y="330">p<tspan dy="4" font-size="10">2</tspan></text>
+  <text class="lbl blue" x="580" y="49">w<tspan dy="4" font-size="10">1</tspan></text>
+  <text class="lbl blue" x="580" y="330">w<tspan dy="4" font-size="10">2</tspan></text>
+
+  <text class="num" x="375" y="177" text-anchor="middle">1</text>
+  <text class="num" x="176" y="190" text-anchor="end">≥ 2s</text>
+  <text class="num" x="574" y="190">≥ 2s</text>
+  <text class="num" x="392" y="235">half-turn</text>
+</svg>
