@@ -33,8 +33,7 @@ nav: work
     that this threshold is exactly $\tfrac12$.
   </p>
   <p>
-    This is a machine-checked proof that $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$,
-    improving the published upper bound of $0.7$.
+    This is a machine-checked proof that $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$.
   </p>
 </div>
 
