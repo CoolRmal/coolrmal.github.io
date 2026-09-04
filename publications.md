@@ -35,6 +35,10 @@ nav: work
   <p>
     This is a machine-checked proof that $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$.
   </p>
+  <p>
+    <span class="badge">registered</span>
+    <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=1" target="_blank" rel="noopener noreferrer">Palomar PALOMAR-2026-09-02-000011</a>
+  </p>
 </div>
 
 Everything else is on

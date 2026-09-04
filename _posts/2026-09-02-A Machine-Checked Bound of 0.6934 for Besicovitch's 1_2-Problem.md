@@ -70,7 +70,7 @@ The finished development is about $27{,}000$ lines across $99$ files. The Gram-c
 
 ### Palomar, and what a comparator is for
 
-I submitted the result to [Palomar](https://palomar-registry.org/), a registry of Lean-verified mathematics incubated by the Lean FRO and ICARM, announced by Terence Tao [in August](https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics/). The idea is to be the analogue of a preprint server, but for Lean proofs: you submit a repository at a fixed commit, and the registry records what has actually been verified.
+I submitted the result to [Palomar](https://palomar-registry.org/), a registry of Lean-verified mathematics incubated by the Lean FRO and ICARM, announced by Terence Tao [in August](https://terrytao.wordpress.com/2026/08/18/palomar-a-registry-of-lean-verified-mathematics/). The idea is to be the analogue of a preprint server, but for Lean proofs: you submit a repository at a fixed commit, and the registry records what has actually been verified. It is registered as [PALOMAR-2026-09-02-000011](https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&version=1).
 
 The mechanism I found genuinely clever is the <em>comparator</em>. A submission has two Lean modules. `Challenge.lean` contains the definitions and the statements you claim, with the proofs replaced by holes. `Solution.lean` contains the same statements, proved. The comparator checks that the solution really does prove <em>exactly</em> the statements advertised in the challenge — not a weakened variant, not a different-looking definition that happens to have the same name.
 
