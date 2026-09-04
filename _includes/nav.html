@@ -6,7 +6,8 @@
     </button>
     <ul class="nav-links">
       <li><a class="nav-link{% if page.nav == 'about' %} active{% endif %}" href="{{ '/' | relative_url }}">about</a></li>
-      <li><a class="nav-link{% if page.nav == 'work' %} active{% endif %}" href="{{ '/publications/' | relative_url }}">repositories &amp; publications</a></li>
+      <li><a class="nav-link{% if page.nav == 'publications' %} active{% endif %}" href="{{ '/publications/' | relative_url }}">publications</a></li>
+      <li><a class="nav-link{% if page.nav == 'repositories' %} active{% endif %}" href="{{ '/repositories/' | relative_url }}">repositories</a></li>
       <li><a class="nav-link{% if page.nav == 'blog' %} active{% endif %}" href="{{ '/archive.html' | relative_url }}">blog</a></li>
     </ul>
   </div>
