@@ -20,7 +20,13 @@ nav: repositories
     that this threshold is exactly $\tfrac12$.
   </p>
   <p>
+    The upper bound has come down slowly: $3/4$ (Besicovitch, 1938),
+    $(2+\sqrt{46})/12=0.73186\ldots$ (Preiss and Ti&scaron;er, 1992), $0.72655\ldots$
+    (Schechter, 1998), and $0.7$ (De Lellis, Glaudo, Massaccesi and Vittone, 2024).
+  </p>
+  <p>
     This is a machine-checked proof that $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$.
+    <a href="/2026/09/02/A-Machine-Checked-Bound-of-0.6934-for-Besicovitch's-1_2-Problem.html">Write-up</a>.
   </p>
   <p>
     <span class="badge">registered</span>
