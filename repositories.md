@@ -26,7 +26,7 @@ nav: repositories
   </p>
   <p>
     This is a machine-checked proof that $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$.
-    <a href="/2026/09/02/A-Machine-Checked-Bound-of-0.6934-for-Besicovitch's-1_2-Problem.html">Write-up</a>.
+    <a href="/2026/09/02/A-Machine-Checked-Bound-of-0.6934-for-Besicovitch's-1_2-Problem.html">The proof can be found over here</a>.
   </p>
   <p>
     <span class="badge">registered</span>
