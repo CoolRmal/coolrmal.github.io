@@ -76,12 +76,7 @@ nav: repositories
     through $0.7056$ (Shevtsova, 2006) to $0.4690$ (Shevtsova, 2013), the best published bound.
   </p>
   <p>
-    This is a machine-checked proof that $0.40\le C\le 0.4688$. A separate development proves
-    $C\le 0.423$, building on the framework of Xiao and Li, with its finite certificates checked by
-    <code>native_decide</code>.
-  </p>
-  <p>
-    <span class="badge">comparator check pending</span>
+    This repository proves $0.4\le C\le 0.423$ in Lean, with the help of <code>native_decide</code>.
   </p>
 </div>
 
