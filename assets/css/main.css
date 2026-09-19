@@ -290,6 +290,9 @@ blockquote {
 .repo-card p { margin: 0.4rem 0; }
 .repo-card .repo-result { font-weight: 400; }
 
+/* punctuation glued to the formula or code span before it */
+.nobr { white-space: nowrap; }
+
 /* ----------------------------------------------------------------- footer */
 .site-footer {
   flex-shrink: 0;
