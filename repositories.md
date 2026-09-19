@@ -18,8 +18,7 @@ nav: repositories
     $0.7$ (De Lellis et al., 2024).
   </p>
   <p class="repo-result">
-    Proves $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$. The proof can be found over
-    <a href="https://github.com/CoolRmal/Besicovitchs-1-2/blob/main/paper/gram-certificate-bound.pdf" target="_blank" rel="noopener noreferrer">here</a>.
+    Proves $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$.
   </p>
 </div>
 
