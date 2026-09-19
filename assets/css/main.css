@@ -154,9 +154,9 @@ blockquote {
 }
 
 /* ------------------------------------------------------------------- page */
-.page { padding-top: 6rem; padding-bottom: 3rem; }
+.page { padding-top: 5rem; padding-bottom: 3rem; }
 
-.post-header { margin-bottom: 2rem; }
+.post-header { margin-bottom: 1.5rem; }
 
 .post-title {
   font-size: 2.6rem;
@@ -270,6 +270,26 @@ blockquote {
   line-height: 1.5;
 }
 
+/* ------------------------------------------------------ repository grid */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem 1.4rem;
+}
+
+.repo-card {
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  padding: 0.85rem 1.1rem 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.repo-card .entry-title { font-size: 1.05rem; margin: 0; }
+.repo-card .entry-meta { font-size: 0.8rem; margin: 0.1rem 0 0.5rem; }
+.repo-card p { margin: 0.4rem 0; }
+.repo-card .repo-result { font-weight: 400; }
+
 /* ----------------------------------------------------------------- footer */
 .site-footer {
   flex-shrink: 0;
@@ -311,5 +331,6 @@ blockquote {
   .post-list li { flex-direction: column; gap: 0; }
   .post-navi { flex-direction: column; }
   .post-navi-item { width: 100%; }
+  .repo-grid { grid-template-columns: 1fr; }
   .post-navi .nav-next { text-align: left; }
 }
