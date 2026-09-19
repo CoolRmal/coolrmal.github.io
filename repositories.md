@@ -57,6 +57,10 @@ nav: repositories
     $n<p_c^{k-1}+k$. Here $p_c\approx 2.4812$ is the root in $(2,3)$ of $p^3-2p^2-2p+2$,
     which exceeds $1+\sqrt2\approx 2.4142$.
   </p>
+  <p>
+    <span class="badge">registered</span>
+    <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000001&amp;version=1" target="_blank" rel="noopener noreferrer">Palomar PALOMAR-2026-09-19-000001</a>
+  </p>
 </div>
 
 <div class="entry">
