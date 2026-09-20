@@ -53,15 +53,15 @@ nav: repositories
 
 <div class="repo-card">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/centered-maximal-constant" target="_blank" rel="noopener noreferrer">centered-maximal-constant</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a></p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a> (lower bound)</p>
   <p>
     $c_2$ is the least $C$ with $\alpha\,\lvert\{Mf\gt\alpha\}\rvert\le C\lVert f\rVert_1$ for all
     $f\in L^1(\mathbb{R}^2)$ and $\alpha\gt 0$, where $M$ is the centred Hardy&ndash;Littlewood maximal
-    operator over squares. Covering gives $c_2\le 4$; best previous lower bound $1.6212$ (Aldaz, 2000).
+    operator over squares. Previous bounds: $1.6212$ (Aldaz, 2000) and the covering bound $4$.
   </p>
   <p class="repo-result">
-    Proves $c_2\ge 1.6855$, from a lattice with two alternating masses, and $c_d\le 2^d$ in every
-    dimension.
+    Proves $1.6855\le c_2\le 3.879$, the lower bound from a lattice with two alternating masses and
+    the upper from a Cauchy-kernel comparison; also $c_d\le 2^d$ in every dimension.
   </p>
 </div>
 
