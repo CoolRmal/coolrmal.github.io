@@ -14,3 +14,12 @@ nav: publications
     <a href="https://arxiv.org/abs/2510.26505" target="_blank" rel="noopener noreferrer">arXiv:2510.26505</a>
   </p>
 </div>
+
+<div class="entry">
+  <h3 class="entry-title">New Progress on Besicovitch's 1/2 Problem</h3>
+  <p class="entry-meta"><strong>Y. Lin</strong> &middot; 2026</p>
+  <p>
+    <span class="badge">note</span>
+    <a href="/assets/papers/besicovitch-1-2-progress-report.pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+  </p>
+</div>

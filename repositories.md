@@ -10,15 +10,17 @@ nav: repositories
 
 <div class="repo-card">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/Besicovitchs-1-2" target="_blank" rel="noopener noreferrer">Besicovitchs-1-2</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-02-000011</a></p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-02-000011</a> (planar statement)</p>
   <p>
-    $\sigma_1(\mathbb{R}^2)$ is the least $\beta$ such that every planar set of finite length with
-    lower density $\ge\beta$ a.e. is countably $1$-rectifiable; Besicovitch conjectured it is
-    $\tfrac12$. Upper bounds: $3/4$ (Besicovitch, 1938), $0.7319$ (Preiss&ndash;Ti&scaron;er, 1992),
-    $0.7$ (De Lellis et al., 2024).
+    $\sigma_1(X)$ is the least $\beta$ such that every set of finite length in $X$ with lower density
+    $\ge\beta$ a.e. is countably $1$-rectifiable; Besicovitch conjectured $\sigma_1(\mathbb{R}^2)=\tfrac12$.
+    Upper bounds: $3/4$ (Besicovitch, 1938), $0.7319$ (Preiss&ndash;Ti&scaron;er, 1992), $0.7$
+    (De Lellis et al., 2024).
   </p>
   <p class="repo-result">
-    Proves $\tfrac12\le\sigma_1(\mathbb{R}^2)\le 0.6934$.
+    Proves $\sigma_1(H)\le 0.6934$ for every real Hilbert space $H$, with no dimension or separability
+    assumption, and $\tfrac12\le\sigma_1(\mathbb{R}^2)$.
+    <a href="/assets/papers/besicovitch-1-2-progress-report.pdf" target="_blank" rel="noopener noreferrer">Progress report</a>.
   </p>
 </div>
 
