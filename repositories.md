@@ -12,14 +12,13 @@ nav: repositories
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/Besicovitchs-1-2" target="_blank" rel="noopener noreferrer">Besicovitchs-1-2</a></h3>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-02-000011</a> (planar statement)</p>
   <p>
-    $\sigma_1(X)$ is the least $\beta$ such that every set of finite length in $X$ with lower density
-    $\ge\beta$ a.e. is countably $1$-rectifiable; Besicovitch conjectured $\sigma_1(\mathbb{R}^2)=\tfrac12$.
-    Upper bounds: $3/4$ (Besicovitch, 1938), $0.7319$ (Preiss&ndash;Ti&scaron;er, 1992), $0.7$
-    (De Lellis et al., 2024).
+    $\sigma_1(X)$ is the least $\beta$ forcing every set of finite length in $X$ with lower density
+    $\ge\beta$ a.e. to be countably $1$-rectifiable; Besicovitch conjectured $\sigma_1(\mathbb{R}^2)=\tfrac12$.
+    Upper bounds: $3/4$ (1938), $0.7319$ (Preiss&ndash;Ti&scaron;er, 1992), $0.7$ (De Lellis et al., 2024).
   </p>
   <p class="repo-result">
-    Proves $\sigma_1(H)\le 0.6934$ for every real Hilbert space $H$, with no dimension or separability
-    assumption, and $\tfrac12\le\sigma_1(\mathbb{R}^2)$.
+    Proves $\sigma_1(H)\le 0.6934$ for every real Hilbert space $H$ (no dimension or separability
+    assumption) and $\tfrac12\le\sigma_1(\mathbb{R}^2)$.
     <a href="/assets/papers/besicovitch-1-2-progress-report.pdf" target="_blank" rel="noopener noreferrer">Progress report</a>.
   </p>
 </div>
@@ -55,13 +54,13 @@ nav: repositories
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/centered-maximal-constant" target="_blank" rel="noopener noreferrer">centered-maximal-constant</a></h3>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a> (lower bound)</p>
   <p>
-    $c_2$ is the least $C$ with $\alpha\,\lvert\{Mf\gt\alpha\}\rvert\le C\lVert f\rVert_1$ for all
-    $f\in L^1(\mathbb{R}^2)$ and $\alpha\gt 0$, where $M$ is the centred Hardy&ndash;Littlewood maximal
-    operator over squares. Previous bounds: $1.6212$ (Aldaz, 2000) and the covering bound $4$.
+    $c_2$ is the least $C$ with $\alpha\,\lvert\{Mf\gt\alpha\}\rvert\le C\lVert f\rVert_1$ for the
+    centred Hardy&ndash;Littlewood maximal operator over squares in the plane. Previous bounds:
+    $1.6212$ (Aldaz, 2000) and the covering bound $4$.
   </p>
   <p class="repo-result">
-    Proves $1.6855\le c_2\le 3.879$, the lower bound from a lattice with two alternating masses and
-    the upper from a Cauchy-kernel comparison; also $c_d\le 2^d$ in every dimension.
+    Proves $1.6855\le c_2\le 3.879$: the lower bound from a lattice with two alternating masses, the
+    upper from a Cauchy-kernel comparison. Also $c_d\le 2^d$ in all dimensions.
   </p>
 </div>
 
