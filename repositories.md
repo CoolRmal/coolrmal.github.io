@@ -56,12 +56,12 @@ nav: repositories
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a> (lower bound)</p>
   <p>
     $c_2$ is the least $C$ with $\alpha\,\lvert\{Mf\gt\alpha\}\rvert\le C\lVert f\rVert_1$ for the
-    centred Hardy&ndash;Littlewood maximal operator over squares in the plane. Previous bounds:
-    $1.6212$ (Aldaz, 2000) and the covering bound $4$.
+    centred Hardy&ndash;Littlewood maximal operator over squares in the plane. The best known bounds
+    were $1.6212\le c_2\le 4$, from Aldaz (2000) and the covering argument.
   </p>
   <p class="repo-result">
     Proves $1.6855\le c_2\le 3.879$: the lower bound from a lattice with two alternating masses, the
-    upper from a Cauchy-kernel comparison. Also $c_d\le 2^d$ in all dimensions.
+    upper from a Cauchy-kernel comparison.
   </p>
 </div>
 
