@@ -14,11 +14,12 @@ nav: repositories
   <p>
     $\sigma_1(X)$ is the least $\beta$ forcing every set of finite length in $X$ with lower density
     $\ge\beta$ a.e. to be countably $1$-rectifiable; Besicovitch conjectured $\sigma_1(\mathbb{R}^2)=\tfrac12$.
-    Upper bounds: $3/4$ (1938), $0.7319$ (Preiss&ndash;Ti&scaron;er, 1992), $0.7$ (De Lellis et al., 2024).
+    In the plane the upper bound fell from $1-10^{-2576}$ (Besicovitch, 1928) to $3/4$ (Besicovitch,
+    1938), then $(2+\sqrt{46})/12=0.73186$ (Preiss&ndash;Ti&scaron;er, 1992), $0.72655$ (Schechter,
+    1998) and $0.7$ (De Lellis et al., 2024).
   </p>
   <p class="repo-result">
-    Proves $\sigma_1(H)\le 0.6934$ for every real Hilbert space $H$ (no dimension or separability
-    assumption) and $\tfrac12\le\sigma_1(\mathbb{R}^2)$.
+    Proves $\sigma_1(H)\le 0.6934$ for every real Hilbert space $H$, and $\tfrac12\le\sigma_1(\mathbb{R}^2)$.
     <a href="/assets/papers/besicovitch-1-2-progress-report.pdf" target="_blank" rel="noopener noreferrer">Progress report</a>.
   </p>
 </div>
