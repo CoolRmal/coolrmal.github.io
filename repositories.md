@@ -10,7 +10,7 @@ nav: repositories
 
 <div class="repo-card">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/Besicovitchs-1-2" target="_blank" rel="noopener noreferrer">Besicovitchs-1-2</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-02-000011</a> (planar statement)</p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=2" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-02-000011</a></p>
   <p>
     $\sigma_1(X)$ is the least $\beta$ forcing every set of finite length in $X$ with lower density
     $\ge\beta$ a.e. to be countably $1$-rectifiable; Besicovitch conjectured $\sigma_1(\mathbb{R}^2)=\tfrac12$.
@@ -53,7 +53,7 @@ nav: repositories
 
 <div class="repo-card">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/centered-maximal-constant" target="_blank" rel="noopener noreferrer">centered-maximal-constant</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a> (lower bound)</p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=2" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a></p>
   <p>
     $c_2$ is the least $C$ with $\alpha\,\lvert\{Mf\gt\alpha\}\rvert\le C\lVert f\rVert_1$ for the
     centred Hardy&ndash;Littlewood maximal operator over squares in the plane. The best known bounds
