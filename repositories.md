@@ -65,4 +65,20 @@ nav: repositories
   </p>
 </div>
 
+<div class="repo-card">
+  <h3 class="entry-title"><a href="https://github.com/CoolRmal/FavardLength" target="_blank" rel="noopener noreferrer">FavardLength</a></h3>
+  <p class="entry-meta">Lean 4 + Mathlib</p>
+  <p>
+    The Favard length of a planar set is its average projection length. For the four-corner Cantor
+    approximants $K_n$ it tends to $0$, and $\alpha_{\mathrm{Fav}}$ is the decay exponent: the
+    supremum of the $a$ with $\mathrm{Fav}(K_n)\le C n^{-a}$. Nazarov&ndash;Peres&ndash;Volberg (2010)
+    proved $\alpha_{\mathrm{Fav}}\ge 1/6$ and C. Marshall (2026) $\ge 1/5$; Bateman&ndash;Volberg
+    (2010) give $\alpha_{\mathrm{Fav}}\le 1$.
+  </p>
+  <p class="repo-result">
+    Proves $\alpha_{\mathrm{Fav}}\ge 1/4$, from Marshall's combinatorics in endpoint form plus a
+    joint negative moment of the low-frequency product.
+  </p>
+</div>
+
 </div>
