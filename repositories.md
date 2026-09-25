@@ -67,7 +67,7 @@ nav: repositories
 
 <div class="repo-card">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/FavardLength" target="_blank" rel="noopener noreferrer">FavardLength</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib</p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-24-000001&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-24-000001</a></p>
   <p>
     The Favard length of a planar set is its average projection length. For the four-corner Cantor
     approximants $K_n$ it tends to $0$, and $\alpha_{\mathrm{Fav}}$ is the decay exponent: the
