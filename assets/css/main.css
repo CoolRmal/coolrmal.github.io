@@ -278,16 +278,19 @@ blockquote {
   line-height: 1.6;
 }
 
+/* This page opts into a wider container so the cards use the side space. */
+.page-wide { max-width: 1400px; }
+
 .repo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.85rem 1.4rem;
+  gap: 1.5rem 2rem;
 }
 
 .repo-card {
   border: 1px solid var(--divider);
   border-radius: 6px;
-  padding: 0.75rem 1rem 0.6rem;
+  padding: 1.1rem 1.35rem 0.95rem;
   font-size: 0.9rem;
   line-height: 1.55;
 }
