@@ -6,6 +6,14 @@ permalink: /repositories/
 nav: repositories
 ---
 
+<p class="repo-intro">
+  I use LLMs heavily in all of the repositories below. I also believe that a result only counts
+  once a human can follow it, and at this stage what an LLM produces is not readable mathematics.
+  So for each repository I try to digest the result myself and write an article that presents the
+  proof, or summarises the main idea of the AI-generated one, so that it can be understood by a
+  person.
+</p>
+
 <div class="repo-grid">
 
 <div class="repo-card">
@@ -78,6 +86,49 @@ nav: repositories
   <p class="repo-result">
     Proves $\alpha_{\mathrm{Fav}}\ge 1/4$, from Marshall's combinatorics in endpoint form plus a
     joint negative moment of the low-frequency product.
+  </p>
+</div>
+
+<div class="repo-card">
+  <h3 class="entry-title"><a href="https://github.com/CoolRmal/odd-zeta-irrationality" target="_blank" rel="noopener noreferrer">odd-zeta-irrationality</a></h3>
+  <p class="entry-meta">Lean 4 + Mathlib</p>
+  <p>
+    Ap&eacute;ry proved $\zeta(3)$ irrational in 1979. For larger odd arguments no single value is
+    known to be irrational; what can be proved is that some member of a finite list must be.
+  </p>
+  <p class="repo-result">
+    Formalizes two such statements, following Zudilin's higher-derivative hypergeometric
+    construction: at least one of $\zeta(7),\zeta(9),\dots,\zeta(21)$ is irrational, and at least
+    one of $\zeta(9),\zeta(11),\dots,\zeta(33)$.
+  </p>
+</div>
+
+<div class="repo-card">
+  <h3 class="entry-title"><a href="https://github.com/CoolRmal/erdos455-convex-primes" target="_blank" rel="noopener noreferrer">erdos455-convex-primes</a></h3>
+  <p class="entry-meta">Lean 4 + Mathlib</p>
+  <p>
+    <a href="https://www.erdosproblems.com/455" target="_blank" rel="noopener noreferrer">Erd&#337;s Problem #455</a>
+    asks whether a convex sequence of primes $q\_0\lt q\_1\lt\cdots$, one with non-decreasing gaps,
+    must satisfy $q\_n/n^2\to\infty$. Richter (1976) proved $\liminf q\_n/n^2\ge 0.352$.
+  </p>
+  <p class="repo-result">
+    Proves $\liminf q\_n/n^2 \gt 0.864289$, from a max-plus certificate whose roughly
+    $5\cdot 10^{10}$ elementary operations are evaluated by the Lean kernel.
+  </p>
+</div>
+
+<div class="repo-card">
+  <h3 class="entry-title"><a href="https://github.com/CoolRmal/erdos5-limit-points" target="_blank" rel="noopener noreferrer">erdos5-limit-points</a></h3>
+  <p class="entry-meta">Lean 4 + Mathlib</p>
+  <p>
+    <a href="https://www.erdosproblems.com/5" target="_blank" rel="noopener noreferrer">Erd&#337;s Problem #5</a>
+    asks whether every positive real is a limit point of the normalised prime gaps
+    $(p\_{n+1}-p\_n)/\log n$. Merikoski (2020) showed that this limit-point set has the four-point
+    property, which forces lower density $\ge 1/3$.
+  </p>
+  <p class="repo-result">
+    Proves that every set with the four-point property has lower density
+    $\ge 25/74 = 1/3 + 1/222$, so $1/3$ is not asymptotically sharp.
   </p>
 </div>
 

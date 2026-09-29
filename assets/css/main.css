@@ -271,6 +271,13 @@ blockquote {
 }
 
 /* ------------------------------------------------------ repository grid */
+.repo-intro {
+  margin: 0 0 1.3rem;
+  max-width: 62ch;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
 .repo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
