@@ -108,11 +108,11 @@ nav: repositories
   <p class="entry-meta">Lean 4 + Mathlib</p>
   <p>
     <a href="https://www.erdosproblems.com/455" target="_blank" rel="noopener noreferrer">Erd&#337;s Problem #455</a>
-    asks whether a convex sequence of primes $q\_0\lt q\_1\lt\cdots$, one with non-decreasing gaps,
-    must satisfy $q\_n/n^2\to\infty$. Richter (1976) proved $\liminf q\_n/n^2\ge 0.352$.
+    asks whether a convex sequence of primes $q_0\lt q_1\lt\cdots$, one with non-decreasing gaps,
+    must satisfy $q_n/n^2\to\infty$. Richter (1976) proved $\liminf q_n/n^2\ge 0.352$.
   </p>
   <p class="repo-result">
-    Proves $\liminf q\_n/n^2 \gt 0.864289$, from a max-plus certificate whose roughly
+    Proves $\liminf q_n/n^2 \gt 0.864289$, from a max-plus certificate whose roughly
     $5\cdot 10^{10}$ elementary operations are evaluated by the Lean kernel.
   </p>
 </div>
@@ -123,7 +123,7 @@ nav: repositories
   <p>
     <a href="https://www.erdosproblems.com/5" target="_blank" rel="noopener noreferrer">Erd&#337;s Problem #5</a>
     asks whether every positive real is a limit point of the normalised prime gaps
-    $(p\_{n+1}-p\_n)/\log n$. Merikoski (2020) showed that this limit-point set has the four-point
+    $(p_{n+1}-p_n)/\log n$. Merikoski (2020) showed that this limit-point set has the four-point
     property, which forces lower density $\ge 1/3$.
   </p>
   <p class="repo-result">
