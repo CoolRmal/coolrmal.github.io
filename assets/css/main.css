@@ -175,9 +175,13 @@ blockquote {
 
 /* --------------------------------------------------------------- profile */
 .profile { width: 22%; max-width: 200px; }
-.profile.float-right { float: right; margin-left: 3.5rem; margin-bottom: 1.5rem; }
 .profile figure { margin: 0; }
 .profile img { width: 100%; }
+
+/* About page: bio on the left, photo and contacts pinned to the right edge. */
+.about-layout { display: flex; align-items: flex-start; gap: 3.5rem; }
+.about-bio { max-width: 70ch; }
+.about-layout .profile { order: 2; flex: 0 0 280px; width: 280px; max-width: 280px; margin-left: auto; }
 
 .rounded { border-radius: 6px; }
 .z-depth-1 { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
@@ -336,8 +340,8 @@ blockquote {
 
   .nav-links.open { display: flex; }
 
-  .profile { width: 100%; max-width: 260px; }
-  .profile.float-right { float: none; margin-left: 0; }
+  .about-layout { display: block; }
+  .about-layout .profile { width: 100%; max-width: 260px; margin-left: 0; }
   .profile img { max-width: 260px; }
   .profile .more-info { margin-bottom: 1.2rem; }
 

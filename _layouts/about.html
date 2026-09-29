@@ -6,8 +6,8 @@ layout: default
     <h1 class="post-title"><span class="fw-bold">{{ site.first_name }}</span> {{ site.last_name }}</h1>
   </header>
 
-  <article class="reading-column">
-    <div class="profile float-right">
+  <article class="about-layout">
+    <div class="profile">
       <figure>
         <img src="{{ site.profile_image | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}" class="rounded z-depth-1">
       </figure>
@@ -20,6 +20,6 @@ layout: default
       </div>
     </div>
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="about-bio">{{ content }}</div>
   </article>
 </div>
