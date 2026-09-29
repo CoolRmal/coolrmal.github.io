@@ -4,7 +4,6 @@ title: Repositories
 description: Lean formalization projects I maintain. Everything else is on <a href="https://github.com/CoolRmal" target="_blank" rel="noopener noreferrer">GitHub</a>.
 permalink: /repositories/
 nav: repositories
-wide: true
 ---
 
 <p class="repo-intro">
