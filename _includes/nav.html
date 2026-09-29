@@ -1,5 +1,5 @@
 <nav id="navbar">
-  <div class="container nav-inner">
+  <div class="container nav-inner{% if page.wide %} page-wide{% endif %}">
     <a class="nav-brand" href="{{ '/' | relative_url }}">{{ site.first_name }} {{ site.last_name }}</a>
     <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
       <span></span><span></span><span></span>

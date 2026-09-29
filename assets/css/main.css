@@ -272,10 +272,19 @@ blockquote {
 
 /* ------------------------------------------------------ repository grid */
 .repo-intro {
-  margin: 0 0 1.3rem;
+  margin: 0 0 1.6rem;
   max-width: 62ch;
   font-size: 0.92rem;
   line-height: 1.6;
+}
+
+/* On a wide screen the intro spans the grid and flows into the same two columns. */
+@media (min-width: 1000px) {
+  .repo-intro {
+    max-width: none;
+    columns: 2;
+    column-gap: 2rem;
+  }
 }
 
 /* This page opts into a wider container so the cards use the side space. */
