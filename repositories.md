@@ -7,11 +7,14 @@ nav: repositories
 ---
 
 <p class="repo-intro">
-  I use LLMs heavily in all of the repositories below. I also believe that a result only counts
-  once a human can follow it, and at this stage what an LLM produces is not readable mathematics.
-  So for each repository I try to digest the result myself and write an article that presents the
-  proof, or summarises the main idea of the AI-generated one, so that it can be understood by a
-  person.
+  I use LLMs and Lean formalization extensively in all of the repositories below. I do not claim
+  to fully understand all of the mathematical content they contain, and I am acutely aware that
+  verification in Lean is not the same as human understanding. I value mathematics that humans
+  can understand, and at present, LLM-generated proofs are generally not readable mathematics.
+  For each repository, I therefore try to digest the result myself and write an article that
+  presents the proof&mdash;or at least summarizes the main idea of the AI-generated argument&mdash;in
+  a form that a human can readily follow. This takes time, so I appreciate your patience if you
+  are interested in any of the results below.
 </p>
 
 <div class="repo-grid">

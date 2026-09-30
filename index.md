@@ -8,9 +8,11 @@ Carnegie Mellon University. My main interests are harmonic analysis, PDEs, and t
 of mathematics in Lean 4, and I am a reviewer for
 <a href="https://github.com/leanprover-community/mathlib4">mathlib</a>.
 
-I share my experiences of learning math here. I often find the proofs in textbooks difficult to
-understand, so I hope to share some of my own understanding of mathematics and provide some
-motivation for various concepts.
+I share what I learn here. In the literature and textbooks, I have often encountered errors or
+arguments with missing details. As something of a perfectionist, I find this especially
+frustrating: I care deeply about complete, rigorous, and logically sound arguments. This is one
+reason I began using formal verification tools such as Lean. I also hope to share my own
+understanding of mathematics and motivate the concepts I discuss.
 
 <h2 class="axioms-heading">I firmly believe Federico Ardila's basic axioms:</h2>
 
