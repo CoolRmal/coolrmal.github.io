@@ -77,6 +77,7 @@ nav: repositories
   <p class="repo-result">
     Proves $1.6855\le c_2\le 3.879$: the lower bound from a lattice with two alternating masses, the
     upper from a Cauchy-kernel comparison.
+    <a href="/assets/papers/c2-less-than-4.pdf" target="_blank" rel="noopener noreferrer">Expository note: c<sub>2</sub> &lt; 4 (PDF)</a>.
   </p>
 </div>
 
