@@ -10,12 +10,9 @@ nav: repositories
   During my studies, I have often encountered errors and missing details in the literature and
   textbooks. As something of a perfectionist, I find this especially frustrating: I care deeply
   about complete, rigorous, and logically sound arguments. This is what led me to begin using
-  formal verification tools such as Lean.
-</p>
-
-<p class="repo-intro">
-  I use LLMs and Lean formalization extensively in all of the repositories below. I do not claim
-  to fully understand all of the mathematical content they contain, and I am acutely aware that
+  formal verification tools such as Lean. I use LLMs and Lean formalization extensively in all of
+  the repositories below. I do not claim to fully understand all of the mathematical content they
+  contain, and I am acutely aware that
   verification in Lean is not the same as human understanding. I value mathematics that humans
   can understand, and at present, LLM-generated proofs are generally not readable mathematics.
   For each repository, I therefore try to digest the result myself and write an article that
