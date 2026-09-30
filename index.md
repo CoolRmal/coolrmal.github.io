@@ -12,7 +12,7 @@ I share my experiences of learning math here. I often find the proofs in textboo
 understand, so I hope to share some of my own understanding of mathematics and provide some
 motivation for various concepts.
 
-## I firmly believe Federico Ardila's basic axioms:
+<h2 class="axioms-heading">I firmly believe Federico Ardila's basic axioms:</h2>
 
 - **Axiom 1.** Mathematical potential is distributed equally among different groups, irrespective
   of geographic, demographic, and economic boundaries.

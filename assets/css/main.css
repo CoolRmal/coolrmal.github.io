@@ -181,6 +181,7 @@ blockquote {
 /* About page: bio on the left, photo and contacts pinned to the right edge. */
 .about-layout { display: flex; align-items: flex-start; gap: 3.5rem; }
 .about-bio { max-width: 70ch; }
+.axioms-heading { font-family: inherit; }
 .about-layout .profile { order: 2; flex: 0 0 280px; width: 280px; max-width: 280px; margin-left: auto; }
 
 .rounded { border-radius: 6px; }
