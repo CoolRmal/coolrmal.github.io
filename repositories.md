@@ -93,7 +93,6 @@ nav: repositories
   <p class="repo-result">
     Proves $|\Delta_y(E)|\gt0$ for some $y\in E$ when $1\lt d\le5/4$ and
     $\dim_P E\lt B_{\mathrm H}(d)$, using only standard axioms.
-    <a href="https://github.com/CoolRmal/falconer-packing/blob/main/docs/falconer-human/falconer-packing-theorem.pdf" target="_blank" rel="noopener noreferrer">Cutoff and proof (PDF)</a>.
   </p>
 </div>
 
