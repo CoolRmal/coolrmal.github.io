@@ -85,7 +85,7 @@ nav: repositories
 
 <div class="repo-card" id="falconer-packing">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/falconer-packing" target="_blank" rel="noopener noreferrer">falconer-packing</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib &middot; <a href="https://github.com/CoolRmal/falconer-packing/actions/runs/36824796497" target="_blank" rel="noopener noreferrer">comparator checked</a></p>
+  <p class="entry-meta">Lean 4 + Mathlib</p>
   <p>
     For a planar Borel set $E$, write $d=\dim_H E$ and let $\Delta_y(E)$ be the set of
     distances from $y$ to points of $E$.
