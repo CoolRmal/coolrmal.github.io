@@ -80,10 +80,8 @@ nav: repositories
     <a href="/assets/papers/c2-less-than-4.pdf" target="_blank" rel="noopener noreferrer">Expository note: c<sub>2</sub> &lt; 4 (PDF)</a>.
   </p>
   <p class="repo-result">
-    For centred averages over Euclidean balls, the same repository proves Yongxi Lin's original bounds
+    For Euclidean balls, also proves
     $$c_2^{\mathrm{ball}}\le e,\qquad c_n^{\mathrm{ball}}\le\left(\frac n2\right)^{n/(n-2)}\quad(n\ge3).$$
-    The proof uses partial balayage and truncated Green kernels.
-    <a href="https://claude.ai/artifact/H4Kdhs9dPAcGmEtzwkJ65a" target="_blank" rel="noopener noreferrer">Proof note</a>.
   </p>
 </div>
 
