@@ -68,20 +68,18 @@ nav: repositories
 
 <div class="repo-card">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/centered-maximal-constant" target="_blank" rel="noopener noreferrer">centered-maximal-constant</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=2" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a></p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=3" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a></p>
   <p>
     $c_2$ is the least $C$ with $\alpha\,\lvert\{Mf\gt\alpha\}\rvert\le C\lVert f\rVert_1$ for the
     centred Hardy&ndash;Littlewood maximal operator over squares in the plane. The best known bounds
     were $1.6212\le c_2\le 4$, from Aldaz (2000) and the covering argument.
   </p>
   <p class="repo-result">
-    Proves $1.6855\le c_2\le 3.879$: the lower bound from a lattice with two alternating masses, the
-    upper from a Cauchy-kernel comparison.
+    Proves $1.6855\le c_2\le 3.879$.
     <a href="/assets/papers/c2-less-than-4.pdf" target="_blank" rel="noopener noreferrer">Expository note: c<sub>2</sub> &lt; 4 (PDF)</a>.
   </p>
   <p class="repo-result">
-    For Euclidean balls, also proves
-    $$c_2^{\mathrm{ball}}\le e,\qquad c_n^{\mathrm{ball}}\le\left(\frac n2\right)^{n/(n-2)}\quad(n\ge3).$$
+    For Euclidean balls, also proves $c_2^{\mathrm{ball}}\le e$ and $c_n^{\mathrm{ball}}\le(n/2)^{n/(n-2)}$ for $n\ge3$.
   </p>
 </div>
 
