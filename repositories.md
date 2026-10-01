@@ -83,6 +83,20 @@ nav: repositories
   </p>
 </div>
 
+<div class="repo-card" id="falconer-packing">
+  <h3 class="entry-title"><a href="https://github.com/CoolRmal/falconer-packing" target="_blank" rel="noopener noreferrer">falconer-packing</a></h3>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <a href="https://github.com/CoolRmal/falconer-packing/actions/runs/36824796497" target="_blank" rel="noopener noreferrer">comparator checked</a></p>
+  <p>
+    For a planar Borel set $E$, write $d=\dim_H E$ and let $\Delta_y(E)$ be the set of
+    distances from $y$ to points of $E$.
+  </p>
+  <p class="repo-result">
+    Proves $|\Delta_y(E)|\gt0$ for some $y\in E$ when $1\lt d\le5/4$ and
+    $\dim_P E\lt B_{\mathrm H}(d)$, using only standard axioms.
+    <a href="https://github.com/CoolRmal/falconer-packing/blob/main/docs/falconer-human/falconer-packing-theorem.pdf" target="_blank" rel="noopener noreferrer">Cutoff and proof (PDF)</a>.
+  </p>
+</div>
+
 <div class="repo-card">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/FavardLength" target="_blank" rel="noopener noreferrer">FavardLength</a></h3>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-24-000001&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-24-000001</a></p>
