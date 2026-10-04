@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Repositories
-description: Lean formalization projects I maintain. Everything else is on <a href="https://github.com/CoolRmal" target="_blank" rel="noopener noreferrer">GitHub</a>.
+description: "Lean 4 and Mathlib formalization projects maintained by Yongxi (Aaron) Lin, covering analysis, geometry, probability, and number theory."
 permalink: /repositories/
 nav: repositories
 ---
 
 <p class="repo-intro">
+  More projects are on <a href="https://github.com/CoolRmal" target="_blank" rel="noopener noreferrer">GitHub</a>.
   During my studies, I have often encountered errors and missing details in the literature and
   textbooks. As something of a perfectionist, I find this especially frustrating: I care deeply
   about complete, rigorous, and logically sound arguments. This is what led me to begin using
@@ -24,7 +25,7 @@ nav: repositories
 <div class="repo-grid">
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/Besicovitchs-1-2" target="_blank" rel="noopener noreferrer">Besicovitchs-1-2</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/Besicovitchs-1-2" target="_blank" rel="noopener noreferrer">Besicovitchs-1-2</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=2" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-02-000011</a></p>
   <p>
     $\sigma_1(X)$ is the least $\beta$ forcing every set of finite length in $X$ with lower density
@@ -40,7 +41,7 @@ nav: repositories
 </div>
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/NKBesicovitch" target="_blank" rel="noopener noreferrer">NKBesicovitch</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/NKBesicovitch" target="_blank" rel="noopener noreferrer">NKBesicovitch</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000001&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000001</a></p>
   <p>
     An $(n,k)$-Besicovitch set contains a unit $k$-disk in every $k$-direction of $\mathbb{R}^n$;
@@ -54,7 +55,7 @@ nav: repositories
 </div>
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/BerryEsseen" target="_blank" rel="noopener noreferrer">BerryEsseen</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/BerryEsseen" target="_blank" rel="noopener noreferrer">BerryEsseen</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib</p>
   <p>
     $C$ is the least constant with $\sup_x\lvert F_n(x)-\Phi(x)\rvert\le C\beta/\sqrt n$ for the
@@ -67,7 +68,7 @@ nav: repositories
 </div>
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/centered-maximal-constant" target="_blank" rel="noopener noreferrer">centered-maximal-constant</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/centered-maximal-constant" target="_blank" rel="noopener noreferrer">centered-maximal-constant</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=3" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a></p>
   <p>
     $c_2$ is the least $C$ with $\alpha\,\lvert\{Mf\gt\alpha\}\rvert\le C\lVert f\rVert_1$ for the
@@ -84,7 +85,7 @@ nav: repositories
 </div>
 
 <div class="repo-card" id="falconer-packing">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/falconer-packing" target="_blank" rel="noopener noreferrer">falconer-packing</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/falconer-packing" target="_blank" rel="noopener noreferrer">falconer-packing</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib</p>
   <p>
     For a planar Borel set $E$, write $d=\dim_H E$ and let $\Delta_y(E)$ be the set of
@@ -97,7 +98,7 @@ nav: repositories
 </div>
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/FavardLength" target="_blank" rel="noopener noreferrer">FavardLength</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/FavardLength" target="_blank" rel="noopener noreferrer">FavardLength</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-24-000001&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-24-000001</a></p>
   <p>
     The Favard length of a planar set is its average projection length. For the four-corner Cantor
@@ -113,7 +114,7 @@ nav: repositories
 </div>
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/odd-zeta-irrationality" target="_blank" rel="noopener noreferrer">odd-zeta-irrationality</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/odd-zeta-irrationality" target="_blank" rel="noopener noreferrer">odd-zeta-irrationality</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib</p>
   <p>
     Ap&eacute;ry proved $\zeta(3)$ irrational in 1979. For larger odd arguments no single value is
@@ -127,7 +128,7 @@ nav: repositories
 </div>
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/erdos455-convex-primes" target="_blank" rel="noopener noreferrer">erdos455-convex-primes</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/erdos455-convex-primes" target="_blank" rel="noopener noreferrer">erdos455-convex-primes</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib</p>
   <p>
     <a href="https://www.erdosproblems.com/455" target="_blank" rel="noopener noreferrer">Erd&#337;s Problem #455</a>
@@ -141,7 +142,7 @@ nav: repositories
 </div>
 
 <div class="repo-card">
-  <h3 class="entry-title"><a href="https://github.com/CoolRmal/erdos5-limit-points" target="_blank" rel="noopener noreferrer">erdos5-limit-points</a></h3>
+  <h2 class="entry-title"><a href="https://github.com/CoolRmal/erdos5-limit-points" target="_blank" rel="noopener noreferrer">erdos5-limit-points</a></h2>
   <p class="entry-meta">Lean 4 + Mathlib</p>
   <p>
     <a href="https://www.erdosproblems.com/5" target="_blank" rel="noopener noreferrer">Erd&#337;s Problem #5</a>

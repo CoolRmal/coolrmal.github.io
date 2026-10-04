@@ -1,3 +1,6 @@
+---
+description: "Estimating an interval-averaging operator on weighted Lp spaces and relating its norm to the Muckenhoupt Ap condition."
+---
 ## A Simple Estimate Involving $A_p$ Weights
 
 This is an exercise given by Professor Sergei Treil during the analysis seminar. Let $f: \mathbb{R}\rightarrow \mathbb{C}$ be a measurable function. Given a bounded interval $I\subset \mathbb{R}$, we can define an operator $E_I$ as follows:

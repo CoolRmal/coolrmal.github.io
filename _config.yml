@@ -1,10 +1,17 @@
-title: "AL's Math Diary"
+title: "Yongxi (Aaron) Lin"
 first_name: "Yongxi (Aaron)"
 last_name: "Lin"
-description: "A place to have fun and study magic."
+description: "Yongxi (Aaron) Lin is a mathematics PhD student at Carnegie Mellon University working on harmonic analysis, partial differential equations, and Lean 4."
 # Not shown on the page; jekyll-seo-tag uses it for the home page <title>.
-tagline: "Harmonic analysis, PDEs, and formalizing mathematics in Lean 4."
+tagline: "Harmonic analysis, PDEs & Lean 4"
 url: "https://coolrmal.github.io"
+lang: "en"
+locale: "en_US"
+
+author:
+  name: "Yongxi (Aaron) Lin"
+  type: "Person"
+  url: "https://coolrmal.github.io/"
 
 email: "aaronlin@andrew.cmu.edu"
 location: "Pittsburgh, Pennsylvania"
@@ -26,6 +33,7 @@ kramdown:
     disable: true
 
 plugins:
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-sitemap
 
@@ -36,6 +44,7 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
+      layout: post
       tags: Other

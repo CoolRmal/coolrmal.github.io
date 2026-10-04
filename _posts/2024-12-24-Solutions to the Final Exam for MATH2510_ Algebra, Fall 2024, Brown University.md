@@ -1,3 +1,6 @@
+---
+description: "Worked solutions to the Brown University MATH2510 algebra final exam, Fall 2024, including geometric arguments about dihedral groups."
+---
 ## Solutions to the Final Exam for MATH2510: Algebra, Fall 2024, Brown University
 
 <strong>Problem 1.</strong> Let $D_{2n}$ be the symmetry group of an $n-$gon and $S_n$ be the permutation group of $n$ elements. Determine whether the following two statements are true:

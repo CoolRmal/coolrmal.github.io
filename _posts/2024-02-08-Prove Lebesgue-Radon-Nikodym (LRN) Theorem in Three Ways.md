@@ -1,3 +1,6 @@
+---
+description: "Three approaches to the Lebesgue–Radon–Nikodym theorem and measure decomposition, beginning with the Hilbert space method based on L2 duality."
+---
 # Prove Lebesgue-Radon-Nikodym (LRN) Theorem in Three Ways
 
 > "Most mathematicians prove what they can, von Neumann proves what he wants."

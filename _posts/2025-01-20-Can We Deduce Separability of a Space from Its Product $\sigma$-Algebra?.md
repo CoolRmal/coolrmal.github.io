@@ -1,3 +1,6 @@
+---
+description: "Exploring separability, Borel sigma-algebras, and product spaces through examples where the product sigma-algebra differs from the Borel sigma-algebra."
+---
 ## Can We Deduce Separability of a Space from Its Product $\sigma$-Algebra?
 
 People who use Folland's real analysis as their introductory textbook for measure theory have probably seen the following statement. We use $\mathcal{B}$ to denote a Borel $\sigma-$algebra.

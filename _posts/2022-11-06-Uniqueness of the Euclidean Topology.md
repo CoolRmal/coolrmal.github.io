@@ -1,3 +1,6 @@
+---
+description: "Why open intervals and compact closed intervals uniquely determine the Euclidean topology on the real line, using a compact-to-Hausdorff argument."
+---
 ## Uniqueness of the Euclidean Topology
 
 Let's denote the usual Euclidean topology on $\mathbb{R}$ by $\mathcal{T}$. We know that in this topology, every interval of the form $(a,b)$ for some $-\infty\leq a<b\leq \infty$ is open, and every interval of the form $[c,d]$ for some $-\infty<c< d<\infty$ is compact. These are the properties within our expectations, or at least they kind of align with our intuition. The question we are concerned about in this blog is:
