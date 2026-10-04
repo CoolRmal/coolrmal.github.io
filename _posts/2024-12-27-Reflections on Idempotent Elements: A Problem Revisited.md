@@ -1,3 +1,6 @@
+---
+description: "A motivated proof that a commutative ring splits as a product of two nonzero rings exactly when it has a nontrivial idempotent."
+---
 ## Reflections on Idempotent Elements: A Problem Revisited
 
 I encountered the following homework problem in my algebra class. We assume throughout this post that a ring is commutative.

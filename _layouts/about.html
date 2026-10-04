@@ -9,7 +9,7 @@ layout: default
   <article class="about-layout">
     <div class="profile">
       <figure>
-        <img src="{{ site.profile_image | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}" class="rounded z-depth-1">
+        <img src="{{ site.profile_image | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}" width="700" height="933" fetchpriority="high" class="rounded z-depth-1">
       </figure>
       <div class="more-info">
         {%- if site.location -%}<p>{{ site.location }}</p>{%- endif -%}

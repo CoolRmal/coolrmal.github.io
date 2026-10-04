@@ -1,3 +1,6 @@
+---
+description: "Intuition and a proof outline for Hardy space H1–BMO duality, beginning with bounded mean oscillation and its role in harmonic analysis."
+---
 ## A Summary of $H_1$-BMO Duality
 
 This article aims to provide an intuition for why BMO is the dual of $H^1$. I will also outline the proof of this duality. We begin by presenting several definitions.

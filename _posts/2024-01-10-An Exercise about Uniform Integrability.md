@@ -1,3 +1,6 @@
+---
+description: "An exercise on uniform integrability of normalized sums of independent random variables, using moment bounds, Chebyshev, and Hölder inequalities."
+---
 ## An Exercise about Uniform Integrability
 <strong>Problem: </strong>Let $\lbrace X_k\rbrace_k$ be a sequence of independent random variables such that
 

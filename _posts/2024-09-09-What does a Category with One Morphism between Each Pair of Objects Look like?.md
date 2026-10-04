@@ -1,3 +1,6 @@
+---
+description: "Understanding a category with exactly one morphism between each pair of objects through isomorphisms, skeletons, and equivalence of categories."
+---
 ## What does a Category with One Morphism between Each Pair of Objects Look like?
 
 Recall that for any two categories $\mathcal{C}$ and $\mathcal{D}$, they are naturally equivalent if and only if their skeletons are isomorphic. That is, $\mathcal{C}$ and $\mathcal{D}$ are equivalent if and only if they are the same after modding isomorphic objects.

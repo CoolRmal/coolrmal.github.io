@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Blog Archive
-description: Everything I have written here, most recent first.
+title: "AL's Math Diary"
+description: "Mathematics notes by Yongxi (Aaron) Lin on harmonic analysis, PDEs, measure theory, probability, and algebra, organized by year."
 permalink: /archive.html
 nav: blog
 ---

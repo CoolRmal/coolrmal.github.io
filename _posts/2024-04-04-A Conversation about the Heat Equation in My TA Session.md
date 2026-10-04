@@ -1,3 +1,6 @@
+---
+description: "A teaching-session discussion of the heat equation with Neumann boundary conditions, conservation of energy, and convergence in L2."
+---
 ## A Conversation about the Heat Equation in My TA Session — $L^2$ Convergence of Energy
 
 Student: Can I discuss the last question of the midterm exam with you?

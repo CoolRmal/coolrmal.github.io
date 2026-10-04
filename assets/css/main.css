@@ -266,7 +266,7 @@ blockquote {
 /* ------------------------------------------------------------ entry list */
 .entry { padding: 1.1rem 0; border-bottom: 1px solid var(--divider); }
 .entry:last-child { border-bottom: 0; }
-.entry-title { font-size: 1.05rem; font-weight: 500; margin: 0 0 0.2rem; }
+.post-content .entry-title { font-size: 1.05rem; font-weight: 500; margin: 0 0 0.2rem; }
 .entry-meta { color: var(--text-light); font-size: 0.88rem; margin: 0 0 0.4rem; }
 .entry p { margin: 0.3rem 0; }
 

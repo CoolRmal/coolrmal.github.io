@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Publications
-description: Papers and preprints.
+description: "Research papers and preprints by Yongxi (Aaron) Lin in harmonic analysis, including sparse bounds and commutator characterizations without doubling."
 permalink: /publications/
 nav: publications
 ---
 
 <div class="entry">
-  <h3 class="entry-title">Optimal Sparse Bounds and Commutator Characterizations Without Doubling</h3>
+  <h2 class="entry-title">Optimal Sparse Bounds and Commutator Characterizations Without Doubling</h2>
   <p class="entry-meta">F. D'Emilio, <strong>Y. Lin</strong>, N. A. Wagner, B. D. Wick &middot; 2025</p>
   <p>
     <span class="badge">preprint</span>
