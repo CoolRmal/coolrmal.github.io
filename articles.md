@@ -29,9 +29,10 @@ nav: articles
 <hr>
 
 <div class="entry">
-  <h2 class="entry-title">Article on Overleaf</h2>
+  <h2 class="entry-title">Two partial balayage principles for weak-type estimates</h2>
+  <p class="entry-meta"><strong>Yongxi Lin</strong></p>
   <p>
-    <a href="https://www.overleaf.com/project/6ac26d8e96959b80ed0ef53d" target="_blank" rel="noopener noreferrer">Open Overleaf project</a>
+    <a href="{{ '/assets/papers/two-partial-balayage-principles.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Read article (PDF)</a>
   </p>
 </div>
 <hr>
