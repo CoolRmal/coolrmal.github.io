@@ -1,0 +1,40 @@
+.article-page { max-width: 1000px; }
+.article-page .post-header { max-width: 850px; margin-bottom: 2.5rem; }
+.article-page .post-title { margin-top: 1rem; font-size: clamp(1.9rem, 3.5vw, 2.6rem); }
+.article-author { margin: 0.8rem 0 0.4rem; font-weight: 400; }
+.mathematical-article { font-weight: 400; }
+.mathematical-article p { margin: 1rem 0; }
+.article-toc { padding: 1rem 1.5rem; border: 1px solid var(--divider); border-radius: 6px; margin-bottom: 2.5rem; }
+.post-content .article-toc h2 { font-size: 1.15rem; margin-top: 0; }
+.article-toc ol { list-style: none; padding-left: 0; }
+.article-toc > ol { columns: 2; column-gap: 2rem; }
+.article-toc > ol > li { break-inside: avoid; }
+.article-toc ol ol { padding-left: 1.25rem; font-size: 0.92rem; }
+.article-toc li { margin: 0.35rem 0; }
+.mathematical-article [id] { scroll-margin-top: 80px; }
+.mathematical-article section.level1 > h2 { margin-top: 3rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--divider); }
+.article-theorem { border-left: 3px solid var(--theme); padding: 0.2rem 1.25rem; margin: 1.5rem 0; background: var(--code-bg); }
+.article-theorem em { font-style: normal; }
+.article-theorem > p:first-child strong { color: var(--theme); }
+.mathematical-article .math.display { display: block; overflow-x: auto; padding: 0.3rem 0; max-width: 100%; }
+.mathematical-article .MathJax_Display { margin: 0.8rem 0; }
+.mathematical-article .nobr { white-space: normal; }
+.article-table-scroll { max-width: 100%; overflow-x: auto; }
+.post-content .operator-bounds { display: table; width: 100%; margin: 1rem 0 2rem; }
+.operator-bounds caption { text-align: left; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-light); }
+.operator-bounds th { font-weight: 400; }
+.operator-bounds th, .operator-bounds td { vertical-align: top; }
+.operator-bounds th[scope="row"] { min-width: 230px; }
+.operator-bounds td { min-width: 300px; }
+.operator-bounds p { margin: 0.4rem 0; }
+.operator-bounds thead { background: var(--code-bg); }
+.article-references { padding-left: 1.6rem; }
+.article-references li { margin: 1rem 0; padding-left: 0.4rem; }
+.article-references li::marker { content: '[' counter(list-item) '] '; }
+@media (max-width: 700px) {
+  .article-toc { padding: 1rem; }
+  .article-toc > ol { columns: 1; }
+  .article-theorem { padding: 0.1rem 0.8rem; }
+  .mathematical-article { font-size: 0.95rem; }
+  .mathematical-article .math.display { font-size: 0.85em; }
+}

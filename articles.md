@@ -29,10 +29,11 @@ nav: articles
 <hr>
 
 <div class="entry">
-  <h2 class="entry-title">Two partial balayage principles for weak-type estimates</h2>
+  <h2 class="entry-title"><a href="{{ '/articles/two-partial-balayage-principles/' | relative_url }}">Two partial balayage principles for weak-type estimates</a></h2>
   <p class="entry-meta"><strong>Yongxi Lin</strong></p>
   <p>
-    <a href="{{ '/assets/papers/two-partial-balayage-principles.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Read article (PDF)</a>
+    <a href="{{ '/articles/two-partial-balayage-principles/' | relative_url }}">Read article</a>
+    &middot; <a href="{{ '/assets/papers/two-partial-balayage-principles.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
   </p>
 </div>
 <hr>

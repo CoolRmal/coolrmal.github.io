@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="container page article-page">
+  <header class="post-header">
+    <a href="{{ '/articles/' | relative_url }}">&larr; Articles</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="article-author">{{ page.author }}</p>
+    <a href="{{ page.pdf | relative_url }}">Download PDF</a>
+  </header>
+  <article class="post-content mathematical-article">{{ content }}</article>
+</div>
+<script>
+  // Inline formulas use the same $$ source delimiters as displayed equations.
+  // Mark their mode explicitly before MathJax's initial document processing.
+  document.querySelectorAll('.mathematical-article .math.inline').forEach(function (span) {
+    var tex = span.textContent;
+    var math = document.createElement('script');
+    math.type = 'math/tex';
+    math.text = tex.slice(2, -2);
+    span.textContent = '';
+    span.appendChild(math);
+  });
+</script>
