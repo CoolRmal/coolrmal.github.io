@@ -15,10 +15,6 @@ of mathematics in Lean 4, and I am a reviewer for
 <a href="https://github.com/leanprover-community/mathlib4">mathlib</a>. I share my experiences of
 learning math here.
 
-Explore my [publications]({{ '/publications/' | relative_url }}),
-[Lean 4 formalization projects]({{ '/repositories/' | relative_url }}), and
-[mathematics blog, AL's Math Diary]({{ '/archive.html' | relative_url }}).
-
 <h2 class="axioms-heading">I firmly believe Federico Ardila's basic axioms:</h2>
 
 - **Axiom 1.** Mathematical potential is distributed equally among different groups, irrespective
