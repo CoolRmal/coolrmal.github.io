@@ -33,7 +33,7 @@ nav: research
     Formalizes fifteen weak-type bounds using two partial balayage principles, covering
     Riesz and Beurling transforms, full and traceless Hessians, Leray and
     gradient projections, centred intervals and Euclidean balls, and Poisson and heat maximal
-    operators. The planar square bound below 3.616 is excluded.
+    operators.
   </p>
   <p class="repo-result">
     An earlier fifteen-row snapshot passed Comparator and independent kernel checks;
@@ -56,12 +56,7 @@ nav: research
   </p>
   <p class="repo-result">
     Proves Hausdorff nullity for logarithmic gauges at every finite iteration depth and the local
-    upper parabolic box-dimension bound 25/23. The registered snapshot passed full Comparator
-    verification and official Palomar mechanical checks.
-  </p>
-  <p class="article-links">
-    <a href="https://github.com/CoolRmal/FluidSingularSets/tree/main/papers" target="_blank" rel="noopener noreferrer">Research manuscripts</a>
-    &middot; <a href="https://github.com/CoolRmal/FluidSingularSets/blob/main/docs/verification.md" target="_blank" rel="noopener noreferrer">Verification record</a>
+    upper parabolic box-dimension bound 25/23.
   </p>
 </div>
 
