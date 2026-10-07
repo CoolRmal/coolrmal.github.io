@@ -307,7 +307,7 @@ blockquote {
 .repo-card .entry-title { font-size: 1.05rem; margin: 0; }
 .repo-card .entry-meta { font-size: 0.8rem; margin: 0.1rem 0 0.5rem; }
 .repo-card p { margin: 0.4rem 0; }
-.repo-card .repo-result { font-weight: 400; }
+.repo-card .repo-description { font-weight: inherit; }
 .repo-card .math.inline {
   display: inline-block;
   max-width: 100%;
