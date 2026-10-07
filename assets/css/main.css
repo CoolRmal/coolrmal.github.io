@@ -295,6 +295,8 @@ blockquote {
 }
 
 .repo-card {
+  min-width: 0;
+  overflow-wrap: anywhere;
   border: 1px solid var(--divider);
   border-radius: 6px;
   padding: 1.1rem 1.35rem 0.95rem;
@@ -306,6 +308,18 @@ blockquote {
 .repo-card .entry-meta { font-size: 0.8rem; margin: 0.1rem 0 0.5rem; }
 .repo-card p { margin: 0.4rem 0; }
 .repo-card .repo-result { font-weight: 400; }
+.repo-card .math.inline {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: middle;
+}
+.repo-card .article-links {
+  border-top: 1px solid var(--divider);
+  margin-top: 0.8rem;
+  padding-top: 0.6rem;
+}
+
 
 /* punctuation glued to the formula or code span before it */
 .nobr { white-space: nowrap; }
@@ -351,6 +365,6 @@ blockquote {
   .post-list li { flex-direction: column; gap: 0; }
   .post-navi { flex-direction: column; }
   .post-navi-item { width: 100%; }
-  .repo-grid { grid-template-columns: 1fr; }
+  .repo-grid { grid-template-columns: minmax(0, 1fr); }
   .post-navi .nav-next { text-align: left; }
 }
