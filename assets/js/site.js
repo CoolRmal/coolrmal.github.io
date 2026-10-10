@@ -34,7 +34,9 @@ window.gluePunctuation = function () {
       group = [frame, prev];
       var preview = frame.previousSibling;
       if (preview && preview.classList && preview.classList.contains('MathJax_Preview')) group.unshift(preview);
-    } else if (INLINE[prev.nodeName]) {
+    } else if (INLINE[prev.nodeName] ||
+        (prev.nodeName === 'SPAN' && prev.classList.contains('math') &&
+         prev.classList.contains('inline'))) {
       group = [prev];
     } else {
       return;

@@ -18,7 +18,7 @@
 .article-theorem > p:first-child strong { color: var(--theme); }
 .mathematical-article .math.display { display: block; overflow-x: auto; padding: 0.3rem 0; max-width: 100%; }
 .mathematical-article .MathJax_Display { margin: 0.8rem 0; }
-.mathematical-article .nobr { white-space: normal; }
+.mathematical-article .nobr { white-space: nowrap; }
 .article-table-scroll { max-width: 100%; overflow-x: auto; }
 .post-content .operator-bounds { display: table; width: 100%; margin: 1rem 0 2rem; }
 .operator-bounds caption { text-align: left; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-light); }
