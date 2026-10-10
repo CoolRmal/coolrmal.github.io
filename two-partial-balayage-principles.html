@@ -529,10 +529,10 @@ Then</em></p>
 <span class="math inline">$$B_P=1.070915813140\ldots$$</span> as <span class="math inline">$$n\to\infty$$</span>.</em></p>
 </div>
 <div class="proof">
-<p><em>Proof.</em> Write <span class="math inline">$$\beta=n/2$$</span>,
-<span class="math inline">$$q(z)=(1+z)^{-(n+1)/2}$$</span>, and <span class="math inline">$$z=|x|^2$$</span>. For <span class="math inline">$$z&lt;b$$</span>, replace <span class="math inline">$$q$$</span> by its radial harmonic tangent at <span class="math inline">$$a$$</span>: <span class="math display">$$k(z)=\begin{cases}
-q(a)+\dfrac{a q'(a)}{1-\beta}
-       \bigl((z/a)^{1-\beta}-1\bigr),&amp;n\ne2,\\[6pt]
+<p><em>Proof.</em> Write <span class="math inline">$$q(z)=(1+z)^{-(n+1)/2}$$</span>
+and <span class="math inline">$$z=|x|^2$$</span>. For <span class="math inline">$$z&lt;b$$</span>, replace <span class="math inline">$$q$$</span> by its radial harmonic tangent at <span class="math inline">$$a$$</span>: <span class="math display">$$k(z)=\begin{cases}
+q(a)+\dfrac{2a q'(a)}{2-n}
+       \bigl((z/a)^{1-n/2}-1\bigr),&amp;n\ne2,\\[6pt]
 q(a)+a q'(a)\log(z/a),&amp;n=2.
 \end{cases}$$</span> For <span class="math inline">$$z\ge b$$</span>,
 keep <span class="math inline">$$k(z)=q(z)$$</span>. The equation for
@@ -544,8 +544,8 @@ point. Consequently <span class="math display">$$K(x)=\frac{\Gamma((n+1)/2)}{\pi
 \ge p_1(x),\qquad \Delta K=\nu-c\delta_0,
 \quad \nu\ge0,\ c&gt;0.$$</span> Corollary <a data-reference="cor:optimal-majorant" data-reference-type="ref" href="#cor:optimal-majorant">3.1</a> bounds the maximal operator
 by <span class="math inline">$$\int K$$</span>. Integrating the inner
-branch, using <span class="math inline">$$\rho_n^{1-\beta}=1/\beta$$</span> when <span class="math inline">$$n\ne2$$</span>, gives <span class="math display">$$\int_0^b k(z)z^{\beta-1}\,dz=\frac{b^\beta
-q(a)}\beta;$$</span> the logarithmic case gives the same identity. The
+branch, using <span class="math inline">$$\rho_n^{1-n/2}=2/n$$</span> when <span class="math inline">$$n\ne2$$</span>, gives <span class="math display">$$\int_0^b k(z)z^{n/2-1}\,dz=\frac{2b^{n/2}q(a)}{n};$$</span>
+the logarithmic case gives the same identity. The
 majorant attains <span class="math inline">$$C_\Delta(p_1)$$</span> by
 Corollary <a data-reference="cor:radial-optimal" data-reference-type="ref" href="#cor:radial-optimal">4.1</a>. Polar integration now yields
 <a data-reference="eq:poisson-general" data-reference-type="eqref" href="#eq:poisson-general">(2)</a>. In
