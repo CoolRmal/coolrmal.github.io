@@ -38,6 +38,7 @@ nav: research
   <p class="article-links">
     <a href="{{ '/articles/two-partial-balayage-principles/' | relative_url }}">Two partial balayage principles for weak-type estimates</a>
     &middot; <a href="{{ '/assets/papers/two-partial-balayage-principles.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
+    &middot; <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-10-07-000002&amp;version=1" target="_blank" rel="noopener noreferrer">Palomar</a>
     <br><span class="entry-meta">Yongxi Lin</span>
   </p>
 </div>
