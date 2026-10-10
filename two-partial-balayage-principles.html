@@ -41,7 +41,7 @@ bounds.</p>
 </th><td><p><span class="math inline">$$e$$</span></p>
 </td></tr><tr><th scope="row"><p>Centered Hardy–Littlewood maximal operator for axis-parallel squares,
 <span class="math inline">$$n=2$$</span></p>
-</th><td><p><span class="math inline">$$&lt;3.616$$</span></p>
+</th><td><p><span class="math inline">$$3.879$$</span></p>
 </td></tr><tr><th scope="row"><p>Centered Hardy–Littlewood maximal operator for balls, <span class="math inline">$$n\ge 3$$</span></p>
 </th><td><p><span class="math inline">$$(n/2)^{n/(n-2)}$$</span></p>
 </td></tr><tr><th scope="row"><p>Poisson maximal operator, <span class="math inline">$$n=1$$</span></p>
@@ -486,18 +486,13 @@ A_\alpha=-|D_u|^\alpha-|D_v|^\alpha,
 even},\quad
 K\ge\mathbf1_{D_\diamond},\quad
 \mathcal A_\alpha K\ge0\text{ on }\mathbb R^2\setminus\{0\}\biggr\}.
-$$</span> Take <span class="math inline">$$\alpha=6/5$$</span>. A fractional radial profile
-on the diamond, corrected by a finite combination of cubic splines,
-gives an admissible kernel with <span class="math display">$$\boxed{\|M_\square\|_{1\to1,\infty}\le
-C_{6/5}&lt;3.615749.}$$</span> Exact rational certificates verify
-domination and generator positivity <a href="#ref-SquareCertificate">[8]</a>. This is a feasible comparison
-bound; attainment of the infimum <span class="math inline">$$C_{6/5}$$</span> is not established. For
-comparison, the covering bound is <span class="math inline">$$4$$</span>. A preceding certified bound <span class="math inline">$$3.879$$</span> and a lower bound <span class="math inline">$$1.68550999\ldots$$</span> are recorded in <a href="https://github.com/teorth/optimizationproblems/pull/192">optimizationproblems
-PR 192</a>. The <a href="https://github.com/CoolRmal/centered-maximal-constant">GitHub
-development</a> and <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=3">Palomar
-v3</a> contain formalizations of that earlier square bound and the ball
-estimates. The refined bound <span class="math inline">$$3.615749$$</span> is supported by the separate
-exact certificate in the accompanying supplement.</p>
+$$</span> The bound <span class="math inline">$$3.879$$</span> has been
+verified in <a href="https://github.com/CoolRmal/centered-maximal-constant">Lean</a>
+and registered in <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=3">Palomar</a>.
+AI has also proposed a kernel for <span class="math inline">$$\alpha=6/5$$</span>
+claimed to yield the sharper bound <span class="math inline">$$3.615749$$</span>.
+The required computations are substantial, making this improvement difficult
+to verify in Lean.</p>
 </section>
 <section class="level2" data-number="4.4" id="sec:poisson">
 <h3 data-number="4.4"><span class="header-section-number">4.4</span>
