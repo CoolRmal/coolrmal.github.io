@@ -28,7 +28,7 @@ nav: research
 
 <div class="repo-card" id="partial-balayage-lean">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/partial-balayage-lean" target="_blank" rel="noopener noreferrer">partial-balayage-lean</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib</p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-10-07-000002&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-10-07-000002</a></p>
   <p class="repo-description">
     Formalizes fifteen weak-type bounds using two partial balayage principles, covering
     Riesz and Beurling transforms, full and traceless Hessians, Leray and
@@ -38,8 +38,6 @@ nav: research
   <p class="article-links">
     <a href="{{ '/articles/two-partial-balayage-principles/' | relative_url }}">Two partial balayage principles for weak-type estimates</a>
     &middot; <a href="{{ '/assets/papers/two-partial-balayage-principles.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
-    &middot; <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-10-07-000002&amp;version=1" target="_blank" rel="noopener noreferrer">Palomar</a>
-    <br><span class="entry-meta">Yongxi Lin</span>
   </p>
 </div>
 
