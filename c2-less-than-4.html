@@ -1,0 +1,566 @@
+---
+layout: article
+title: "c₂ < 4"
+author: Yongxi Lin
+description: "An AI-assisted partial-balayage construction for the centered Hardy–Littlewood maximal operator over squares, proving c₂ < 4."
+permalink: /articles/c2-less-than-4/
+nav: research
+pdf: /assets/papers/c2-less-than-4.pdf
+---
+{% raw %}
+<nav aria-label="Article contents" class="article-toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#introduction">1 Introduction</a></li>
+    <li><a href="#kernel-comparison">2 Kernel comparison</a>
+      <ol>
+        <li><a href="#lemma-domination">Lemma 1: Kernel domination</a></li>
+        <li><a href="#lemma-partial-balayage">Lemma 2: Partial balayage</a></li>
+        <li><a href="#lemma-kernel-transfer">Lemma 3: Kernel transfer from the obstacle</a></li>
+      </ol>
+    </li>
+    <li><a href="#candidate-kernels">3 Optimization formulation and candidate kernels</a></li>
+    <li><a href="#references">References</a></li>
+  </ol>
+</nav>
+
+<h2 id="abstract">Abstract</h2>
+<p>Let <span class="math inline">$$c_2$$</span> be the least weak-type
+<span class="math inline">$$(1,1)$$</span> constant for the centered Hardy–Littlewood maximal
+operator over axis-parallel squares in <span class="math inline">$$\mathbb R^2$$</span>.
+A classical covering argument gives <span class="math inline">$$c_2\le4$$</span>.
+We describe an AI-assisted construction, prompted by the human insight to adapt the
+partial-balayage method of Spector and Stockdale <a href="#ref-spector-stockdale">[1]</a>,
+that proves <span class="math inline">$$c_2&lt;4$$</span>.</p>
+
+<section class="level1" id="introduction">
+<h2><span class="header-section-number">1</span> Introduction</h2>
+<p>For <span class="math inline">$$f\in L^1(\mathbb R^2)$$</span> define the centered square maximal operator</p>
+<div class="math display">$$\begin{gathered}
+M_{\square}f(x)=\sup_{r&gt;0}\frac{1}{4r^2}\int_{x+[-r,r]^2}|f(y)|\,dy,\\
+c_2=\sup_{f\ne0,\,\lambda&gt;0}\frac{\lambda|\{M_{\square}f&gt;\lambda\}|}{\|f\|_1}.
+\end{gathered}$$</div>
+<p>The classical covering argument gives <span class="math inline">$$c_2\le4$$</span>;
+see Tao <a href="#ref-tao">[4]</a>. This article aims at explaining the main idea that leads to
+<span class="math inline">$$c_2&lt;4$$</span>. The motivating human insight was to adapt the
+partial-balayage method used by Spector and Stockdale in a different maximal-function problem
+<a href="#ref-spector-stockdale">[1]</a>.</p>
+<p>Let <span class="math inline">$$D=\{(u,v):|u|+|v|\le1\}$$</span> be the unit diamond,
+of area <span class="math inline">$$2$$</span>, and define</p>
+<div class="math display">$$M_Dg(z)=\sup_{s&gt;0}\frac{1}{2s^2}\int_{z+sD}|g(w)|\,dw.$$</div>
+<p>The linear map <span class="math inline">$$(u,v)\mapsto(u+v,u-v)$$</span> carries
+<span class="math inline">$$D$$</span> onto <span class="math inline">$$[-1,1]^2$$</span>
+and has determinant of absolute value <span class="math inline">$$2$$</span>.
+The corresponding change of variables preserves the optimal weak-type
+<span class="math inline">$$(1,1)$$</span> constant, so it suffices to bound
+<span class="math inline">$$M_D$$</span>. We do this by dominating
+<span class="math inline">$$M_D$$</span> with a suitable convolution maximal operator
+and proving a weak-type estimate for that operator.</p>
+</section>
+
+<section class="level1" id="kernel-comparison">
+<h2><span class="header-section-number">2</span> Kernel comparison</h2>
+<p>For <span class="math inline">$$0&lt;\alpha&lt;2$$</span>, let
+<span class="math inline">$$A_\alpha=-|D_u|^\alpha-|D_v|^\alpha$$</span>, with Fourier symbol
+<span class="math inline">$$-(|\xi_1|^\alpha+|\xi_2|^\alpha)$$</span>.
+For an integrable kernel <span class="math inline">$$K$$</span>, the distribution
+<span class="math inline">$$A_\alpha K$$</span> is defined by duality:</p>
+<div class="math display">$$\langle A_\alpha K,\varphi\rangle:=\langle K,A_\alpha\varphi\rangle
+=\int_{\mathbb R^2}K(x)(A_\alpha\varphi)(x)\,dx.$$</div>
+<p>Thus <span class="math inline">$$A_\alpha K\ge0$$</span> on
+<span class="math inline">$$\mathbb R^2\setminus\{0\}$$</span> means this pairing is
+nonnegative for every nonnegative smooth test function supported away from the origin.</p>
+
+<div class="article-theorem" id="thm-kernel-comparison">
+<p><strong>Theorem 1.</strong> Let <span class="math inline">$$K\in L^1(\mathbb R^2)$$</span> be even.
+Suppose <span class="math inline">$$K\ge\mathbf1_D$$</span> a.e. and
+<span class="math inline">$$A_\alpha K\ge0$$</span> on
+<span class="math inline">$$\mathbb R^2\setminus\{0\}$$</span>. Then
+<span class="math inline">$$c_2\le\frac12\int_{\mathbb R^2}K$$</span>.</p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The proof has three steps, and the proof of each step is shown in the lemmas below.</p>
+<p><strong>Step 1.</strong> Show that <span class="math inline">$$M_Dg$$</span> is dominated by
+<span class="math inline">$$\frac12\sup_{s&gt;0}K_s*|g|$$</span>, where
+<span class="math inline">$$K_s(x)=s^{-2}K(x/s)$$</span>.</p>
+<p><strong>Step 2.</strong> For a smooth source <span class="math inline">$$f\ge0$$</span> and cap
+<span class="math inline">$$\kappa$$</span>, we construct a potential
+<span class="math inline">$$u$$</span> and a capped density <span class="math inline">$$\sigma$$</span>
+with <span class="math inline">$$A_\alpha u=\sigma-f$$</span>.
+This is the partial balayage approach used in <a href="#ref-spector-stockdale">[1]</a>.</p>
+<p><strong>Step 3.</strong> Use the result in Step 2 to establish a weak-type estimate for the operator
+<span class="math inline">$$\frac12\sup_{s&gt;0}K_s*(\cdot)$$</span>.</p>
+<p class="proof-end" aria-label="End of proof">□</p>
+</div>
+
+<div class="article-theorem" id="lemma-domination">
+<p><strong>Lemma 1.</strong> If <span class="math inline">$$K\ge\mathbf1_D$$</span> a.e., then
+<span class="math inline">$$M_Dg\le\frac12\sup_{s&gt;0}K_s*|g|$$</span>.</p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Since <span class="math inline">$$K\ge\mathbf1_D$$</span>, we have
+<span class="math inline">$$K_s\ge s^{-2}\mathbf1_{sD}$$</span>.
+For every <span class="math inline">$$z\in\mathbb R^2$$</span> and
+<span class="math inline">$$s&gt;0$$</span>, the substitution <span class="math inline">$$y=z-w$$</span>
+and the symmetry of <span class="math inline">$$D$$</span> give</p>
+<div class="math display">$$\begin{aligned}
+\frac{1}{2s^2}\int_{z+sD}|g(y)|\,dy
+&amp;=\frac{1}{2s^2}\int_{sD}|g(z-w)|\,dw\\
+&amp;\le\frac12\int_{\mathbb R^2}K_s(w)|g(z-w)|\,dw\\
+&amp;=\frac12(K_s*|g|)(z).
+\end{aligned}$$</div>
+<p>Taking the supremum over <span class="math inline">$$s&gt;0$$</span> proves the claim.</p>
+<p class="proof-end" aria-label="End of proof">□</p>
+</div>
+
+<div class="article-theorem" id="lemma-partial-balayage">
+<p><strong>Lemma 2 (Partial-balayage).</strong> Let <span class="math inline">$$f$$</span> be a
+nonnegative function in <span class="math inline">$$C_c^\infty(\mathbb R^2)$$</span> and
+<span class="math inline">$$\kappa$$</span> a positive constant. There exist nonnegative functions
+<span class="math inline">$$u$$</span> and <span class="math inline">$$\sigma$$</span> such that,
+with <span class="math inline">$$\Omega=\{u&gt;0\}$$</span>,</p>
+<div class="math display">$$\begin{gathered}
+A_\alpha u=\sigma-f\quad\text{in }\mathcal D'(\mathbb R^2),\\
+\sigma\le\kappa\text{ a.e.},\qquad\sigma=\kappa\text{ a.e. on }\Omega,\\
+\int_{\mathbb R^2}\sigma=\int_{\mathbb R^2}f,\qquad\kappa|\Omega|\le\|f\|_1.
+\end{gathered}$$</div>
+</div>
+
+<div class="proof">
+<p><em>Proof.</em> For a real-valued <span class="math inline">$$v\in L^1(\mathbb R^2)$$</span>,
+define the Dirichlet energy, possibly equal to <span class="math inline">$$+\infty$$</span>, by</p>
+<div class="math display">$$\begin{gathered}
+\mathcal E(v,v)=\int_{\mathbb R^2}(|\xi_1|^\alpha+|\xi_2|^\alpha)|\widehat v(\xi)|^2\,d\xi,\\
+\mathcal C=\{v\in L^1(\mathbb R^2):v\ge0,\ \mathcal E(v,v)&lt;\infty\}.
+\end{gathered}$$</div>
+<p><span class="math inline">$$\mathcal E$$</span> has the following bilinear representation for
+<span class="math inline">$$v,w\in L^1(\mathbb R^2)$$</span> of finite Dirichlet energy:</p>
+<div class="math display">$$\begin{aligned}
+\mathcal E(v,w)&amp;=\frac{c_\alpha}{2}\sum_{j=1}^2\int_{\mathbb R^2}\int_{\mathbb R}\\
+&amp;\quad\frac{[v(x+se_j)-v(x)][w(x+se_j)-w(x)]}{|s|^{1+\alpha}}\,ds\,dx.
+\end{aligned}$$</div>
+<p>Here <span class="math inline">$$e_j$$</span> is the <span class="math inline">$$j$$</span>th
+coordinate vector, and <span class="math inline">$$c_\alpha&gt;0$$</span> is chosen so that
+<span class="math inline">$$c_\alpha\int_{\mathbb R}(1-\cos(s\tau))|s|^{-1-\alpha}\,ds=|\tau|^\alpha$$</span>.
+To justify the formula, note first that <span class="math inline">$$v\in L^1$$</span> implies
+<span class="math inline">$$\widehat v$$</span> is bounded near the origin; finite energy controls
+<span class="math inline">$$\widehat v$$</span> away from the origin. Hence
+<span class="math inline">$$v\in L^2$$</span>, and likewise <span class="math inline">$$w\in L^2$$</span>.
+Plancherel and Tonelli, applied first with <span class="math inline">$$w=v$$</span>, give the formula
+for <span class="math inline">$$\mathcal E(v,v)$$</span>; polarization gives the displayed bilinear identity.</p>
+<p>We will prove the desired result by finding a minimizer in <span class="math inline">$$\mathcal C$$</span> of</p>
+<div class="math display">$$J(v)=\frac12\mathcal E(v,v)+\kappa\int_{\mathbb R^2}v-\int_{\mathbb R^2}fv.$$</div>
+
+<h3 id="obstacle-existence">Step 1: coercivity and existence of a minimizer</h3>
+<p>For every admissible <span class="math inline">$$v$$</span>, the fractional Sobolev inequality,
+followed by Hölder’s and Young’s inequalities, gives</p>
+<div class="math display">$$\begin{gathered}
+\|v\|_p\le C_\alpha\mathcal E(v,v)^{1/2},\\
+\begin{aligned}
+\left|\int fv\right|&amp;\le C_\alpha\|f\|_{p'}\mathcal E(v,v)^{1/2}\\
+&amp;\le\frac14\mathcal E(v,v)+C_\alpha^2\|f\|_{p'}^2,
+\end{aligned}
+\end{gathered}$$</div>
+<p>where <span class="math inline">$$p=4/(2-\alpha)&gt;2$$</span> and
+<span class="math inline">$$p'=4/(2+\alpha)$$</span>; see <a href="#ref-sobolev">[2]</a>.
+Consequently,</p>
+<div class="math display">$$\begin{aligned}
+J(v)&amp;\ge\tfrac14\mathcal E(v,v)+\kappa\|v\|_1-C_\alpha^2\|f\|_{p'}^2\\
+&amp;\ge-C_\alpha^2\|f\|_{p'}^2.
+\end{aligned}$$</div>
+<p>Thus <span class="math inline">$$\inf J&gt;-\infty$$</span>, and a minimizing sequence
+<span class="math inline">$$(u_n)$$</span> is bounded in energy and in
+<span class="math inline">$$L^1$$</span>. Interpolation also bounds its
+<span class="math inline">$$L^2$$</span> norm. Hence it is bounded in
+<span class="math inline">$$H^{\alpha/2}(\mathbb R^2)$$</span>. Weak compactness and local Rellich
+compactness yield a subsequence converging weakly in
+<span class="math inline">$$H^{\alpha/2}(\mathbb R^2)$$</span>, strongly in
+<span class="math inline">$$L^2_{\mathrm{loc}}$$</span>, and almost everywhere to
+<span class="math inline">$$u$$</span>. Since <span class="math inline">$$u_n\ge0$$</span>, we have
+<span class="math inline">$$u\ge0$$</span> almost everywhere. Fatou’s lemma gives
+<span class="math inline">$$\int u\le\liminf_n\int u_n$$</span> and thus
+<span class="math inline">$$u\in L^1$$</span>, and weak lower semicontinuity of the squared
+<span class="math inline">$$L^2$$</span> norm of
+<span class="math inline">$$(|\xi_1|^\alpha+|\xi_2|^\alpha)^{1/2}\widehat u_n$$</span> gives
+<span class="math inline">$$\mathcal E(u,u)\le\liminf_n\mathcal E(u_n,u_n)$$</span>.
+Finally, <span class="math inline">$$\int fu_n\to\int fu$$</span> by local
+<span class="math inline">$$L^2$$</span> convergence and compact support of
+<span class="math inline">$$f$$</span>. Thus
+<span class="math inline">$$J(u)\le\liminf_n J(u_n)=\inf J$$</span>, proving that
+<span class="math inline">$$u$$</span> is a minimizer.</p>
+
+<h3 id="obstacle-variation">Step 2: derivation of the first variational inequality</h3>
+<p>Fix <span class="math inline">$$v\in\mathcal C$$</span>, put
+<span class="math inline">$$w=v-u$$</span>, and set
+<span class="math inline">$$u_t=u+tw=(1-t)u+tv$$</span> for
+<span class="math inline">$$0\le t\le1$$</span>. Convexity of
+<span class="math inline">$$\mathcal C$$</span> makes <span class="math inline">$$u_t$$</span>
+admissible. Minimality gives <span class="math inline">$$J(u_t)-J(u)\ge0$$</span>.
+Therefore, for <span class="math inline">$$t&gt;0$$</span>,</p>
+<div class="math display">$$\begin{aligned}
+0\le\frac{J(u_t)-J(u)}{t}
+&amp;=\mathcal E(u,v-u)+\int_{\mathbb R^2}(\kappa-f)(v-u)\\
+&amp;\quad+\frac t2\mathcal E(v-u,v-u).
+\end{aligned}$$</div>
+<p>Letting <span class="math inline">$$t\downarrow0$$</span> proves the first variational inequality</p>
+<div class="math display" id="eq-variational-inequality">$$\mathcal E(u,v-u)+\int_{\mathbb R^2}(\kappa-f)(v-u)\ge0.\tag{1}$$</div>
+
+<h3 id="obstacle-estimate">Step 3: the Lewy–Stampacchia estimate</h3>
+<p>Taking <span class="math inline">$$v=u+\varphi$$</span> in
+<a href="#eq-variational-inequality">(1)</a>, for <span class="math inline">$$\varphi\ge0$$</span>, gives</p>
+<div class="math display">$$\langle A_\alpha u,\varphi\rangle=-\mathcal E(u,\varphi)\le\int(\kappa-f)\varphi.$$</div>
+<p>Thus, <span class="math inline">$$A_\alpha u\le\kappa-f$$</span> as a distribution. We now aim
+to obtain a lower bound. Fix <span class="math inline">$$t&gt;0$$</span> and put
+<span class="math inline">$$w=(t\varphi-u)_+$$</span>. Positive-part truncation preserves
+integrability and finite energy, so <span class="math inline">$$v=(u-t\varphi)_+=u-t\varphi+w$$</span>
+is admissible. Equation <a href="#eq-variational-inequality">(1)</a> gives</p>
+<div class="math display">$$\mathcal E(u,t\varphi-w)+\int(\kappa-f)(t\varphi-w)\le0.$$</div>
+<p>Write <span class="math inline">$$h=t\varphi-u$$</span>, so
+<span class="math inline">$$w=h_+$$</span>. Applying the elementary inequality
+<span class="math inline">$$(a-b)(a_+-b_+)\ge(a_+-b_+)^2$$</span> to the bilinear representation
+of <span class="math inline">$$\mathcal E$$</span> gives</p>
+<div class="math display">$$\begin{aligned}
+\mathcal E(t\varphi-u,w)
+&amp;=\frac{c_\alpha}{2}\sum_{j=1}^2\int_{\mathbb R^2}\int_{\mathbb R}\\
+&amp;\quad\frac{[h(x+se_j)-h(x)][h_+(x+se_j)-h_+(x)]}{|s|^{1+\alpha}}\,ds\,dx\\
+&amp;\ge\frac{c_\alpha}{2}\sum_{j=1}^2\int_{\mathbb R^2}\int_{\mathbb R}
+\frac{|h_+(x+se_j)-h_+(x)|^2}{|s|^{1+\alpha}}\,ds\,dx\\
+&amp;=\mathcal E(w,w).
+\end{aligned}$$</div>
+<p>Using this truncation inequality and Cauchy–Schwarz, we obtain</p>
+<div class="math display">$$\begin{aligned}
+\mathcal E(u,t\varphi-w)&amp;=t\mathcal E(u,\varphi)-\mathcal E(u,w)\\
+&amp;=t\mathcal E(u,\varphi)-t\mathcal E(\varphi,w)+\mathcal E(t\varphi-u,w)\\
+&amp;\ge t\mathcal E(u,\varphi)-t\mathcal E(\varphi,w)+\mathcal E(w,w)\\
+&amp;\ge t\mathcal E(u,\varphi)-t\mathcal E(\varphi,\varphi)^{1/2}\mathcal E(w,w)^{1/2}\\
+&amp;\quad+\mathcal E(w,w)\\
+&amp;=t\mathcal E(u,\varphi)-\frac{t^2}{4}\mathcal E(\varphi,\varphi)\\
+&amp;\quad+\left(\mathcal E(w,w)^{1/2}-\frac t2\mathcal E(\varphi,\varphi)^{1/2}\right)^2\\
+&amp;\ge t\mathcal E(u,\varphi)-\frac{t^2}{4}\mathcal E(\varphi,\varphi).
+\end{aligned}$$</div>
+<p>Since <span class="math inline">$$0\le t\varphi-w\le t\varphi$$</span> and
+<span class="math inline">$$f\ge0$$</span>, we also have</p>
+<div class="math display">$$\begin{aligned}
+\int(\kappa-f)(t\varphi-w)&amp;=\kappa\int(t\varphi-w)-\int f(t\varphi-w)\\
+&amp;\ge-\int f(t\varphi-w)\\
+&amp;\ge-t\int f\varphi.
+\end{aligned}$$</div>
+<p>Substituting these bounds into the variational inequality above gives</p>
+<div class="math display">$$\begin{aligned}
+0&amp;\ge\mathcal E(u,t\varphi-w)+\int(\kappa-f)(t\varphi-w)\\
+&amp;\ge t\mathcal E(u,\varphi)-\frac{t^2}{4}\mathcal E(\varphi,\varphi)-t\int f\varphi.
+\end{aligned}$$</div>
+<p>Dividing by <span class="math inline">$$t&gt;0$$</span> yields
+<span class="math inline">$$\mathcal E(u,\varphi)\le\int f\varphi+\frac t4\mathcal E(\varphi,\varphi)$$</span>.
+Letting <span class="math inline">$$t\downarrow0$$</span> therefore proves
+<span class="math inline">$$\mathcal E(u,\varphi)\le\int f\varphi$$</span>.
+Together, the two bounds prove</p>
+<div class="math display" id="eq-obstacle-bounds">$$-f\le A_\alpha u\le\kappa-f\quad\text{in }\mathcal D'(\mathbb R^2).\tag{2}$$</div>
+<p>Define <span class="math inline">$$\sigma=f+A_\alpha u$$</span>, which is a distribution.
+By <a href="#eq-obstacle-bounds">(2)</a>, it is positive and bounded above by the distribution
+induced by the constant function <span class="math inline">$$\kappa$$</span>.
+A positive distribution is a nonnegative Radon measure; the bound
+<span class="math inline">$$\sigma\le\kappa\,dx$$</span> then makes it absolutely continuous.
+Its Radon–Nikodym density, also denoted by <span class="math inline">$$\sigma$$</span>, satisfies
+<span class="math inline">$$0\le\sigma\le\kappa$$</span> almost everywhere. Thus
+<span class="math inline">$$A_\alpha u=\sigma-f$$</span> holds distributionally with a bounded
+function on the right.</p>
+
+<h3 id="obstacle-positivity">Step 4: equality on the positivity set</h3>
+<p>Taking <span class="math inline">$$v=0$$</span> and <span class="math inline">$$v=2u$$</span>
+in <a href="#eq-variational-inequality">(1)</a> gives opposite inequalities, hence</p>
+<div class="math display">$$\mathcal E(u,u)+\kappa\int u-\int fu=0.$$</div>
+<p>The identity <span class="math inline">$$A_\alpha u=\sigma-f$$</span> also gives
+<span class="math inline">$$\mathcal E(u,u)=\int u(f-\sigma)$$</span>.
+To justify this test, approximate <span class="math inline">$$u$$</span> by smooth compactly
+supported functions in both <span class="math inline">$$L^1$$</span> and the energy norm, using
+cutoffs and convolution; the pairings converge because <span class="math inline">$$f-\sigma$$</span>
+is bounded. Subtracting the identities yields</p>
+<div class="math display">$$\int u(\kappa-\sigma)=0.$$</div>
+<p>The integrand is nonnegative, so <span class="math inline">$$\sigma=\kappa$$</span> almost
+everywhere on <span class="math inline">$$\Omega=\{u&gt;0\}$$</span>.</p>
+
+<h3 id="obstacle-mass">Step 5: conservation of mass</h3>
+<p>Choose a smooth radial cutoff <span class="math inline">$$0\le\chi\le1$$</span>, equal to
+one on the unit ball, compactly supported, and nonincreasing in the radius. Then
+<span class="math inline">$$\chi_R(x)=\chi(x/R)\uparrow1$$</span>, and homogeneity gives
+<span class="math inline">$$\|A_\alpha\chi_R\|_\infty=R^{-\alpha}\|A_\alpha\chi\|_\infty$$</span>.
+Testing <span class="math inline">$$A_\alpha u=\sigma-f$$</span> against
+<span class="math inline">$$\chi_R$$</span> gives</p>
+<div class="math display">$$\begin{gathered}
+\int\sigma\chi_R=\int f\chi_R+\int uA_\alpha\chi_R,\\
+\left|\int uA_\alpha\chi_R\right|\le R^{-\alpha}\|u\|_1\|A_\alpha\chi\|_\infty\longrightarrow0.
+\end{gathered}$$</div>
+<p>Monotone convergence, using <span class="math inline">$$\sigma\ge0$$</span>, proves both its
+integrability and <span class="math inline">$$\int\sigma=\int f$$</span>.
+Finally, <a href="#obstacle-positivity">Step 4</a> and conservation of mass yield the area estimate:</p>
+<div class="math display">$$\kappa|\Omega|=\int_\Omega\sigma\le\int\sigma=\|f\|_1.$$</div>
+<p class="proof-end">□</p>
+</div>
+
+<div class="article-theorem" id="lemma-kernel-transfer">
+<p><strong>Lemma 3 (Kernel transfer from the obstacle).</strong> Under the hypotheses of <a href="#thm-kernel-comparison">Theorem 1</a>, for every nonnegative <span class="math inline">$$f\in C_c^\infty(\mathbb{R}^2)$$</span> and <span class="math inline">$$\lambda&gt;0$$</span>,</p>
+<div class="math display">$$
+\left|\left\{x:\sup_{s&gt;0}(K_s*f)(x)&gt;\lambda\right\}\right|
+\le \frac{\int_{\mathbb{R}^2}K}{\lambda}\|f\|_1.
+$$</div>
+</div>
+
+<div class="proof">
+<p><em>Proof.</em> Choose <span class="math inline">$$\kappa=\lambda/\int_{\mathbb{R}^2}K$$</span>. The denominator is positive since <span class="math inline">$$K\ge\mathbf{1}_D$$</span>. <a href="#lemma-partial-balayage">Lemma 2</a> supplies <span class="math inline">$$u,\sigma$$</span> and <span class="math inline">$$\Omega=\{u&gt;0\}$$</span> with</p>
+<div class="math display">$$
+A_\alpha u=\sigma-f,\qquad 0\le\sigma\le\kappa,\qquad
+|\Omega|\le\frac{\|f\|_1}{\kappa}.
+$$</div>
+<p>We will prove that <span class="math inline">$$K_s*f\le\lambda$$</span> almost everywhere outside <span class="math inline">$$\Omega$$</span> for every scale, and then bound the superlevel set by <span class="math inline">$$|\Omega|$$</span>.</p>
+
+<h3 id="transfer-minimum">Step 1: the positive minimum principle for <span class="math inline">$$B$$</span></h3>
+<p>Define the operator <span class="math inline">$$B$$</span> on smooth compactly supported functions by <span class="math inline">$$B\varphi=K*(A_\alpha\varphi)$$</span>. Its distributional convolution kernel is <span class="math inline">$$A_\alpha K$$</span>. We first prove that <span class="math inline">$$B$$</span> satisfies the <em>positive-minimum principle</em>. That is, we assume <span class="math inline">$$\varphi\in C_c^\infty(\mathbb{R}^2)$$</span>, <span class="math inline">$$\varphi\ge0$$</span>, and <span class="math inline">$$\varphi(x_0)=0$$</span>, and we want to prove that <span class="math inline">$$B\varphi(x_0)\ge0$$</span>. Since convolution and the Fourier multiplier commute with translations, we may assume without loss of generality that <span class="math inline">$$x_0=0$$</span>. Evenness of <span class="math inline">$$K$$</span> gives <span class="math inline">$$B\varphi(0)=\langle A_\alpha K,\varphi\rangle$$</span>. The assumed sign of <span class="math inline">$$A_\alpha K$$</span> applies only to tests supported away from zero. To remove this restriction, choose <span class="math inline">$$\eta\in C_c^\infty(\mathbb{R}^2)$$</span> with <span class="math inline">$$0\le\eta\le1$$</span> and <span class="math inline">$$\eta=1$$</span> near zero, and put <span class="math inline">$$g_\varepsilon(x)=\eta(x/\varepsilon)\varphi(x)$$</span>. Since zero is a minimum of <span class="math inline">$$\varphi$$</span>, we have <span class="math inline">$$\nabla\varphi(0)=0$$</span>. Taylor’s theorem gives <span class="math inline">$$|\varphi(x)|\le C|x|^2$$</span> and <span class="math inline">$$|\nabla\varphi(x)|\le C|x|$$</span> near zero. The product rule therefore yields</p>
+<div class="math display">$$
+\|g_\varepsilon\|_\infty\le C\varepsilon^2,\qquad
+\|D^2g_\varepsilon\|_\infty\le C.
+$$</div>
+<p><span class="math inline">$$A_\alpha g_\varepsilon$$</span> has the following integral representation:</p>
+<div class="math display">$$
+A_\alpha g_\varepsilon(x)=\frac{c_\alpha}{2}\sum_{j=1}^2
+\int_{\mathbb{R}}\frac{g_\varepsilon(x+te_j)+g_\varepsilon(x-te_j)-2g_\varepsilon(x)}{|t|^{1+\alpha}}\,dt,
+$$</div>
+<p>where <span class="math inline">$$c_\alpha$$</span> is a positive constant. The numerator is bounded by <span class="math inline">$$Ct^2$$</span> for <span class="math inline">$$|t|\le\varepsilon$$</span>, using the second-derivative bound, and by <span class="math inline">$$C\varepsilon^2$$</span> for <span class="math inline">$$|t|&gt;\varepsilon$$</span>, using the bound on <span class="math inline">$$g_\varepsilon$$</span>. Hence</p>
+<div class="math display">$$
+\begin{aligned}
+\|A_\alpha g_\varepsilon\|_\infty
+&amp;\le C\left(\int_0^\varepsilon t^{1-\alpha}\,dt+\varepsilon^2\int_\varepsilon^\infty t^{-1-\alpha}\,dt\right)\\
+&amp;\le C_\alpha\varepsilon^{2-\alpha}\longrightarrow0.
+\end{aligned}
+$$</div>
+<p>Both integrals are finite because <span class="math inline">$$0&lt;\alpha&lt;2$$</span>. Since <span class="math inline">$$K\in L^1$$</span>,</p>
+<div class="math display">$$
+|\langle A_\alpha K,g_\varepsilon\rangle|
+=\left|\int KA_\alpha g_\varepsilon\right|
+\le\left(\int_{\mathbb{R}^2}K\right)\|A_\alpha g_\varepsilon\|_\infty\longrightarrow0.
+$$</div>
+<p>The function <span class="math inline">$$\varphi-g_\varepsilon=(1-\eta(\cdot/\varepsilon))\varphi$$</span> is nonnegative and vanishes near zero. Therefore <span class="math inline">$$\langle A_\alpha K,\varphi-g_\varepsilon\rangle\ge0$$</span>, and passage to the limit proves <span class="math inline">$$B\varphi(0)\ge0$$</span>.</p>
+
+<h3 id="transfer-representation">Step 2: application of the Courrège representation theorem</h3>
+<p>We now show that <span class="math inline">$$B$$</span> also satisfies the <em>positive-maximum principle</em>. This means that if <span class="math inline">$$\varphi\in C_c^\infty(\mathbb{R}^2)$$</span> attains a nonnegative global maximum at <span class="math inline">$$x$$</span>, then <span class="math inline">$$B\varphi(x)\le0$$</span>. Let this maximum be <span class="math inline">$$m$$</span>. Choose a smooth cutoff <span class="math inline">$$0\le\chi_R\le1$$</span> that is equal to one on a ball containing both <span class="math inline">$$\operatorname{supp}\varphi$$</span> and <span class="math inline">$$x$$</span>. Then</p>
+<div class="math display">$$
+m\chi_R-\varphi\ge0,\qquad(m\chi_R-\varphi)(x)=0.
+$$</div>
+<p>The positive-minimum principle proved in <a href="#transfer-minimum">Step 1</a>, applied at the point <span class="math inline">$$x$$</span>, gives <span class="math inline">$$B\varphi(x)\le mB\chi_R(x)$$</span>. Writing <span class="math inline">$$\chi_R(y)=\chi(y/R)$$</span>, homogeneity of <span class="math inline">$$A_\alpha$$</span> gives</p>
+<div class="math display">$$
+\begin{aligned}
+\|B\chi_R\|_\infty
+&amp;=\|K*A_\alpha\chi_R\|_\infty
+\le\|K\|_1\|A_\alpha\chi_R\|_\infty\\
+&amp;=\left(\int_{\mathbb{R}^2}K\right)R^{-\alpha}\|A_\alpha\chi\|_\infty\longrightarrow0.
+\end{aligned}
+$$</div>
+<p>Letting <span class="math inline">$$R\to\infty$$</span> proves <span class="math inline">$$B\varphi(x)\le0$$</span>.</p>
+<p>Since <span class="math inline">$$B$$</span> is translation invariant and satisfies the positive-maximum principle, the Courrège representation theorem applies <a href="#ref-courrege">[3]</a>:</p>
+<div class="math display">$$
+\begin{aligned}
+B\varphi(x)&amp;=-c\varphi(x)+b\cdot\nabla\varphi(x)+\operatorname{tr}(QD^2\varphi(x))\\
+&amp;\quad+\int_{\mathbb{R}^2\setminus\{0\}}
+\bigl(\varphi(x+z)-\varphi(x)-\mathbf{1}_{\{|z|&lt;1\}}z\cdot\nabla\varphi(x)\bigr)\,\nu(dz),
+\end{aligned}
+$$</div>
+<p>where <span class="math inline">$$Q$$</span> is positive semidefinite, <span class="math inline">$$c\ge0$$</span>, and <span class="math inline">$$\nu$$</span> is a nonnegative measure satisfying</p>
+<div class="math display">$$
+\int_{\mathbb{R}^2\setminus\{0\}}\min(1,|z|^2)\,\nu(dz)&lt;\infty.
+$$</div>
+<p>We now remove the terms in the representation one at a time.</p>
+<ul>
+<li>
+<p><em>Zeroth-order term.</em> Use the cutoffs <span class="math inline">$$\chi_R(x)=\chi(x/R)$$</span>. They equal one near the origin, so <span class="math inline">$$\chi_R(0)=1$$</span>, <span class="math inline">$$\nabla\chi_R(0)=0$$</span>, and <span class="math inline">$$D^2\chi_R(0)=0$$</span>. Both derivative terms vanish at <span class="math inline">$$x=0$$</span>, without using any symmetry of <span class="math inline">$$\nu$$</span>. The representation there reads</p>
+<div class="math display">$$
+B\chi_R(0)=-c+\int_{\mathbb{R}^2\setminus\{0\}}(\chi_R(z)-1)\,\nu(dz).
+$$</div>
+<p>The integral vanishes on <span class="math inline">$$|z|\le R$$</span> and its absolute value is at most <span class="math inline">$$\nu(\{|z|&gt;R\})$$</span>, which tends to zero because <span class="math inline">$$\nu$$</span> has finite mass outside the unit ball. The estimate <span class="math inline">$$\|B\chi_R\|_\infty\to0$$</span> proved above now gives <span class="math inline">$$c=0$$</span>.</p>
+</li>
+<li>
+<p><em>First-order term and symmetry of the measure.</em> Let <span class="math inline">$$(R\varphi)(x)=\varphi(-x)$$</span>. Evenness of <span class="math inline">$$K$$</span> and of <span class="math inline">$$A_\alpha$$</span> gives <span class="math inline">$$RBR=B$$</span>. Reflecting the displayed Courrège formula replaces <span class="math inline">$$b$$</span> by <span class="math inline">$$-b$$</span> and <span class="math inline">$$\nu$$</span> by its reflected measure <span class="math inline">$$\nu^-$$</span>, defined by <span class="math inline">$$\nu^-(E)=\nu(-E)$$</span> for every Borel set <span class="math inline">$$E$$</span>. Since <span class="math inline">$$B=RBR$$</span>, we may average these two formulas. Their first-order terms <span class="math inline">$$b\cdot\nabla\varphi$$</span> and <span class="math inline">$$-b\cdot\nabla\varphi$$</span> cancel. The measure becomes <span class="math inline">$$(\nu+\nu^-)/2$$</span>; we continue to denote it by <span class="math inline">$$\nu$$</span>. Thus <span class="math inline">$$\nu$$</span> is <em>symmetric</em>: <span class="math inline">$$\nu(E)=\nu(-E)$$</span> for every Borel set <span class="math inline">$$E$$</span>.</p>
+</li>
+<li>
+<p><em>Second-order term.</em> The multiplier of <span class="math inline">$$-B$$</span> is <span class="math inline">$$(|\xi_1|^\alpha+|\xi_2|^\alpha)\widehat K(\xi)$$</span>, whose absolute value is at most <span class="math inline">$$(|\xi_1|^\alpha+|\xi_2|^\alpha)\left(\int_{\mathbb{R}^2}K\right)$$</span>. The representation, with <span class="math inline">$$c=0$$</span> and symmetric <span class="math inline">$$\nu$$</span>, gives</p>
+<div class="math display">$$
+\begin{aligned}
+\xi^TQ\xi+\int_{\mathbb{R}^2\setminus\{0\}}(1-\cos(\xi\cdot z))\,\nu(dz)
+&amp;=(|\xi_1|^\alpha+|\xi_2|^\alpha)\widehat K(\xi).
+\end{aligned}
+$$</div>
+<p>Both terms on the left are nonnegative. If <span class="math inline">$$Q\ne0$$</span>, choose a unit vector <span class="math inline">$$e$$</span> with <span class="math inline">$$e^TQe&gt;0$$</span> and set <span class="math inline">$$\xi=re$$</span>. We would obtain</p>
+<div class="math display">$$
+r^2e^TQe\le\left(\int_{\mathbb{R}^2}K\right)r^\alpha(|e_1|^\alpha+|e_2|^\alpha),
+$$</div>
+<p>which is impossible as <span class="math inline">$$r\to\infty$$</span> because <span class="math inline">$$\alpha&lt;2$$</span>. Hence <span class="math inline">$$Q=0$$</span>.</p>
+</li>
+<li>
+<p><em>Cancellation of the gradient term inside the integral.</em> Fix <span class="math inline">$$x$$</span>. Since <span class="math inline">$$\nu(E)=\nu(-E)$$</span>, the substitution <span class="math inline">$$z\mapsto-z$$</span> in the integral gives</p>
+<div class="math display">$$
+\begin{aligned}
+B\varphi(x)&amp;=\int\bigl[\varphi(x+z)-\varphi(x)-\mathbf{1}_{\{|z|&lt;1\}}z\cdot\nabla\varphi(x)\bigr]\,\nu(dz)\\
+&amp;=\int\bigl[\varphi(x-z)-\varphi(x)+\mathbf{1}_{\{|z|&lt;1\}}z\cdot\nabla\varphi(x)\bigr]\,\nu(dz).
+\end{aligned}
+$$</div>
+<p>Averaging these two equal expressions cancels the gradient terms inside the integrand and yields</p>
+<div class="math display">$$
+B\varphi(x)=\frac12\int_{\mathbb{R}^2\setminus\{0\}}
+\bigl(\varphi(x+z)+\varphi(x-z)-2\varphi(x)\bigr)\,\nu(dz).
+$$</div>
+</li>
+</ul>
+<p>For <span class="math inline">$$v,w\in C_c^\infty(\mathbb{R}^2)$$</span>, define <span class="math inline">$$\mathcal E_B(v,w):=-\int_{\mathbb{R}^2}vBw$$</span>. Insert the preceding formula for <span class="math inline">$$Bw$$</span> and use the change of variables formula. This gives</p>
+<div class="math display">$$
+\mathcal E_B(v,w)=\frac12\int_{\mathbb{R}^2\setminus\{0\}}\int_{\mathbb{R}^2}
+[v(x+z)-v(x)][w(x+z)-w(x)]\,dx\,\nu(dz).
+$$</div>
+<p>This formula also shows <span class="math inline">$$\mathcal E_B(v,w)=\mathcal E_B(w,v)$$</span>.</p>
+<p>As in <a href="#lemma-partial-balayage">Lemma 2</a>, apply <span class="math inline">$$(a-b)(a_+-b_+)\ge(a_+-b_+)^2$$</span> inside this integral to obtain</p>
+<div class="math display">$$
+\mathcal E_B(v,v_+)\ge\mathcal E_B(v_+,v_+).
+$$</div>
+<p>It remains to check that the potential <span class="math inline">$$u$$</span> belongs to this energy domain. Plancherel’s identity and the Fourier multiplier above give</p>
+<div class="math display">$$
+\mathcal E_B(v,v)=\int_{\mathbb{R}^2}(|\xi_1|^\alpha+|\xi_2|^\alpha)\widehat K(\xi)|\widehat v(\xi)|^2\,d\xi.
+$$</div>
+<p>The Courrège representation makes this integral nonnegative. Moreover, <span class="math inline">$$\widehat K(\xi)\le\int_{\mathbb{R}^2}K$$</span>. Therefore</p>
+<div class="math display">$$
+0\le\mathcal E_B(v,v)\le\left(\int_{\mathbb{R}^2}K\right)\mathcal E(v,v).
+$$</div>
+<p><a href="#lemma-partial-balayage">Lemma 2</a> gives <span class="math inline">$$\mathcal E(u,u)&lt;\infty$$</span>, so <span class="math inline">$$u$$</span> has finite <span class="math inline">$$\mathcal E_B$$</span> energy. This fact is needed in <a href="#transfer-obstacle">Step 3</a>: it ensures that the truncation <span class="math inline">$$(\varepsilon\varphi-u)_+$$</span> also has finite <span class="math inline">$$\mathcal E_B$$</span> energy and that every pairing in the truncation argument is well defined.</p>
+
+<h3 id="transfer-obstacle">Step 3: bound the convolution outside <span class="math inline">$$\Omega$$</span></h3>
+<p>Convolving the obstacle equation with <span class="math inline">$$K$$</span> gives</p>
+<div class="math display">$$
+Bu=K*\sigma-K*f
+$$</div>
+<p>in distributions. The right-hand side is bounded because <span class="math inline">$$K\in L^1$$</span> and <span class="math inline">$$\sigma,f\in L^\infty$$</span>, so <span class="math inline">$$Bu$$</span> is represented by a bounded function. We show that this function is nonnegative almost everywhere on <span class="math inline">$$\Omega^c=\{u=0\}$$</span>.</p>
+<p>Fix a nonnegative smooth compactly supported <span class="math inline">$$\varphi$$</span> and put <span class="math inline">$$w=(\varepsilon\varphi-u)_+$$</span>, where <span class="math inline">$$\varepsilon&gt;0$$</span>. The truncation inequality gives</p>
+<div class="math display">$$
+\begin{aligned}
+\mathcal E_B(u,w)-\varepsilon\mathcal E_B(\varphi,w)
+&amp;=\mathcal E_B(u-\varepsilon\varphi,w)\\
+&amp;\le-\mathcal E_B(w,w)\le0.
+\end{aligned}
+$$</div>
+<p>Dividing this truncation inequality by <span class="math inline">$$\varepsilon$$</span> now gives</p>
+<div class="math display">$$
+\begin{aligned}
+-\int(Bu)\frac{w}{\varepsilon}
+&amp;=\frac1\varepsilon\mathcal E_B(u,w)
+\le\mathcal E_B(\varphi,w)\\
+&amp;=-\int(B\varphi)w
+\le\|B\varphi\|_\infty\int w\\
+&amp;\le\varepsilon\|B\varphi\|_\infty\int\varphi\longrightarrow0.
+\end{aligned}
+$$</div>
+<p>Moreover,</p>
+<div class="math display">$$
+0\le\frac{w}{\varepsilon}\le\varphi,\qquad
+\frac{w}{\varepsilon}\longrightarrow\varphi\mathbf{1}_{\Omega^c}\quad\text{a.e.}
+$$</div>
+<p>Dominated convergence therefore gives <span class="math inline">$$\int_{\Omega^c}(Bu)\varphi\ge0$$</span>. Since this holds for every nonnegative test function, <span class="math inline">$$Bu\ge0$$</span> almost everywhere on <span class="math inline">$$\Omega^c$$</span>. On that set,</p>
+<div class="math display">$$
+K*f=K*\sigma-Bu\le K*\sigma\le\kappa\int_{\mathbb{R}^2}K=\lambda.
+$$</div>
+
+<h3 id="transfer-scales">Step 4: take the supremum over scales</h3>
+<p>Every <span class="math inline">$$K_s$$</span> is even and nonnegative, has integral <span class="math inline">$$\int_{\mathbb{R}^2}K$$</span>, and satisfies <span class="math inline">$$A_\alpha K_s\ge0$$</span> away from zero by homogeneity. Steps 1–3 therefore apply to <span class="math inline">$$K_s$$</span> with the same <span class="math inline">$$u,\sigma,\Omega$$</span>, giving <span class="math inline">$$K_s*f\le\lambda$$</span> almost everywhere on <span class="math inline">$$\Omega^c$$</span> for each fixed <span class="math inline">$$s&gt;0$$</span>.</p>
+<p>For each positive rational scale <span class="math inline">$$q$$</span>, the preceding argument gives <span class="math inline">$$(K_q*f)(x)\le\lambda$$</span> for almost every <span class="math inline">$$x\in\Omega^c$$</span>. For each positive rational <span class="math inline">$$q$$</span>, we denote its corresponding exceptional null set by <span class="math inline">$$N_q$$</span>. Let <span class="math inline">$$N:=\bigcup_{q\in\mathbb{Q},q&gt;0}N_q$$</span>. On <span class="math inline">$$\Omega^c\setminus N$$</span>, the inequality holds for every rational <span class="math inline">$$q&gt;0$$</span>. For each <span class="math inline">$$x$$</span>, <span class="math inline">$$(K_s*f)(x)$$</span> is continuous in <span class="math inline">$$s&gt;0$$</span>, which can be proved by dominated convergence.</p>
+<p>Fix <span class="math inline">$$x\in\Omega^c\cap N^c$$</span>. Approximating any real <span class="math inline">$$s&gt;0$$</span> by positive rational scales and using continuity gives</p>
+<div class="math display">$$
+\sup_{s&gt;0}(K_s*f)(x)\le\lambda.
+$$</div>
+<p>Thus the superlevel set of the supremum is contained in <span class="math inline">$$\Omega\cup N$$</span>. Consequently,</p>
+<div class="math display">$$
+\begin{aligned}
+\left|\left\{x:\sup_{s&gt;0}(K_s*f)(x)&gt;\lambda\right\}\right|
+&amp;\le|\Omega\cup N|=|\Omega|\\
+&amp;\le\frac{\|f\|_1}{\kappa}
+=\frac{\int_{\mathbb{R}^2}K}{\lambda}\|f\|_1.
+\end{aligned}
+$$</div>
+<p class="proof-end" aria-label="End of proof">&#9633;</p>
+</div>
+
+</section>
+
+<section class="level1" id="candidate-kernels">
+<h2><span class="header-section-number">3</span> Optimization formulation and candidate kernels</h2>
+<div class="article-theorem" id="thm-strict-bound">
+<p><strong>Theorem 2.</strong> <span class="math inline">$$c_2&lt;4$$</span>.</p>
+</div>
+<p>By <a href="#thm-kernel-comparison">Theorem 1</a>, to prove
+<a href="#thm-strict-bound">Theorem 2</a> it is enough to consider</p>
+<div class="math display">$$C_\alpha=\inf\left\{\frac12\int_{\mathbb R^2}K:
+\begin{gathered}
+K\in L^1(\mathbb R^2)\text{ is even},\quad K\ge\mathbf1_D,\\
+A_\alpha K\ge0\text{ on }\mathbb R^2\setminus\{0\}
+\end{gathered}\right\},$$</div>
+<p>and to prove that <span class="math inline">$$C_\alpha&lt;4$$</span> for some
+<span class="math inline">$$\alpha\in(0,2)$$</span>. There are two natural approaches.
+The first is to choose a specific value of <span class="math inline">$$\alpha$$</span>,
+construct a corresponding kernel <span class="math inline">$$K$$</span>, and compute
+<span class="math inline">$$\frac12\int_{\mathbb R^2}K$$</span>.
+This is the approach taken by the AI agents, which produced the following two concrete examples:</p>
+<ul>
+<li id="candidate-verified">
+<p>Let <span class="math inline">$$\alpha=1$$</span>,
+<span class="math inline">$$r=|u|+|v|$$</span>, <span class="math inline">$$R=3797/2000$$</span>,
+and <span class="math inline">$$\varepsilon=159411/200000$$</span>. Define</p>
+<div class="math display">$$K(u,v)=\frac{(R/r-1)_+}{R-1}-\varepsilon(1-r)_+^2,\qquad r&gt;0.$$</div>
+<p>The first candidate has been verified in Lean:</p>
+<div class="math display">$$\frac12\int_{\mathbb R^2}K
+=\frac{R^2}{R-1}-\frac{\varepsilon}{6}&lt;3.878624.$$</div>
+<p>Consequently, <span class="math inline">$$c_2&lt;3.878624$$</span>.
+The Lean code is available on <a href="https://github.com/CoolRmal/centered-maximal-constant">GitHub</a>,
+and the certificate is registered on <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=2">Palomar</a>.</p>
+</li>
+<li id="candidate-unverified">
+<p>Let <span class="math inline">$$\alpha=6/5$$</span>,
+<span class="math inline">$$R=7/4$$</span>, and <span class="math inline">$$r=|u|+|v|$$</span>.
+Define the cubic cardinal spline</p>
+<div class="math display">$$\beta(x)=\frac16\sum_{q=0}^4(-1)^q\binom4q(x+2-q)_+^3.$$</div>
+<p>The kernel is</p>
+<div class="math display">$$\begin{gathered}
+K(u,v)=a(r^{-6/5}-R^{-6/5})_+
++\sum_{i,j}C_{ij}\,\beta(16u-i)\beta(16v-j),\\
+a=\frac{11248245541992991}{6250000000000000}.
+\end{gathered}$$</div>
+<p>The AI-assisted computation gives</p>
+<div class="math display">$$\begin{aligned}
+\frac12\int_{\mathbb R^2}K
+&amp;=\frac{33744736625978973}{12500000000000000}\left(\frac74\right)^{4/5}
+-\frac{3114374068343977777}{5120000000000000000}\\
+&amp;&lt;3.615749.
+\end{aligned}$$</div>
+<p>This result has not been verified in Lean because the computation is too large:
+checking it would require excessive CPU time in the Lean kernel.</p>
+</li>
+</ul>
+<p>The second, more ambitious approach is to determine the exact theoretical infimum
+<span class="math inline">$$\inf_{0&lt;\alpha&lt;2}C_\alpha$$</span>.
+The AI-assisted search has not yet made substantial progress on this harder problem.</p>
+</section>
+
+<section id="references">
+<h2>References</h2>
+<ol class="article-references">
+  <li id="ref-spector-stockdale"><p>D. Spector and C. B. Stockdale,
+  <em>The weak-type <span class="math inline">$$(1,1)$$</span> bound for the Hardy–Littlewood
+  maximal function is <span class="math inline">$$O(\sqrt n\log n)$$</span>,</em>
+  <a href="https://arxiv.org/abs/2609.05377">arXiv:2609.05377</a> (2026).</p></li>
+  <li id="ref-sobolev"><p>E. Di Nezza, G. Palatucci, and E. Valdinoci,
+  <em>Hitchhiker’s guide to the fractional Sobolev spaces,</em>
+  <em>Bull. Sci. Math.</em> <strong>136</strong> (2012), 521–573.
+  <a href="https://arxiv.org/abs/1104.4345">arXiv:1104.4345</a>.</p></li>
+  <li id="ref-courrege"><p>P. Courrège,
+  <em>Générateur infinitésimal d’un semi-groupe de convolution sur
+  <span class="math inline">$$\mathbb R^n$$</span>, et formule de Lévy-Khinchine,</em>
+  <em>Bull. Sci. Math.</em> (2) <strong>88</strong> (1964), 3–30.</p></li>
+  <li id="ref-tao"><p>T. Tao,
+  <a href="https://terrytao.wordpress.com/2010/10/16/245a-notes-5-differentiation-theorems/">245A, Notes 5: Differentiation theorems</a>,
+  2010.</p></li>
+</ol>
+</section>
+{% endraw %}

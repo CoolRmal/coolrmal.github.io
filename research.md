@@ -114,7 +114,7 @@ nav: research
   </p>
 </div>
 
-<div class="repo-card">
+<div class="repo-card" id="centered-maximal-constant">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/centered-maximal-constant" target="_blank" rel="noopener noreferrer">centered-maximal-constant</a></h3>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-19-000002&amp;version=3" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-19-000002</a></p>
   <p class="repo-description">
@@ -125,9 +125,8 @@ nav: research
     For Euclidean balls, also proves <span class="math inline">$$c_2^{\mathrm{ball}}\le e$$</span> and <span class="math inline">$$c_n^{\mathrm{ball}}\le(n/2)^{n/(n-2)}$$</span> for <span class="math inline">$$n\ge3$$</span>.
   </p>
   <p class="article-links">
-    <span class="badge">expository note</span>
-    <a href="{{ '/assets/papers/c2-less-than-4.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">c<sub>2</sub> &lt; 4 (PDF)</a>
-    <br><span class="entry-meta">Yongxi Lin</span>
+    <a href="{{ '/articles/c2-less-than-4/' | relative_url }}">c<sub>2</sub> &lt; 4</a>
+    &middot; <a href="{{ '/assets/papers/c2-less-than-4.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
   </p>
 </div>
 
