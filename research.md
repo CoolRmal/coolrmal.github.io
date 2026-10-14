@@ -50,6 +50,7 @@ nav: research
     Proves Hausdorff nullity for logarithmic gauges at every finite iteration depth and the local
     upper parabolic box-dimension bound 25/23.
   </p>
+  <p class="entry-meta">expository article &middot; <a href="{{ '/articles/logarithmic-refinement-ckn/' | relative_url }}">A logarithmic refinement of CKN partial regularity</a> &middot; <a href="{{ '/assets/papers/logarithmic-refinement-ckn-original.pdf' | relative_url }}">original PDF</a></p>
 </div>
 
 <div class="repo-card">
