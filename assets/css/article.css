@@ -31,6 +31,12 @@
 .article-references { padding-left: 1.6rem; }
 .article-references li { margin: 1rem 0; padding-left: 0.4rem; }
 .article-references li::marker { content: '[' counter(list-item) '] '; }
+.article-figure { margin: 2rem 0; text-align: center; }
+.post-content .article-figure img { margin: 0 auto 1rem; }
+.article-figure figcaption { font-size: 0.95rem; }
+.article-note { border-top: 1px solid var(--divider); font-size: 0.9rem; margin-top: 1.5rem; }
+.article-bibliography dt { float: left; clear: left; width: 5rem; }
+.article-bibliography dd { margin: 0 0 1.25rem 5.5rem; overflow-wrap: anywhere; }
 @media (max-width: 700px) {
   .article-toc { padding: 1rem; }
   .article-toc > ol { columns: 1; }
