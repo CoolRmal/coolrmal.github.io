@@ -154,7 +154,7 @@ nav: research
   </p>
 </div>
 
-<div class="repo-card">
+<div class="repo-card" id="besicovitchs-1-2">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/Besicovitchs-1-2" target="_blank" rel="noopener noreferrer">Besicovitchs-1-2</a></h3>
   <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-09-02-000011&amp;version=2" target="_blank" rel="noopener noreferrer">PALOMAR-2026-09-02-000011</a></p>
   <p class="repo-description">
@@ -166,9 +166,8 @@ nav: research
     Proves <span class="math inline">$$\sigma_1(H)\le 0.6934$$</span> for every real Hilbert space <span class="math inline">$$H$$</span>, and <span class="math inline">$$\tfrac12\le\sigma_1(\mathbb{R}^2)$$</span>.
   </p>
   <p class="article-links">
-    <span class="badge">progress report</span>
-    <a href="{{ '/assets/papers/besicovitch-1-2-progress-report.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">New Progress on Besicovitch&rsquo;s 1/2 Problem (PDF)</a>
-    <br><span class="entry-meta">Yongxi Lin</span>
+    <a href="{{ '/articles/besicovitch-1-2-progress-report/' | relative_url }}">New Progress on Besicovitch&rsquo;s 1/2 Problem</a>
+    &middot; <a href="{{ '/assets/papers/besicovitch-1-2-progress-report.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
   </p>
 </div>
 
