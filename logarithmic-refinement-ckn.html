@@ -51,11 +51,11 @@ P_r(z)&amp;=B_r(x)\times(t-r^2,t).
  |u|^2(\partial_t\phi+\Delta\phi)
  +(|u|^2+2p)u\cdot\nabla\phi\,dx\,dt.
 \end{aligned}$$</span></p>
-<p>Thus the kinetic energy and viscous dissipation inside a region are controlled by transport through its boundary. For a smooth solution this follows by multiplying the equation by <span class="math inline">$$2u\phi$$</span> and integrating by parts. For a weak solution the inequality is an additional requirement: the word <em>suitable</em> includes precisely this local control. No boundary condition on the lateral boundary of our cylinder is needed, because all test functions are supported in its interior. If one starts with a locally suitable solution, the displayed integrability is required only on compactly contained cylinders; the proof below uses exactly such cylinders.</p>
+<p>Thus the kinetic energy and viscous dissipation inside a region are controlled by transport through its boundary. For a smooth solution this follows by multiplying the equation by <span class="math inline">$$2u\phi$$</span> and integrating by parts. For a weak solution the inequality is an additional requirement: the word <em>suitable</em> includes precisely this local control. No boundary condition on the lateral boundary of our cylinder is needed, because all test functions are supported in its interior.</p>
 <p>A point is regular if the velocity is essentially bounded in some open spacetime neighborhood of that point. The singular set <span class="math inline">$$S$$</span> consists of the remaining interior points. The problem is to show that this set has zero Hausdorff measure for the gauges in our theorems.</p>
 <h3>Scale-invariant quantities</h3>
-<p>For the proof, first restrict attention to <span class="math inline">$$L=\overline{C_1(0)}$$</span>, and put <span class="math inline">$$U=C_2(0)=B_2(0)\times(-4,4)$$</span>.</p>
-<p>Every cylinder centered in <span class="math inline">$$L$$</span> with radius at most <span class="math inline">$$1/2$$</span> lies in <span class="math inline">$$U$$</span>. Throughout, constants denoted by <span class="math inline">$$C$$</span> can change from line to line. They depend only on the dimension and on fixed choices of cutoffs, unless another dependence is indicated. For cylinders contained in <span class="math inline">$$U$$</span>, define</p>
+<p>For the proof, first restrict attention to <span class="math inline">$$L=\overline{C_1(0)}$$</span>. This compact set lies in the interior of <span class="math inline">$$C_4(0)$$</span>, so there is room around every point of <span class="math inline">$$L$$</span> for the cylinders and cutoffs used below.</p>
+<p>In particular, every cylinder centered in <span class="math inline">$$L$$</span> with radius at most <span class="math inline">$$1/2$$</span> is compactly contained in <span class="math inline">$$C_4(0)$$</span>. Throughout, constants denoted by <span class="math inline">$$C$$</span> can change from line to line. They depend only on the dimension and on fixed choices of cutoffs, unless another dependence is indicated. For cylinders contained in <span class="math inline">$$C_4(0)$$</span>, define</p>
 <p><span class="math display">$$\begin{aligned}
 G(r,z)&amp;=r^{-2}\int_{C_r(z)}\bigl(|u|^3+|p|^{3/2}\bigr)\,dy\,ds,\\
 A(r,z)&amp;=r^{-1}\operatorname*{ess\,sup}_{|s-t|&lt;r^2}
@@ -67,17 +67,18 @@ e(r,z)&amp;=r^{-3/2}\int_{t-r^2}^{t+r^2}
 <p>The quantity <span class="math inline">$$G$$</span> measures cubic velocity and pressure activity. The quantities <span class="math inline">$$A$$</span> and <span class="math inline">$$E$$</span> are scaled energy and dissipation. The mixed quantity <span class="math inline">$$e$$</span> is chosen to fit a specific Sobolev estimate in Lemma 3. Each is unchanged by the Navier–Stokes rescaling</p>
 <p><span class="math display">$$u_r(y,s)=r\,u(x+ry,t+r^2s),\qquad
 p_r(y,s)=r^2p(x+ry,t+r^2s).$$</span></p>
-<p>All four quantities are finite. In particular, the energy spaces imply local integrability of the cubic velocity: interpolation between spatial <span class="math inline">$$L^2$$</span> and <span class="math inline">$$L^6$$</span> gives</p>
+<p>All four quantities are finite. In particular, the energy spaces imply integrability of the cubic velocity on <span class="math inline">$$C_4(0)$$</span>: interpolation between spatial <span class="math inline">$$L^2$$</span> and <span class="math inline">$$L^6$$</span>, followed by the Sobolev embedding <span class="math inline">$$H^1(B_4)\subset L^6(B_4)$$</span>, gives</p>
 <p><span class="math display">$$\begin{aligned}
-\int_U |u|^{10/3}
-&amp;\le \int_{-4}^4
-       \|u(\cdot,s)\|_{L^2(B_2)}^{4/3}
-       \|u(\cdot,s)\|_{L^6(B_2)}^2\,ds\\
-&amp;\le C\left(\operatorname*{ess\,sup}_{s\in(-4,4)}
-       \|u(\cdot,s)\|_{L^2(B_2)}^2\right)^{2/3}
-       \int_{-4}^4\|u(\cdot,s)\|_{H^1(B_2)}^2\,ds
+\int_{C_4(0)} |u|^{10/3}
+&amp;\le \int_{-16}^{16}
+       \|u(\cdot,s)\|_{L^2(B_4)}^{4/3}
+       \|u(\cdot,s)\|_{L^6(B_4)}^2\,ds\\
+&amp;\le C\left(\operatorname*{ess\,sup}_{s\in(-16,16)}
+       \|u(\cdot,s)\|_{L^2(B_4)}^2\right)^{2/3}
+       \int_{-16}^{16}\|u(\cdot,s)\|_{H^1(B_4)}^2\,ds
 &lt;\infty.
 \end{aligned}$$</span></p>
+<p>Since <span class="math inline">$$C_4(0)$$</span> has finite volume, Hölder&#39;s inequality then gives <span class="math inline">$$u\in L^3(C_4(0))$$</span>.</p>
 <p>Also, spatial Hölder&#39;s inequality yields the useful comparison</p>
 <p><span class="math display">$$\begin{aligned}
 \left(\int_{B_r(x)}|\nabla u|^{12/7}\right)^{7/6}
@@ -96,7 +97,7 @@ e(r,z)\le CE(r,z).$$</span></p>
 \sum_i h(r_i): A\subset\bigcup_i C_{r_i}(z_i),\quad 0&lt;r_i&lt;\delta
 \right\}.$$</span></p>
 <h3>Dyadic boxes and the dissipation measure</h3>
-<p>The measure recording the available dissipation is <span class="math inline">$$\nu(A)=\int_{A\cap U}|\nabla u|^2\,dx\,dt$$</span>, where <span class="math inline">$$U=C_2(0)$$</span> is the fixed interior cylinder introduced above. Whenever a box extends outside <span class="math inline">$$U$$</span>, extend the function <span class="math inline">$$|\nabla u|$$</span> by zero outside that region. This makes <span class="math inline">$$\nu$$</span> a finite measure on all of spacetime and requires no extension of the velocity itself.</p>
+<p>The measure recording the available dissipation is <span class="math inline">$$\nu(A)=\int_{A\cap C_4(0)}|\nabla u|^2\,dx\,dt$$</span>. The assumed energy integrability gives <span class="math inline">$$\nu(\mathbb R^3\times\mathbb R)=\int_{C_4(0)}|\nabla u|^2\,dx\,dt&lt;\infty$$</span>. In all dyadic-box integrals below, interpret the scalar function <span class="math inline">$$|\nabla u|$$</span> as zero outside <span class="math inline">$$C_4(0)$$</span>. Thus even boxes that cross the boundary have well-defined integrals; this convention does not extend the velocity or assert any equation outside its domain.</p>
 <p>A <strong>parabolic dyadic box of level</strong> <span class="math inline">$$n$$</span> is a product <span class="math inline">$$Q=X\times I$$</span> with spatial side <span class="math inline">$$\ell_n=2^{-n}$$</span> and time length <span class="math inline">$$|I|=\ell_n^2$$</span>.</p>
 <p>Here <span class="math inline">$$X$$</span> is a spatial cube and <span class="math inline">$$I$$</span> is a time interval. In one fixed grid, the level-<span class="math inline">$$n$$</span> boxes partition spacetime, and each box is partitioned by its boxes at level <span class="math inline">$$n+1$$</span>. We use half-open cubes and intervals so that every point belongs to exactly one box at each level. Define</p>
 <p><span class="math display">$$E_Q=\frac{\nu(Q)}{\ell_n},\qquad
@@ -713,19 +714,19 @@ E_Q
 <p>Thus the geometric comparison has produced precisely the expression controlled by the dissipation trace.</p>
 <h2 id="proof-theorem-1">8. Proof of Theorem 1</h2>
 
-<p>Use the localization <span class="math inline">$$L=\overline{C_1(0)}$$</span>, the interior cylinder <span class="math inline">$$U=C_2(0)$$</span>, and the dissipation measure <span class="math inline">$$\nu$$</span> introduced in Section 1.</p>
+<p>Use the localization <span class="math inline">$$L=\overline{C_1(0)}$$</span> and the finite dissipation measure <span class="math inline">$$\nu$$</span> on <span class="math inline">$$C_4(0)$$</span> introduced in Section 1.</p>
 <p>The proof works on every compact subcylinder of the original cylinder, by choosing all radii below its distance from the boundary. No rescaling of the gauge is needed.</p>
 <p>Choose the dyadic constants from Lemmas 3 and 6, and then a sufficiently small dyadic starting radius. Write <span class="math inline">$$r_j=R\theta^j$$</span>, <span class="math inline">$$G_j(z)=G(r_j,z)$$</span>, and <span class="math inline">$$e_j(z)=e(r_j/K,z)$$</span>.</p>
-<p>All the cylinders below then lie inside the region where the finite dissipation measure is defined. Suppose, toward a contradiction, that <span class="math inline">$$\mathcal P^h(S\cap L)&gt;0$$</span>.</p>
-<p>For a fixed radius, the activity is a continuous function of its center. To see this, extend its locally integrable density by zero after restricting it to a slightly larger compact region. Translation is continuous in the space of integrable functions, and hence</p>
+<p>All the cylinders below then lie inside <span class="math inline">$$C_4(0)$$</span>, where <span class="math inline">$$\nu$$</span> agrees with the dissipation of the solution. Suppose, toward a contradiction, that <span class="math inline">$$\mathcal P^h(S\cap L)&gt;0$$</span>.</p>
+<p>For a fixed radius, the activity is a continuous function of its center. To see this, let <span class="math inline">$$f=|u|^3+|p|^{3/2}$$</span> on <span class="math inline">$$C_4(0)$$</span> and extend <span class="math inline">$$f$$</span> by zero outside that cylinder. The integrability proved in Section 1 and the assumed pressure integrability give <span class="math inline">$$f\in L^1(\mathbb R^4)$$</span>. For a center in <span class="math inline">$$L$$</span> and a sufficiently small translation <span class="math inline">$$a$$</span>, both cylinders remain inside <span class="math inline">$$C_4(0)$$</span>. Translation is continuous in <span class="math inline">$$L^1$$</span>, so</p>
 <p><span class="math display">$$\begin{aligned}
 |G(r,z+a)-G(r,z)|
 &amp;\le r^{-2}\int_{C_r(0)}
 \big|f(z+a+w)-f(z+w)\big|\,dw\\
 &amp;\le r^{-2}\|f(\,\cdot+a)-f\|_{L^1(\mathbb R^4)}\\
-&amp;\longrightarrow0,
+&amp;\longrightarrow0.
 \end{aligned}$$</span></p>
-<p>where the density agrees with <span class="math inline">$$f=|u|^3+|p|^{3/2}$$</span> on all cylinders in question. Therefore the persistent set <span class="math inline">$$T=L\cap\bigcap_{j\ge0}\{z:G_j(z)\ge\varepsilon_*\}$$</span> is compact. The <span class="math inline">$$\epsilon$$</span>-regularity criterion shows that it contains every singular point in the localization. In particular, <span class="math inline">$$\mathcal P^h(T)\ge\mathcal P^h(S\cap L)&gt;0$$</span>.</p>
+<p>Therefore the persistent set <span class="math inline">$$T=L\cap\bigcap_{j\ge0}\{z:G_j(z)\ge\varepsilon_*\}$$</span> is compact. The <span class="math inline">$$\epsilon$$</span>-regularity criterion shows that it contains every singular point in the localization. In particular, <span class="math inline">$$\mathcal P^h(T)\ge\mathcal P^h(S\cap L)&gt;0$$</span>.</p>
 <p>Apply the abstract Frostman hypothesis to obtain a probability measure supported on the persistent set, with <span class="math inline">$$\mu(Q)\le C_\mu F(n)$$</span> for every sufficiently fine level in every grid.</p>
 <p>Let the box level corresponding to the radius in Lemma 6 be <span class="math inline">$$n_j=Mj+c$$</span>, where <span class="math inline">$$\theta=2^{-M}$$</span>. More explicitly, if <span class="math inline">$$R=2^{-b}$$</span> and <span class="math inline">$$K=128$$</span>, then <span class="math inline">$$16r_j/K=2^{-(Mj+b+3)}$$</span>, so <span class="math inline">$$c=b+3$$</span> is fixed independently of the center and scale index. Choose the starting index large enough that all these levels satisfy the hypotheses. The weight we need is exactly <span class="math inline">$$w_j=\frac1{\sqrt{2^{n_j}F(n_j)}}$$</span>. These weights decrease. They also have divergent sum. For completeness, define only in this verification <span class="math inline">$$w(n)=\frac1{\sqrt{2^nF(n)}}$$</span>.</p>
 <p>For each block of consecutive indices, monotonicity gives</p>
@@ -760,7 +761,8 @@ E_Q
 &amp;&lt;\infty.
 \end{aligned}$$</span></p>
 <p>However, the integrand on the left is infinite at every point of the persistent set, and that set has measure one. This is a contradiction. Hence <span class="math inline">$$\mathcal P^h(S\cap L)=0$$</span>.</p>
-<p>To cover the whole original cylinder, repeat the same proof on compact subcylinders whose interiors exhaust it. The energy is finite on a slightly larger compact cylinder at each stage, and the starting radius is chosen small enough for that stage. Countable subadditivity then gives <span class="math inline">$$\mathcal P^h(S)=0$$</span>.</p>
+<p>To cover the whole original cylinder, repeat the same proof on compact subcylinders whose interiors exhaust <span class="math inline">$$C_4(0)$$</span>. Use the same finite measure <span class="math inline">$$\nu$$</span> at every stage, choosing the starting radius small enough that all cylinders remain inside <span class="math inline">$$C_4(0)$$</span>. Countable subadditivity then gives <span class="math inline">$$\mathcal P^h(S)=0$$</span>.</p>
+<p><strong>Locally suitable solutions.</strong> The same conclusion holds if the energy and pressure integrability in the definition is assumed only on compactly contained cylinders. For each compact subcylinder in the exhaustion, choose a slightly larger cylinder whose closure still lies in <span class="math inline">$$C_4(0)$$</span>. Restrict the dissipation measure to that larger cylinder, where its total mass is finite, and extend the scalar densities by zero outside it. Starting at sufficiently small radii makes every cylinder in that stage lie in the larger cylinder, so the preceding proof applies without any other change.</p>
 <h2 id="proof-theorem-2">9. Proof of Theorem 2</h2>
 
 <p>Fix the number of logarithmic factors and take the radius sufficiently small that all the logarithms below are positive. The relevant dyadic mass bound is</p>
