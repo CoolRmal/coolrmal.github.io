@@ -64,7 +64,7 @@ E(r,z)&amp;=r^{-1}\int_{C_r(z)}|\nabla u|^2\,dy\,ds,\\
 e(r,z)&amp;=r^{-3/2}\int_{t-r^2}^{t+r^2}
        \left(\int_{B_r(x)}|\nabla u(y,s)|^{12/7}\,dy\right)^{7/6}ds.
 \end{aligned}$$</span></p>
-<p>The quantity <span class="math inline">$$G$$</span> measures cubic velocity and pressure activity. The quantities <span class="math inline">$$A$$</span> and <span class="math inline">$$E$$</span> are scaled energy and dissipation. The mixed quantity <span class="math inline">$$e$$</span> is chosen to fit a specific Sobolev estimate in Lemma 2. Each is unchanged by the Navier–Stokes rescaling</p>
+<p>The quantity <span class="math inline">$$G$$</span> measures cubic velocity and pressure activity. The quantities <span class="math inline">$$A$$</span> and <span class="math inline">$$E$$</span> are scaled energy and dissipation. The mixed quantity <span class="math inline">$$e$$</span> is chosen to fit a specific Sobolev estimate in Lemma 3. Each is unchanged by the Navier–Stokes rescaling</p>
 <p><span class="math display">$$u_r(y,s)=r\,u(x+ry,t+r^2s),\qquad
 p_r(y,s)=r^2p(x+ry,t+r^2s).$$</span></p>
 <p>All four quantities are finite. In particular, the energy spaces imply local integrability of the cubic velocity: interpolation between spatial <span class="math inline">$$L^2$$</span> and <span class="math inline">$$L^6$$</span> gives</p>
@@ -105,7 +105,7 @@ e_Q=\ell_n^{-3/2}\int_I
 <p>These are the box versions of the cylindrical quantities. If <span class="math inline">$$\nu(Q)=0$$</span>, then <span class="math inline">$$|\nabla u|=0$$</span> almost everywhere on <span class="math inline">$$Q$$</span> and hence <span class="math inline">$$e_Q=0$$</span>. Every quotient involving <span class="math inline">$$e_Q/\sqrt{E_Q}$$</span> is assigned the value zero in this case.</p>
 <h2 id="main-results">2. Two theorems and the proof strategy</h2>
 
-<p>The finite family of nested grids used below is constructed in Lemma 5. The phrase “every box” in the following hypothesis includes every one of those grids.</p>
+<p>The finite family of nested grids used below is constructed in Lemma 6. The phrase “every box” in the following hypothesis includes every one of those grids.</p>
 <p><strong>Abstract Frostman hypothesis.</strong> Let <span class="math inline">$$F(n)&gt;0$$</span> for <span class="math inline">$$n\ge n_0$$</span>.</p>
 <p>Suppose that every compact set <span class="math inline">$$T\subset C_4$$</span> of positive parabolic Hausdorff measure supports a probability measure with the following bound:</p>
 <p><span class="math display">$$\mathcal P^h(T)&gt;0
@@ -152,26 +152,22 @@ h(2r)
 <p>The proof uses the cylindrical activity <span class="math inline">$$G$$</span>, the mixed dissipation <span class="math inline">$$e$$</span>, their box counterparts, and a Frostman measure <span class="math inline">$$\mu$$</span>. The auxiliary coefficients for Carleson embedding will be introduced when needed.</p>
 <ol>
 <li><strong>A singular point has activity at every scale.</strong> Epsilon-regularity gives a uniform positive lower bound for <span class="math inline">$$G(r,z)$$</span> at every sufficiently small radius. The local energy inequality bounds <span class="math inline">$$A(r/2,z)+E(r/2,z)$$</span> by <span class="math inline">$$C(G(r,z)^{2/3}+G(r,z))$$</span>.</li>
-<li><strong>Persistent activity has an infinite weighted cost.</strong> Lemma 2 shows contraction of <span class="math inline">$$G$$</span> unless <span class="math inline">$$e$$</span> pays for it. Lemma 3 turns this into an infinite sum of mixed dissipation divided by the square root of activity, even after inserting any positive decreasing weights with divergent sum.</li>
-<li><strong>The same cost has a finite trace.</strong> From <span class="math inline">$$\mu(Q)\le C_\mu F(n)$$</span>, Lemma 4 bounds the sum of <span class="math inline">$$\mu(Q)e_Q/\sqrt{E_Q\,2^nF(n)}$$</span> over all boxes and all levels by the square root of the two total masses.</li>
-<li><strong>Cylinders and boxes give the same comparison.</strong> Lemma 5 constructs finitely many nested grids and compares the cylindrical cost with their box costs. Frostman&#39;s lemma then supplies a probability measure on a compact set of persistent points. The weights <span class="math inline">$$1/\sqrt{2^nF(n)}$$</span> make the cost infinite at every point of that set, while the trace estimate makes its integral finite. This contradiction proves Theorem 1. Theorem 2 follows by checking its two sequence conditions.</li>
+<li><strong>Persistent activity has an infinite weighted cost.</strong> Lemma 3 shows contraction of <span class="math inline">$$G$$</span> unless <span class="math inline">$$e$$</span> pays for it. Lemma 4 turns this into an infinite sum of mixed dissipation divided by the square root of activity, even after inserting any positive decreasing weights with divergent sum.</li>
+<li><strong>The same cost has a finite trace.</strong> From <span class="math inline">$$\mu(Q)\le C_\mu F(n)$$</span>, Lemma 5 bounds the sum of <span class="math inline">$$\mu(Q)e_Q/\sqrt{E_Q\,2^nF(n)}$$</span> over all boxes and all levels by the square root of the two total masses.</li>
+<li><strong>Cylinders and boxes give the same comparison.</strong> Lemma 6 constructs finitely many nested grids and compares the cylindrical cost with their box costs. Frostman&#39;s lemma then supplies a probability measure on a compact set of persistent points. The weights <span class="math inline">$$1/\sqrt{2^nF(n)}$$</span> make the cost infinite at every point of that set, while the trace estimate makes its integral finite. This contradiction proves Theorem 1. Theorem 2 follows by checking its two sequence conditions.</li>
 </ol>
 <p>The only Navier–Stokes regularity result taken as an input is the classical velocity–pressure epsilon-regularity criterion. The additional tools are Sobolev–Poincaré, the boundedness of Riesz transforms, dyadic Carleson embedding, and Frostman&#39;s lemma. We spell out the embedding argument as well as its Carleson estimate.</p>
 <h2 id="local-energy">3. Local energy and epsilon-regularity</h2>
 
 <div class="article-theorem">
 
-<p><strong>Lemma 1 (Local energy and persistent activity).</strong> There is a dimensional constant such that</p>
+<p><strong>Lemma 1 (Local energy estimate).</strong> There is a dimensional constant <span class="math inline">$$C$$</span> such that, for every <span class="math inline">$$z\in L$$</span> and <span class="math inline">$$0&lt;r\le1/2$$</span>,</p>
 <p><span class="math display">$$A(r/2,z)+E(r/2,z)
 \le C\bigl(G(r,z)^{2/3}+G(r,z)\bigr).
 \tag{1}$$</span></p>
-<p>There is also a fixed positive threshold <span class="math inline">$$\varepsilon_*$$</span> such that every singular point satisfies</p>
-<p><span class="math display">$$G(r,z)\ge\varepsilon_*
-\qquad (z\in S\cap L,\ 0&lt;r\le1/2).
-\tag{2}$$</span></p>
 </div>
 
-<p><strong>Proof of the energy estimate.</strong> Take a spatial cutoff supported in the large ball and equal to one in the ball of half the radius. Multiply it by a time cutoff which vanishes near the initial time of the large cylinder and equals one on the middle time interval. The resulting function can be chosen so that</p>
+<p><strong>Proof of Lemma 1.</strong> Take a spatial cutoff supported in the large ball and equal to one in the ball of half the radius. Multiply it by a time cutoff which vanishes near the initial time of the large cylinder and equals one on the middle time interval. The resulting function can be chosen so that</p>
 <p><span class="math display">$$0\le\phi\le1,\qquad
 \phi=1\text{ on }C_{r/2}(z),\qquad
 |\nabla\phi|\le Cr^{-1},\qquad
@@ -196,22 +192,66 @@ r^{-2}\int_{C_r(z)}|p||u|
 &amp;\le G(r,z)^{2/3}G(r,z)^{1/3}\\
 &amp;=G(r,z).
 \end{aligned}$$</span></p>
-<p>This proves (1).</p>
-<p><strong>Why singular points satisfy (2).</strong> We use the classical velocity–pressure epsilon-regularity criterion: sufficiently small scaled cubic velocity and pressure integral on a backward cylinder implies that the velocity is bounded on the backward cylinder of half its radius. This is the only regularity theorem used here; see <a href="#ref-gp">Guevara–Phuc, Theorem 1.1</a>.</p>
-<p>To apply it to our symmetric cylinders, shift the top time forward:</p>
+<p>This proves (1). □</p>
+<div class="article-theorem">
+
+<p><strong>Lemma 2 (Persistent activity at singular points).</strong> There is a fixed positive threshold <span class="math inline">$$\varepsilon_*$$</span> such that</p>
+<p><span class="math display">$$G(r,z)\ge\varepsilon_*
+\qquad (z\in S\cap L,\ 0&lt;r\le1/2).
+\tag{2}$$</span></p>
+</div>
+
+<p><strong>Proof of Lemma 2.</strong> The regularity input is the following precise statement. We use <span class="math inline">$$P$$</span> in place of the paper&#39;s <span class="math inline">$$Q$$</span> for backward cylinders, so that <span class="math inline">$$Q$$</span> remains reserved for our dyadic boxes.</p>
+<div class="article-theorem">
+
+<p><strong>Epsilon-regularity criterion (<a href="#ref-gp">Guevara–Phuc, Theorem 1.1</a>).</strong> There is a universal constant <span class="math inline">$$\varepsilon_*&gt;0$$</span> with this property: every suitable weak solution <span class="math inline">$$(u,p)$$</span> on <span class="math inline">$$P_1(0)=B_1(0)\times(-1,0)$$</span> satisfies the implication</p>
+<p><span class="math display">$$\int_{P_1(0)}\bigl(|u|^3+|p|^{3/2}\bigr)\,dy\,ds
+\le\varepsilon_*
+\quad\Longrightarrow\quad
+u\in L^\infty\bigl(P_{1/2}(0)\bigr).$$</span></p>
+</div>
+
+<p>To apply this statement at radius <span class="math inline">$$r$$</span> and with top time <span class="math inline">$$\tau$$</span>, use the rescaling already introduced: <span class="math inline">$$u_r(y,s)=r\,u(x+ry,\tau+r^2s)$$</span> and <span class="math inline">$$p_r(y,s)=r^2p(x+ry,\tau+r^2s)$$</span>. It preserves the equations and suitability. Under the change of variables <span class="math inline">$$Y=x+ry$$</span> and <span class="math inline">$$T=\tau+r^2s$$</span>, the spacetime volume element contributes <span class="math inline">$$r^{-5}$$</span>, whereas each term of the integrand contributes <span class="math inline">$$r^3$$</span>. Thus</p>
+<p><span class="math display">$$\begin{aligned}
+\int_{P_1(0)}\bigl(|u_r|^3+|p_r|^{3/2}\bigr)\,dy\,ds
+&amp;=r^3r^{-5}\int_{P_r(x,\tau)}
+       \bigl(|u|^3+|p|^{3/2}\bigr)\,dY\,dT\\
+&amp;=r^{-2}\int_{P_r(x,\tau)}
+       \bigl(|u|^3+|p|^{3/2}\bigr)\,dY\,dT.
+\end{aligned}$$</span></p>
+<p>Also, the image of <span class="math inline">$$P_{1/2}(0)$$</span> under this change of variables is exactly <span class="math inline">$$P_{r/2}(x,\tau)$$</span>. Consequently, the scaled criterion is</p>
+<p><span class="math display">$$r^{-2}\int_{P_r(x,\tau)}\bigl(|u|^3+|p|^{3/2}\bigr)\,dy\,ds
+\le\varepsilon_*
+\quad\Longrightarrow\quad
+u\in L^\infty\bigl(P_{r/2}(x,\tau)\bigr).$$</span></p>
+<p><strong>Why the smaller cylinder matters.</strong> The hypothesis concerns the backward cylinder of radius <span class="math inline">$$r$$</span>, but the conclusion gives boundedness only on its smaller cylinder of radius <span class="math inline">$$r/2$$</span>. This leaves room between the conclusion&#39;s region and the outer cylinder&#39;s spatial and initial-time boundaries. To prove that <span class="math inline">$$z=(x,t)$$</span> is regular, we must therefore arrange for this <em>smaller</em> cylinder to contain an open neighborhood of <span class="math inline">$$z$$</span>. Applying the criterion to <span class="math inline">$$P_r(x,t)$$</span> would not do this: <span class="math inline">$$z$$</span> lies on the excluded upper face of <span class="math inline">$$P_{r/2}(x,t)$$</span>. Boundedness only at earlier times does not directly establish regularity under our definition.</p>
+<p>Shift the top time forward to <span class="math inline">$$\tau=t+r^2/8$$</span>. The outer cylinder still fits inside the symmetric cylinder whose activity we control:</p>
 <p><span class="math display">$$\begin{aligned}
 P_r(x,t+r^2/8)
- &amp;=B_r(x)\times(t-7r^2/8,t+r^2/8)
- \subset C_r(z),\\
-P_{r/2}(x,t+r^2/8)
- &amp;=B_{r/2}(x)\times(t-r^2/8,t+r^2/8).
+&amp;=B_r(x)\times\bigl(t+r^2/8-r^2,\,t+r^2/8\bigr)\\
+&amp;=B_r(x)\times\bigl(t-7r^2/8,\,t+r^2/8\bigr)\\
+&amp;\subset B_r(x)\times(t-r^2,t+r^2)\\
+&amp;=C_r(z).
 \end{aligned}$$</span></p>
-<p>The second cylinder is an open neighborhood of the original center. Consequently, if <span class="math inline">$$G(r,z)$$</span> is below the epsilon-regularity threshold, the scaled integral on the first cylinder is also below that threshold, and the solution is bounded near the original center. Taking the contrapositive proves (2). □</p>
+<p>At the same time, the smaller cylinder extends both before and after the original time:</p>
+<p><span class="math display">$$\begin{aligned}
+P_{r/2}(x,t+r^2/8)
+&amp;=B_{r/2}(x)\times\bigl(t+r^2/8-(r/2)^2,\,t+r^2/8\bigr)\\
+&amp;=B_{r/2}(x)\times\bigl(t-r^2/8,\,t+r^2/8\bigr).
+\end{aligned}$$</span></p>
+<p>This is an open spacetime neighborhood of <span class="math inline">$$z$$</span>. Now suppose, for a contradiction, that <span class="math inline">$$z\in S\cap L$$</span> and <span class="math inline">$$G(r,z)&lt;\varepsilon_*$$</span> at some radius <span class="math inline">$$0&lt;r\le1/2$$</span>. The containment of the outer cylinder and the nonnegativity of the integrand give</p>
+<p><span class="math display">$$\begin{aligned}
+r^{-2}\int_{P_r(x,t+r^2/8)}\bigl(|u|^3+|p|^{3/2}\bigr)\,dy\,ds
+&amp;\le r^{-2}\int_{C_r(z)}\bigl(|u|^3+|p|^{3/2}\bigr)\,dy\,ds\\
+&amp;=G(r,z)\\
+&amp;&lt;\varepsilon_*.
+\end{aligned}$$</span></p>
+<p>The scaled criterion therefore gives <span class="math inline">$$u\in L^\infty(P_{r/2}(x,t+r^2/8))$$</span>. Since this smaller cylinder is an open neighborhood of <span class="math inline">$$z$$</span>, the point is regular, contradicting <span class="math inline">$$z\in S$$</span>. This proves (2). □</p>
 <h2 id="scale-recurrence">4. The scale recurrence</h2>
 
 <div class="article-theorem">
 
-<p><strong>Lemma 2 (Scale recurrence).</strong></p>
+<p><strong>Lemma 3 (Scale recurrence).</strong></p>
 <p>Fix a sufficiently large dyadic constant <span class="math inline">$$K$$</span>. There are a contraction factor <span class="math inline">$$q\in(0,1)$$</span>, a dyadic scale ratio <span class="math inline">$$\theta\in(0,K^{-1})$$</span>, and a constant <span class="math inline">$$C_*$$</span> such that</p>
 <p><span class="math display">$$G(\theta r,z)
 \le qG(r,z)+C_*\sqrt{G(r,z)}\,e(r/K,z)
@@ -366,8 +406,8 @@ G(\theta r)
 
 <div class="article-theorem">
 
-<p><strong>Lemma 3 (Weighted persistent activity).</strong></p>
-<p>Fix a sufficiently small radius and use the geometric scales supplied by Lemma 2, writing <span class="math inline">$$r_j=R\theta^j$$</span>, <span class="math inline">$$G_j(z)=G(r_j,z)$$</span>, and <span class="math inline">$$e_j(z)=e(r_j/K,z)$$</span>.</p>
+<p><strong>Lemma 4 (Weighted persistent activity).</strong></p>
+<p>Fix a sufficiently small radius and use the geometric scales supplied by Lemma 3, writing <span class="math inline">$$r_j=R\theta^j$$</span>, <span class="math inline">$$G_j(z)=G(r_j,z)$$</span>, and <span class="math inline">$$e_j(z)=e(r_j/K,z)$$</span>.</p>
 <p>Let the weights be positive and nonincreasing, and suppose that their series diverges, so <span class="math inline">$$w_{j+1}\le w_j$$</span> and <span class="math inline">$$\sum_{j\ge j_0}w_j=\infty$$</span>.</p>
 <p>If activity remains above the regularity threshold at all these scales, then</p>
 <p><span class="math display">$$G_j(z)\ge\varepsilon_*\quad(j\ge j_0)
@@ -407,7 +447,7 @@ a_{j+1}-a_j
 
 <div class="article-theorem">
 
-<p><strong>Lemma 4 (Dissipation trace).</strong> Suppose <span class="math inline">$$\mu$$</span> is a finite nonnegative Borel measure, and, for every level-<span class="math inline">$$n$$</span> box in a fixed parabolic dyadic grid, <span class="math inline">$$\mu(Q)\le C_\mu F(n)$$</span> for <span class="math inline">$$n\ge n_0$$</span>.</p>
+<p><strong>Lemma 5 (Dissipation trace).</strong> Suppose <span class="math inline">$$\mu$$</span> is a finite nonnegative Borel measure, and, for every level-<span class="math inline">$$n$$</span> box in a fixed parabolic dyadic grid, <span class="math inline">$$\mu(Q)\le C_\mu F(n)$$</span> for <span class="math inline">$$n\ge n_0$$</span>.</p>
 <p>Assume <span class="math inline">$$F(n)&gt;0$$</span> and that <span class="math inline">$$2^nF(n)$$</span> is nondecreasing. Then</p>
 <p><span class="math display">$$\boxed{
 \sum_{n\ge n_0}\ \sum_{\operatorname{level}(Q)=n}
@@ -569,7 +609,7 @@ v\int_0^{m/v}\lambda^{-1/2}\,d\lambda
 <p>The trace estimate concerns boxes in one nested grid, whereas the recurrence concerns cylinders centered at arbitrary points. A single grid cannot compare all those cylinders: a small cylinder may straddle a grid boundary at every large scale. We now construct a finite collection of grids so that at least one of them has a box containing any given cylinder at a comparable scale. The familiar name “one-third trick” refers to the spacing of the three grids used in each coordinate; the construction below is the whole trick needed here.</p>
 <div class="article-theorem">
 
-<p><strong>Lemma 5 (Cylinder-to-box comparison).</strong> There are <span class="math inline">$$81$$</span> fixed nested parabolic dyadic grids with the following property. Choose <span class="math inline">$$K=128$$</span>, and let <span class="math inline">$$r$$</span> be a dyadic radius. For every center <span class="math inline">$$z=(x,t)$$</span>, there is a box in one of these grids such that</p>
+<p><strong>Lemma 6 (Cylinder-to-box comparison).</strong> There are <span class="math inline">$$81$$</span> fixed nested parabolic dyadic grids with the following property. Choose <span class="math inline">$$K=128$$</span>, and let <span class="math inline">$$r$$</span> be a dyadic radius. For every center <span class="math inline">$$z=(x,t)$$</span>, there is a box in one of these grids such that</p>
 <p><span class="math display">$$C_{r/K}(z)\subset Q\subset C_{r/2}(z),
 \qquad \operatorname{side}(X)=16r/K.$$</span></p>
 <p>If <span class="math inline">$$G(r,z)\ge\varepsilon_*$$</span> and the cylinders lie in the region where the local energy estimate holds, then <span class="math inline">$$\frac{e(r/K,z)}{\sqrt{G(r,z)}} \le C\frac{e_Q}{\sqrt{E_Q}}$$</span>.</p>
@@ -660,12 +700,12 @@ E_Q
 &amp;\le C\frac{e_Q}{\sqrt{E_Q}}.
 \end{aligned}$$</span></p>
 <p>If <span class="math inline">$$E_Q=0$$</span>, the gradient vanishes almost everywhere on <span class="math inline">$$Q$$</span>; the inner containment then gives <span class="math inline">$$e(r/K,z)=0$$</span>, so the zero convention gives the same result. <span class="math inline">$$\square$$</span></p>
-<p>One useful consequence concerns measurability. Denote by <span class="math inline">$$Q_n^{(a)}(z)$$</span> the unique level-<span class="math inline">$$n$$</span> box containing <span class="math inline">$$z$$</span> in the <span class="math inline">$$a$$</span>th grid. We need not choose a successful grid as a measurable function of the center. Because all terms are nonnegative, Lemma 5 immediately implies</p>
+<p>One useful consequence concerns measurability. Denote by <span class="math inline">$$Q_n^{(a)}(z)$$</span> the unique level-<span class="math inline">$$n$$</span> box containing <span class="math inline">$$z$$</span> in the <span class="math inline">$$a$$</span>th grid. We need not choose a successful grid as a measurable function of the center. Because all terms are nonnegative, Lemma 6 immediately implies</p>
 <p><span class="math display">$$\frac{e(r/K,z)}{\sqrt{G(r,z)}}
 \le C\sum_{a=1}^{81}
 \frac{e_{Q_n^{(a)}(z)}}{\sqrt{E_{Q_n^{(a)}(z)}}},
 \qquad 2^{-n}=16r/K.$$</span></p>
-<p>Each summand on the right is constant on a half-open box and is therefore measurable. Integrating it against <span class="math inline">$$\mu$$</span> gives exactly the box sum in Lemma 4:</p>
+<p>Each summand on the right is constant on a half-open box and is therefore measurable. Integrating it against <span class="math inline">$$\mu$$</span> gives exactly the box sum in Lemma 5:</p>
 <p><span class="math display">$$\int
 \frac{e_{Q_n^{(a)}(z)}}{\sqrt{E_{Q_n^{(a)}(z)}}}\,d\mu(z)
 =\sum_{\operatorname{level}(Q)=n}
@@ -675,7 +715,7 @@ E_Q
 
 <p>Use the localization <span class="math inline">$$L=\overline{C_1(0)}$$</span>, the interior cylinder <span class="math inline">$$U=C_2(0)$$</span>, and the dissipation measure <span class="math inline">$$\nu$$</span> introduced in Section 1.</p>
 <p>The proof works on every compact subcylinder of the original cylinder, by choosing all radii below its distance from the boundary. No rescaling of the gauge is needed.</p>
-<p>Choose the dyadic constants from Lemmas 2 and 5, and then a sufficiently small dyadic starting radius. Write <span class="math inline">$$r_j=R\theta^j$$</span>, <span class="math inline">$$G_j(z)=G(r_j,z)$$</span>, and <span class="math inline">$$e_j(z)=e(r_j/K,z)$$</span>.</p>
+<p>Choose the dyadic constants from Lemmas 3 and 6, and then a sufficiently small dyadic starting radius. Write <span class="math inline">$$r_j=R\theta^j$$</span>, <span class="math inline">$$G_j(z)=G(r_j,z)$$</span>, and <span class="math inline">$$e_j(z)=e(r_j/K,z)$$</span>.</p>
 <p>All the cylinders below then lie inside the region where the finite dissipation measure is defined. Suppose, toward a contradiction, that <span class="math inline">$$\mathcal P^h(S\cap L)&gt;0$$</span>.</p>
 <p>For a fixed radius, the activity is a continuous function of its center. To see this, extend its locally integrable density by zero after restricting it to a slightly larger compact region. Translation is continuous in the space of integrable functions, and hence</p>
 <p><span class="math display">$$\begin{aligned}
@@ -687,7 +727,7 @@ E_Q
 \end{aligned}$$</span></p>
 <p>where the density agrees with <span class="math inline">$$f=|u|^3+|p|^{3/2}$$</span> on all cylinders in question. Therefore the persistent set <span class="math inline">$$T=L\cap\bigcap_{j\ge0}\{z:G_j(z)\ge\varepsilon_*\}$$</span> is compact. The epsilon-regularity criterion shows that it contains every singular point in the localization. In particular, <span class="math inline">$$\mathcal P^h(T)\ge\mathcal P^h(S\cap L)&gt;0$$</span>.</p>
 <p>Apply the abstract Frostman hypothesis to obtain a probability measure supported on the persistent set, with <span class="math inline">$$\mu(Q)\le C_\mu F(n)$$</span> for every sufficiently fine level in every grid.</p>
-<p>Let the box level corresponding to the radius in Lemma 5 be <span class="math inline">$$n_j=Mj+c$$</span>, where <span class="math inline">$$\theta=2^{-M}$$</span>. More explicitly, if <span class="math inline">$$R=2^{-b}$$</span> and <span class="math inline">$$K=128$$</span>, then <span class="math inline">$$16r_j/K=2^{-(Mj+b+3)}$$</span>, so <span class="math inline">$$c=b+3$$</span> is fixed independently of the center and scale index. Choose the starting index large enough that all these levels satisfy the hypotheses. The weight we need is exactly <span class="math inline">$$w_j=\frac1{\sqrt{2^{n_j}F(n_j)}}$$</span>. These weights decrease. They also have divergent sum. For completeness, define only in this verification <span class="math inline">$$w(n)=\frac1{\sqrt{2^nF(n)}}$$</span>.</p>
+<p>Let the box level corresponding to the radius in Lemma 6 be <span class="math inline">$$n_j=Mj+c$$</span>, where <span class="math inline">$$\theta=2^{-M}$$</span>. More explicitly, if <span class="math inline">$$R=2^{-b}$$</span> and <span class="math inline">$$K=128$$</span>, then <span class="math inline">$$16r_j/K=2^{-(Mj+b+3)}$$</span>, so <span class="math inline">$$c=b+3$$</span> is fixed independently of the center and scale index. Choose the starting index large enough that all these levels satisfy the hypotheses. The weight we need is exactly <span class="math inline">$$w_j=\frac1{\sqrt{2^{n_j}F(n_j)}}$$</span>. These weights decrease. They also have divergent sum. For completeness, define only in this verification <span class="math inline">$$w(n)=\frac1{\sqrt{2^nF(n)}}$$</span>.</p>
 <p>For each block of consecutive indices, monotonicity gives</p>
 <p><span class="math display">$$\sum_{n=n_j}^{n_{j+1}-1}w(n)
 \le\sum_{n=n_j}^{n_{j+1}-1}w(n_j)
@@ -696,14 +736,14 @@ E_Q
 <p><span class="math display">$$\sum_{n=n_{j_0}}^{n_{N+1}-1}w(n)
 \le M\sum_{j=j_0}^{N}w_j.$$</span></p>
 <p>The left side tends to infinity by the hypothesis of Theorem 1, so the sum on the right also diverges. This argument explains why no additional comparison between the sequence at two affine-related indices is needed.</p>
-<p>Apply Lemma 3 with these weights. At every point of the persistent set,</p>
+<p>Apply Lemma 4 with these weights. At every point of the persistent set,</p>
 <p><span class="math display">$$\sum_{j\ge j_0}w_j\frac{e_j(z)}{\sqrt{G_j(z)}}=\infty.$$</span></p>
 <p>We next integrate the same expression and obtain a finite bound. Index the finitely many grids by <span class="math inline">$$\mathscr D^1,\ldots,\mathscr D^{81}$$</span>, and denote the unique level box containing the center by <span class="math inline">$$Q_n^a(z)\in\mathscr D^a$$</span>.</p>
-<p>The cylinder-to-box comparison of Lemma 5 says that at least one of these grids gives the estimate needed at each point and scale. All summands are nonnegative, so we may sum over every grid and obtain the pointwise bound</p>
+<p>The cylinder-to-box comparison of Lemma 6 says that at least one of these grids gives the estimate needed at each point and scale. All summands are nonnegative, so we may sum over every grid and obtain the pointwise bound</p>
 <p><span class="math display">$$\frac{e_j(z)}{\sqrt{G_j(z)}}
 \le C\sum_{a=1}^{81}\frac{e_{Q_{n_j}^a(z)}}{\sqrt{E_{Q_{n_j}^a(z)}}}.$$</span></p>
 <p>A term with zero dissipation is defined to be zero. Notice that we have not chosen a grid as a measurable function of the center. The finite sum avoids that issue entirely.</p>
-<p>Since each level is a disjoint partition, integration of a box-constant function simply multiplies its value by the mass of that box. Tonelli&#39;s theorem and Lemma 4 therefore give the complete chain</p>
+<p>Since each level is a disjoint partition, integration of a box-constant function simply multiplies its value by the mass of that box. Tonelli&#39;s theorem and Lemma 5 therefore give the complete chain</p>
 <p><span class="math display">$$\begin{aligned}
 \int_T\sum_{j\ge j_0}w_j
 \frac{e_j(z)}{\sqrt{G_j(z)}}\,d\mu(z)
@@ -768,9 +808,9 @@ E_Q
 <ol>
 <li><span id="ref-original"></span>Yongxi Lin, <em>A logarithmic refinement of CKN partial regularity</em>, <a href="/assets/papers/logarithmic-refinement-ckn-original.pdf">original manuscript</a>. This webpage expands and reorganizes its proof; Theorem 2 is Proposition 5 of the manuscript. The source manuscript describes the proof as AI-generated under the author&#39;s guidance.</li>
 <li><span id="ref-ckn"></span>L. Caffarelli, R. Kohn, and L. Nirenberg, <em>Partial regularity of suitable weak solutions of the Navier–Stokes equations</em>, Communications on Pure and Applied Mathematics <strong>35</strong> (1982), 771–831. <a href="https://doi.org/10.1002/cpa.3160350604">DOI</a>.</li>
-<li><span id="ref-gp"></span>C. Guevara and N. C. Phuc, <em>Local energy bounds and epsilon-regularity criteria for the 3D Navier–Stokes system</em>, Calculus of Variations and Partial Differential Equations <strong>56</strong> (2017), article 68. <a href="https://www.math.lsu.edu/~pcnguyen/papers_html/Guevara-Phuc-12-29-16.pdf">Author-hosted manuscript</a>. Theorem 1.1 is the velocity–pressure epsilon-regularity input used in Lemma 1.</li>
+<li><span id="ref-gp"></span>C. Guevara and N. C. Phuc, <em>Local energy bounds and epsilon-regularity criteria for the 3D Navier–Stokes system</em>, Calculus of Variations and Partial Differential Equations <strong>56</strong> (2017), article 68. <a href="https://www.math.lsu.edu/~pcnguyen/papers_html/Guevara-Phuc-12-29-16.pdf">Author-hosted manuscript</a>. Theorem 1.1 is the velocity–pressure epsilon-regularity input used in Lemma 2.</li>
 <li><span id="ref-bishop-peres"></span>C. J. Bishop and Y. Peres, <em>Fractals in Probability and Analysis</em>, Cambridge University Press, 2017. <a href="https://www.math.stonybrook.edu/~bishop/fractalbook.pdf">Author-hosted manuscript</a>, Lemma 3.1.1 and its dyadic proof.</li>
-<li><span id="ref-hk"></span>T. Hytönen and A. Kairema, <em>Systems of dyadic cubes in a doubling metric space</em>, Colloquium Mathematicum <strong>126</strong> (2012), 1–33. <a href="https://doi.org/10.4064/cm126-1-1">DOI</a>. Lemma 5 above gives the explicit construction needed here, so no adjacent-grid theorem is left implicit.</li>
+<li><span id="ref-hk"></span>T. Hytönen and A. Kairema, <em>Systems of dyadic cubes in a doubling metric space</em>, Colloquium Mathematicum <strong>126</strong> (2012), 1–33. <a href="https://doi.org/10.4064/cm126-1-1">DOI</a>. Lemma 6 above gives the explicit construction needed here, so no adjacent-grid theorem is left implicit.</li>
 </ol>
 
 </div>
