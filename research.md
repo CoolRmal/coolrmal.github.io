@@ -28,7 +28,7 @@ nav: research
 
 <div class="repo-card" id="bergman-weak-type">
   <h3 class="entry-title"><a href="https://github.com/CoolRmal/bergman-weak-type" target="_blank" rel="noopener noreferrer">bergman-weak-type</a></h3>
-  <p class="entry-meta">Lean 4 + Mathlib</p>
+  <p class="entry-meta">Lean 4 + Mathlib &middot; <span class="badge">registered</span> <a href="https://palomar-registry.org/entry?id=PALOMAR-2026-10-19-000019&amp;version=1" target="_blank" rel="noopener noreferrer">PALOMAR-2026-10-19-000019</a></p>
   <p class="repo-description">
     Formalizes sharp weak-type estimates for Bergman projections. On the unit disk with
     normalized area, proves that both the complex projection and its positive majorant have
