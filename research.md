@@ -59,6 +59,7 @@ nav: research
   <p class="article-links">
     <a href="{{ '/articles/two-partial-balayage-principles/' | relative_url }}">Two partial balayage principles for weak-type estimates</a>
     &middot; <a href="{{ '/assets/papers/two-partial-balayage-principles.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
+    &middot; <a href="{{ '/assets/slides/explicit-weak-type-constants-partial-balayage.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
   </p>
 </div>
 
@@ -204,6 +205,16 @@ nav: research
   <p>
     <span class="badge">preprint</span>
     <a href="https://arxiv.org/abs/2510.26505" target="_blank" rel="noopener noreferrer">arXiv:2510.26505</a>
+  </p>
+</div>
+
+<h2 id="talks">Talks</h2>
+
+<div class="entry">
+  <h3 class="entry-title">Explicit Weak-Type Constants via Partial Balayage</h3>
+  <p class="entry-meta">Nonlinear Analysis Seminar Series &middot; October 26, 2026</p>
+  <p>
+    <a href="{{ '/assets/slides/explicit-weak-type-constants-partial-balayage.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>
   </p>
 </div>
 
