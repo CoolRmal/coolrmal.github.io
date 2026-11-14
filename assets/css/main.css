@@ -200,9 +200,11 @@ blockquote {
 .profile .more-info p { margin: 0; }
 .clearfix::after { content: ""; display: table; clear: both; }
 
-/* Long-form prose keeps a readable measure; it still starts at the container's
-   left edge, so every page lines up. */
-.post .post-content,
+/* Article width and typography are shared in article.css. */
+.post.h-entry { margin-inline: auto; }
+
+.post .post-content { max-width: none; }
+
 .reading-column { max-width: 78ch; }
 
 /* ------------------------------------------------------- post + page body */

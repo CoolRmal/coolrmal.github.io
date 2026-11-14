@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+cd "$(dirname "$0")/.."
+export GEM_HOME="$PWD/.preview/gems"
+export GEM_PATH="$GEM_HOME:$(ruby -rrubygems -e 'puts Gem.default_path.join(":")')"
+bundle check >/dev/null 2>&1 || bundle install
+exec bundle exec jekyll serve \
+  --config _config.yml,_config_preview.yml \
+  --host 127.0.0.1 --port 4000 \
+  --force_polling

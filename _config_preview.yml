@@ -1,0 +1,13 @@
+url: http://127.0.0.1:4000
+baseurl: ""
+destination: .preview/site
+plugins_dir: scripts/preview-plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-titles-from-headings
+exclude:
+  - scripts
+  - Gemfile
+  - Gemfile.lock

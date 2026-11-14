@@ -28,6 +28,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-titles-from-headings
 
 titles_from_headings:
   strip_title: true
@@ -36,6 +37,14 @@ titles_from_headings:
 defaults:
   - scope:
       path: ""
-      type: post
+      type: posts
     values:
+      layout: post
       tags: Other
+
+# Comments are stored in this repository's GitHub Discussions.
+giscus:
+  repo: CoolRmal/coolrmal.github.io
+  repo_id: R_kgDOMCAbQA
+  category: Announcements
+  category_id: DIC_kwDOMCAbQM4DLElV

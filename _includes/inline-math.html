@@ -1,0 +1,11 @@
+<script>
+  // Keep $$ source delimiters for inline formulas and mark their mode for MathJax.
+  document.querySelectorAll('.post-content .math.inline').forEach(function (span) {
+    var tex = span.textContent;
+    var math = document.createElement('script');
+    math.type = 'math/tex';
+    math.text = tex.slice(2, -2);
+    span.textContent = '';
+    span.appendChild(math);
+  });
+</script>

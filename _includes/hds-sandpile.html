@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="{{ '/assets/css/hds-sandpile.css' | relative_url }}">
+
+<figure class="hds-sandpile" data-hds-sandpile>
+  <figcaption>
+    <strong>A divisible sandpile on ℤ</strong>
+    <span>7 units at the origin · capacity 1 · 80% survives each move</span>
+  </figcaption>
+
+  <p data-hds-fallback>At the exact limit, sites −1, 0, and 1 each hold 1 unit, and sites −2 and 2 each hold 14/17. The remaining 40/17 units are lost in transit.</p>
+
+  <div data-hds-interface hidden>
+    <div class="hds-chart" aria-hidden="true">
+      <div class="hds-chart-heading">
+        <strong>Density</strong>
+        <span><i class="hds-key"></i> Kept</span>
+        <span><i class="hds-key hds-key-over"></i> Excess</span>
+      </div>
+      <div class="hds-plot" data-hds-plot>
+        <span class="hds-cap-label">Cap 1</span>
+        <span class="hds-cap-line"></span>
+      </div>
+      <div class="hds-lattice" data-hds-sites><span>Site</span></div>
+      <div class="hds-lattice hds-odometer" data-hds-odometer><span>Sent</span></div>
+    </div>
+
+    <div class="hds-frame-note">
+      <strong data-hds-frame>Round 0</strong>
+      <span data-hds-note></span>
+    </div>
+
+    <dl class="hds-totals">
+      <div>
+        <dt>Mass on the lattice</dt>
+        <dd data-hds-mass>7</dd>
+      </div>
+      <div>
+        <dt>Mass lost in transit</dt>
+        <dd data-hds-lost>0</dd>
+      </div>
+    </dl>
+
+    <div class="hds-controls">
+      <label for="hds-round">Scrub through rounds</label>
+      <input id="hds-round" data-hds-round type="range" min="0" step="1" value="0">
+      <div class="hds-buttons">
+        <button type="button" data-hds-play>Play</button>
+        <button type="button" data-hds-step>Step</button>
+        <button type="button" data-hds-reset>Reset</button>
+        <button type="button" data-hds-limit>Show exact limit</button>
+      </div>
+    </div>
+
+    <p class="hds-sr-only" data-hds-status role="status" aria-atomic="true"></p>
+  </div>
+</figure>
+
+<script src="{{ '/assets/js/hds-sandpile.js' | relative_url }}" defer></script>
