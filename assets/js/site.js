@@ -10,6 +10,31 @@
   }
 })();
 
+// Keep exceptionally long inline formulas inside the same reading column.
+// Short formulas retain their inline layout, including after a window resize.
+window.fitArticleMath = function () {
+  var article = document.querySelector('.mathematical-article');
+  if (!article) return;
+  article.querySelectorAll('.MathJax_CHTML').forEach(function (frame) {
+    if (frame.closest('.MJXc-display')) return;
+    var container = frame.closest('.nobr, .math.inline') || frame;
+    var block = container.parentElement;
+    while (block !== article && /^(inline|contents)$/.test(getComputedStyle(block).display)) {
+      block = block.parentElement;
+    }
+    var style = getComputedStyle(block);
+    var available = block.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
+    var width = Math.max(frame.scrollWidth, frame.getBoundingClientRect().width);
+    container.classList.toggle('article-math-scroll', width > available + 1);
+  });
+};
+var mathResizeFrame;
+window.addEventListener('resize', function () {
+  cancelAnimationFrame(mathResizeFrame);
+  mathResizeFrame = requestAnimationFrame(window.fitArticleMath);
+});
+if (document.fonts) document.fonts.ready.then(window.fitArticleMath);
+
 // Keep punctuation on the same line as the formula, code span or link before it,
 // so that no line ever starts with ",", "." and the like.
 window.gluePunctuation = function () {
@@ -27,6 +52,13 @@ window.gluePunctuation = function () {
   }
   targets.forEach(function (text) {
     var prev = text.previousSibling, group;
+    // Let long titles and emphasized phrases wrap, with only the punctuation
+    // attached to the final word instead of keeping the entire phrase together.
+    if (prev.nodeName === 'A' ||
+        (INLINE[prev.nodeName] && /\s/.test(prev.textContent.trim()))) {
+      text.nodeValue = '\u2060' + text.nodeValue;
+      return;
+    }
     if (prev.nodeName === 'SCRIPT' && /math\/tex/.test(prev.type || '')) {
       // MathJax output: [preview] frame <script type="math/tex">
       var frame = prev.previousSibling;
@@ -49,5 +81,6 @@ window.gluePunctuation = function () {
     wrap.appendChild(document.createTextNode(punct));
     text.nodeValue = text.nodeValue.slice(punct.length);
   });
+  window.fitArticleMath();
 };
 window.gluePunctuation();

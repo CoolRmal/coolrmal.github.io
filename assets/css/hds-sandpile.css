@@ -1,15 +1,3 @@
-.post-content .MJXc-display {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: .2em 0;
-}
-
-.post-content .MJXc-display > .mjx-chtml {
-  flex-shrink: 0;
-  margin-inline: auto;
-}
-
 .hds-sandpile {
   --hds-blue: var(--theme, #1565c0);
   --hds-rust: #a64d21;

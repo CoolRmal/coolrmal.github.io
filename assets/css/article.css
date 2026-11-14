@@ -1,8 +1,19 @@
-.article-page { max-width: 1000px; }
+/* One centered reading column for every post and research article. */
+.container.article-page {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.article-page .post,
+.article-page .post-content {
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+}
 .article-page .post-header { max-width: 850px; margin-bottom: 2.5rem; }
 .article-page .post-title { margin-top: 1rem; font-size: clamp(1.9rem, 3.5vw, 2.6rem); }
 .article-author { margin: 0.8rem 0 0.4rem; font-weight: 400; }
-.mathematical-article { font-weight: 400; }
+.mathematical-article { font-weight: 400; overflow-wrap: anywhere; }
 .mathematical-article p { margin: 1rem 0; }
 .article-toc { padding: 1rem 1.5rem; border: 1px solid var(--divider); border-radius: 6px; margin-bottom: 2.5rem; }
 .post-content .article-toc h2 { font-size: 1.15rem; margin-top: 0; }
@@ -19,6 +30,15 @@
 .mathematical-article .math.display { display: block; overflow-x: auto; padding: 0.3rem 0; max-width: 100%; }
 .mathematical-article .MathJax_Display { margin: 0.8rem 0; }
 .mathematical-article .nobr { white-space: nowrap; }
+/* Only formulas wider than their text column receive this class. */
+.mathematical-article .article-math-scroll {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0.6em 0;
+  padding: 0.2em 0;
+}
 .article-table-scroll { max-width: 100%; overflow-x: auto; }
 .post-content .operator-bounds { display: table; width: 100%; margin: 1rem 0 2rem; }
 .operator-bounds caption { text-align: left; font-size: 0.9rem; margin-bottom: 0.75rem; color: var(--text-light); }
