@@ -1,3 +1,6 @@
+---
+description: "A counterexample showing that the intersection of finite Lp spaces need not equal L-infinity, and a categorical perspective on limits of function spaces."
+---
 ## Is $L^\infty$ the Limit of $L^p$ (Categorically)?
 
 Let $(X,\mu)$ be a measure space. According to Exercise 1.1.3 in GTM249, if $f\in L^{p_0}(X,\mu)$ for some $p_0<\infty$, then 

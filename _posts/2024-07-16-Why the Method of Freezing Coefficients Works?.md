@@ -1,3 +1,6 @@
+---
+description: "Why freezing coefficients and a partition of unity turn local PDE estimates into global ones, illustrated by Gårding's inequality."
+---
 # Why the Method of Freezing Coefficients Works?
 
 Partial differential operators with constant coefficients are always easier to handle. But what if the coefficients are not constant? If we assume the coefficients are sufficiently smooth/regular, one approach is to "freeze" the coefficients—approximate them as constants—and then estimate the resulting error. This method works because smooth functions locally (within a sufficiently small ball) approximate constants very well.

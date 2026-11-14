@@ -1,3 +1,6 @@
+---
+description: "Studying the best constant in the weak-type inequality for the dyadic maximal function associated with a Borel measure."
+---
 ## Best Constant in the Weak Type Inequality of the Dyadic Maximal Function
 
 Let $\mathscr{D}$ be the collection of all dyadic cubes of $\mathbb{R}^n$. Let $\mu$ be a Borel measure on $\mathbb{R}^n$ such that $\mu(Q)<\infty$ for each $Q\in \mathscr{D}$. For any locally integrable function $f$, we define its average over a dyadic cube $Q$ to be

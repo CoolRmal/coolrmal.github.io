@@ -1,10 +1,16 @@
 ---
 layout: about
 nav: about
+image:
+  path: /assets/img/profile.jpg
+  width: 700
+  height: 933
+  alt: Yongxi (Aaron) Lin
 ---
 
 Hello, this is Yongxi (Aaron) Lin. I am a second-year PhD student in mathematics at
-Carnegie Mellon University. My main interests are harmonic analysis, PDEs, and the formalization
+Carnegie Mellon University. My main interests are harmonic analysis, partial differential equations
+(PDEs), and the formalization
 of mathematics in Lean 4, and I am a reviewer for
 <a href="https://github.com/leanprover-community/mathlib4">mathlib</a>. I share my experiences of
 learning math here.

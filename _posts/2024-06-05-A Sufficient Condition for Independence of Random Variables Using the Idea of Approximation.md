@@ -1,3 +1,6 @@
+---
+description: "Proving independence of random variables from factorization of expectations of bounded continuous functions, using approximation of indicator functions."
+---
 ## A Sufficient Condition for Independence of Random Variables Using the Idea of Approximation
 
 When I was reading a note about <a href="https://terrytao.wordpress.com/2010/02/10/245a-notes-5-free-probability/">Free Probability</a>, I learnt the following proposition:

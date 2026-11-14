@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": {{ '/#profile' | absolute_url | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "name": {{ site.author.name | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ '/#person' | absolute_url | jsonify }},
+    "name": {{ site.author.name | jsonify }},
+    "alternateName": ["Yongxi Lin", "Aaron Lin"],
+    "url": {{ site.author.url | jsonify }},
+    "image": {{ site.profile_image | absolute_url | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "jobTitle": "Mathematics PhD student",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Carnegie Mellon University"
+    },
+    "knowsAbout": ["Harmonic analysis", "Partial differential equations", "Lean 4", "Formalization of mathematics"],
+    "sameAs": [
+      {{ site.scholar_url | jsonify }},
+      {{ site.github_username | prepend: 'https://github.com/' | jsonify }},
+      {{ site.zhihu_url | jsonify }}
+    ]
+  }
+}
+</script>

@@ -1,3 +1,6 @@
+---
+description: "Recovering incompressible-fluid pressure from velocity through singular integrals, with solutions to exercises from Krylov's PDE lectures."
+---
 ## Krylov's Approach of Recovering Pressure from Velocity
 
 The mathematician Nicolai Vladimirovich Krylov wrote a book *Lectures on Elliptic and Parabolic Equations in Sobolev Space* and this article is meant to give a complete solution to the three exercises at the end of Section 9, Chapter 1 of this book.

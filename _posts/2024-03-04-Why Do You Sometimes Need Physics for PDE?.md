@@ -1,3 +1,6 @@
+---
+description: "Deriving the one-dimensional advection–diffusion equation from Fick's law and conservation of mass, with reflections from a PDE teaching session."
+---
 # Why Do You Sometimes Need Physics for PDE?
 
 I realized I truly lack a "physics mindset." This realization came from considering the following problem in the PDE class where I was a TA:

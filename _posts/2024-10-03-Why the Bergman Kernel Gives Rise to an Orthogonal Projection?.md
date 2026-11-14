@@ -1,3 +1,6 @@
+---
+description: "A detailed explanation of why the Bergman kernel represents the orthogonal projection onto the Hilbert space of square-integrable holomorphic functions."
+---
 ## Why the Bergman Kernel Gives Rise to an Orthogonal Projection?
 
 I was reading Krantz's book *Fuction Theory of Several Complex Variables*, and I was not satisfied by the proof that the Bergman projection is represented by the Bergman kernel. This article aims at giving a little bit more details of this proof. Here's the setting.

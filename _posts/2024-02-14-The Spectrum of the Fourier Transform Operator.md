@@ -1,3 +1,6 @@
+---
+description: "Exploring the spectrum of the Fourier transform operator, starting from its fourth-power identity and its action on Schwartz functions."
+---
 # The Spectrum of the Fourier Transform Operator
 
 Let's begin with some notations.

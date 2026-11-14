@@ -1,3 +1,6 @@
+---
+description: "An outline of integral representations for subharmonic and superharmonic functions, using Riesz measures, Green functions, and Riesz decomposition."
+---
 ## Integral Representation of Sub/super/harmonic Functions
 
 I want to share a theorem about sub/superharmonic function that I found pretty amazing and give an outline for its proof. Let first give some definitions. If $u:\Omega\rightarrow [-\infty,\infty]$ is subharmonic, then we can define the following linear functional on $C_0^\infty(\Omega)$:

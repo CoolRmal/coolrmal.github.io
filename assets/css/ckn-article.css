@@ -1,0 +1,24 @@
+.ckn-article .proof-step { font-weight: 500; }
+.ckn-article .article-toc { margin-top: 2rem; }
+.ckn-article h3 { margin-top: 2rem; }
+.ckn-article #references + ol .nobr { white-space: normal; }
+.ckn-article .math.display { overscroll-behavior-x: contain; scrollbar-width: thin; }
+.ckn-article .math-hint { display: none; }
+.ckn-article .grid-demo { border: 1px solid var(--divider); border-radius: 6px; padding: 1.2rem; margin: 2rem 0; }
+.ckn-article .grid-demo svg { display: block; width: 100%; height: auto; color: var(--text); }
+.ckn-article .grid-demo text { font-family: Roboto, sans-serif; font-size: 15px; fill: currentColor; }
+.ckn-article .grid-demo .grid-line { stroke: currentColor; opacity: 0.35; }
+.ckn-article .grid-demo .grid-cell { fill: #12804d; fill-opacity: 0.12; stroke: #12804d; stroke-width: 2; }
+.ckn-article .grid-demo .interval { stroke: var(--theme); stroke-width: 9; stroke-linecap: round; }
+.ckn-article .grid-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 0.8rem; margin: 0.8rem 0; }
+.ckn-article .grid-controls input { flex: 1 1 160px; accent-color: var(--theme); }
+.ckn-article .grid-controls select { color: var(--text); background: var(--bg); padding: 0.4rem; border: 1px solid var(--divider); border-radius: 4px; font: inherit; }
+.ckn-article .grid-demo figcaption { font-size: 0.94rem; }
+.ckn-article .grid-status { font-size: 0.94rem; min-height: 1.5em; }
+.ckn-article .proof-map { border-left: 3px solid var(--theme); padding: 0.2rem 1.25rem; margin: 1.5rem 0; }
+.ckn-article .proof-map li { margin: 0.75rem 0; }
+@media (max-width: 600px) {
+  .ckn-article .math-hint { display: block; font-size: 0.9rem; color: var(--text-light); }
+  .ckn-article .grid-demo { padding: 0.6rem; }
+  .ckn-article .grid-demo text { font-size: 30px; }
+}

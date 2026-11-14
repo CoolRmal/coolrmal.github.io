@@ -1,3 +1,6 @@
+---
+description: "Using Wirtinger derivatives to study harmonic functions in complex variables, inspired by an exercise in several complex variables."
+---
 ## Application of Wirtinger Derivatives to Harmonic Functions
 
 This article is inspired by Exercise 1 in Chapter 1 of Krantz's Several Complex Variables. We first recall the definition of Wirtinger derivatives:
