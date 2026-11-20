@@ -85,7 +85,7 @@ $$
 \qquad\text{(1)}
 $$
 
-To see this, let $$\Phi_\varepsilon(s)=\frac12\bigl(\sqrt{s^2+\varepsilon^2}-s\bigr)$$, a smooth approximation of $$s^-$$, which satisfies $$0\le\Phi_\varepsilon(s)-s\Phi_\varepsilon'(s)\le\varepsilon/2$$. Using this estimate, the equation for $\tau$, and the positivity of both $$u\,h(u)$$ (the nonnegativity of $h$ follows from the monotonicity of $$f(s)/s$$) and $\Phi_\varepsilon''$ (as $\Phi_\varepsilon$ is convex), we compute
+To see this, let $$\Phi_\varepsilon(s)=\frac12\bigl(\sqrt{s^2+\varepsilon^2}-s\bigr)$$, a smooth approximation of $$s^-$$, which satisfies $$0\le\Phi_\varepsilon(s)-s\Phi_\varepsilon'(s)\le\varepsilon/2$$. Using this estimate, the equation for $\tau$, and the convexity of $$\Phi_\varepsilon$$, we compute
 
 $$
 \begin{align*}
@@ -93,7 +93,7 @@ $$
 &=-\operatorname{div}\bigl(\Phi_\varepsilon'(\tau)\,u^2\nabla\tau\bigr)+u\,h(u)\,\Phi_\varepsilon(\tau)\\
 &=-\Phi_\varepsilon'(\tau)\operatorname{div}(u^2\nabla\tau)-\Phi_\varepsilon''(\tau)\,u^2|\nabla\tau|^2+u\,h(u)\,\Phi_\varepsilon(\tau)\\
 &=u\,h(u)\bigl[\Phi_\varepsilon(\tau)-\tau\Phi_\varepsilon'(\tau)\bigr]-u^2\,\Phi_\varepsilon''(\tau)\,|\nabla\tau|^2\\
-&\le uh(u)\frac{\varepsilon}2.
+&\le \frac{\varepsilon}{2}\lvert u\,h(u)\rvert.
 \end{align*}
 $$
 
@@ -236,7 +236,7 @@ which contradicts (G). Hence $$z\equiv0$$, that is, $$\partial_nu\geq0$$ in $$\O
 
 {: .article-references}
 1. James Serrin, [*A symmetry problem in potential theory*](https://doi.org/10.1007/BF00250468), *Archive for Rational Mechanics and Analysis* **43** (1971), 304–318.
-2. Henri Berestycki, Luis Caffarelli and Louis Nirenberg, [*Monotonicity for elliptic equations in unbounded Lipschitz domains*](https://doi.org/10.1002/%28SICI%291097-0312%28199711%2950%3A11%3C1089%3A%3AAID-CPA2%3E3.0.CO%3B2-6), *Communications on Pure and Applied Mathematics* **50** (1997), 1089–1111. The conjecture, the monotonicity theorem for Lipschitz epigraphs, and the first rigidity results for epigraphs.
+2. Henri Berestycki, Luis Caffarelli and Louis Nirenberg, [*Monotonicity for elliptic equations in unbounded Lipschitz domains*](https://doi.org/10.1002/%28SICI%291097-0312%28199711%2950%3A11%3C1089%3A%3AAID-CPA2%3E3.0.CO%3B2-6), *Communications on Pure and Applied Mathematics* **50** (1997), 1089–1111.
 3. Antonio Ros, David Ruiz and Pieralberto Sicbaldi, [*A rigidity result for overdetermined elliptic problems in the plane*](https://doi.org/10.1002/cpa.21696), *Communications on Pure and Applied Mathematics* **70** (2017), 1223–1252.
 4. Alberto Farina and Enrico Valdinoci, [*Flattening results for elliptic PDEs in unbounded domains with applications to overdetermined problems*](https://doi.org/10.1007/s00205-009-0227-8), *Archive for Rational Mechanics and Analysis* **195** (2010), 1025–1058.
 5. Kelei Wang and Juncheng Wei, [*On Serrin's overdetermined problem and a conjecture of Berestycki, Caffarelli and Nirenberg*](https://doi.org/10.1080/03605302.2019.1611846), *Communications in Partial Differential Equations* **44** (2019), 837–858. [arXiv:1502.04680](https://arxiv.org/abs/1502.04680)
